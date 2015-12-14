@@ -1,0 +1,66 @@
+make[2]: Entering directory `/work/02658/agomez/tools/toys/irs/sources/cur'
+makedepend -- -DUNIX -DFUNCTION_TIMERS -Dlinux -DCOMMPI -DOPENMP -DOMP2COMPILER -I../.. -I../../includes -I/usr/local/include     -- clrcur.c curbold.c curbop.c curgetxy.c curgetxy0.c curlmt.c curwrtxy.c curwrtxy0.c delcur.c delcur0.c dobop.c dorop.c getcur.c getcurroot.c getnxcn.c getvec.c getvec1.c getvectp.c irsfmax.c irsfmin.c pamp.c plot.c plotmd.c setcur.c setcur0.c stoplot.c tpamp.c tplot.c xlim.c ylim.c  
+makedepend: warning:  clrcur.c (reading /usr/include/stdio.h, line 34): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/_G_config.h, line 15): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/wchar.h, line 52): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/libio.h, line 53): cannot find include file "stdarg.h"
+	not in ../../stdarg.h
+	not in ../../includes/stdarg.h
+	not in /usr/local/include/stdarg.h
+	not in /usr/include/stdarg.h
+makedepend: warning:  clrcur.c (reading /usr/include/stdlib.h, line 33): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/sys/types.h, line 147): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/alloca.h, line 25): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/string.h, line 34): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  clrcur.c (reading /usr/include/malloc.h, line 25): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  curgetxy.c, line 3: cannot find include file "irscur.hh"
+	not in irscur.hh
+	not in irscur.hh
+	not in ../../irscur.hh
+	not in ../../includes/irscur.hh
+	not in /usr/local/include/irscur.hh
+	not in /usr/include/irscur.hh
+makedepend: warning:  stoplot.c (reading /usr/include/unistd.h, line 227): cannot find include file "stddef.h"
+	not in ../../stddef.h
+	not in ../../includes/stddef.h
+	not in /usr/local/include/stddef.h
+	not in /usr/include/stddef.h
+makedepend: warning:  stoplot.c (reading ../../includes/FunctionTimer.h, line 27): cannot find include file "mpi.h"
+	not in ../../mpi.h
+	not in ../../includes/mpi.h
+	not in /usr/local/include/mpi.h
+	not in /usr/include/mpi.h
+irs_fixdepend Makefile
+make[2]: Leaving directory `/work/02658/agomez/tools/toys/irs/sources/cur'
