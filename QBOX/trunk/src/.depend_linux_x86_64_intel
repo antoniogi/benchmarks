@@ -1,0 +1,1742 @@
+# DO NOT DELETE
+
+(objs-linux_x86_64_intel/AndersonMixer.o): AndersonMixer.h Context.h blas.h
+(objs-linux_x86_64_intel/AndersonMixer.o): Context.h
+(objs-linux_x86_64_intel/AngleCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/AngleCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/AngleCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/AngleCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/AngleCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/AngleCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/AngleCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/AngleConstraint.o): AngleConstraint.h Constraint.h
+(objs-linux_x86_64_intel/AngleConstraint.o): D3vector.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/AngleConstraint.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/AngleConstraint.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/AngleConstraint.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/AngleConstraint.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/AngleConstraint.o): Constraint.h D3vector.h
+(objs-linux_x86_64_intel/Atom.o): Atom.h D3vector.h
+(objs-linux_x86_64_intel/AtomCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/AtomCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/AtomCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/AtomCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/AtomCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/AtomCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/AtomCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Atom.o): D3vector.h
+(objs-linux_x86_64_intel/AtomsDyn.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/AtomsDyn.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/AtomsDyn.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/AtomsDyn.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/AtomsDyn.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/AtomsDyn.o): ConstraintSet.h
+(objs-linux_x86_64_intel/AtomSet.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/AtomSet.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/AtomSet.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/AtomSet.o): Symmetry.h NameOf.h
+(objs-linux_x86_64_intel/AtomSet.o): Context.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/AtomSet.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/AtomSet.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/AtomSet.o): Symmetry.h
+(objs-linux_x86_64_intel/AtomSetHandler.o): StructureHandler.h D3vector.h
+(objs-linux_x86_64_intel/Base64Transcoder.o): Base64Transcoder.h
+(objs-linux_x86_64_intel/Basis.o): Basis.h D3vector.h UnitCell.h Context.h
+(objs-linux_x86_64_intel/Basis.o): D3vector.h UnitCell.h Context.h
+(objs-linux_x86_64_intel/BasisMapping.o): Basis.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/BasisMapping.o): Context.h BasisMapping.h
+(objs-linux_x86_64_intel/BLYPFunctional.o): BLYPFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/BLYPFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): BMDIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): IonicStepper.h Sample.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/BMDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): BOSampleStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Timer.h EnergyFunctional.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): StructureFactor.h SlaterDet.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Matrix.h WavefunctionStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SDWavefunctionStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): JDWavefunctionStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): PSDWavefunctionStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): PSDAWavefunctionStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SDIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SDAIonicStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): LineMinimizer.h CGIonicStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): MDIonicStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): BMDIonicStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SDCellStepper.h CellStepper.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Preconditioner.h AndersonMixer.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): MLWFTransform.h BasisMapping.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SimpleConvergenceDetector.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): ConvergenceDetector.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Hugoniostat.h PrintMem.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): FourierTransform.h profile.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): Timer.h EnergyFunctional.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/BOSampleStepper.o): StructureFactor.h
+(objs-linux_x86_64_intel/CellDyn.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CellDyn.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/CellDyn.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/CellDyn.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CellDyn.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CellDyn.o): ConstraintSet.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/CellDyn.o): Timer.h
+(objs-linux_x86_64_intel/Cell.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Cell.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Cell.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Cell.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Cell.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/CellLock.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CellLock.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/CellLock.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/CellLock.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CellLock.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CellLock.o): ConstraintSet.h
+(objs-linux_x86_64_intel/CellMass.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CellMass.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/CellMass.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/CellMass.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CellMass.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CellMass.o): ConstraintSet.h
+(objs-linux_x86_64_intel/CellStepFreq.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CellStepFreq.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/CellStepFreq.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CellStepFreq.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/CellStepFreq.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CellStepFreq.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CellStepFreq.o): ConstraintSet.h
+(objs-linux_x86_64_intel/CellStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CellStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/CellStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CellStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/CellStepper.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CellStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CellStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/CenterOfMass.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CenterOfMass.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/CenterOfMass.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CenterOfMass.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/CenterOfMass.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/CenterOfMass.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/CenterOfMass.o): ConstraintSet.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): CGIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): LineMinimizer.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): IonicStepper.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/CGIonicStepper.o): LineMinimizer.h
+(objs-linux_x86_64_intel/ChargeDensity.o): ChargeDensity.h Timer.h Context.h
+(objs-linux_x86_64_intel/ChargeDensity.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/ChargeDensity.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ChargeDensity.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ChargeDensity.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ChargeDensity.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ChargeDensity.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ChargeDensity.o): ConstraintSet.h FourierTransform.h
+(objs-linux_x86_64_intel/ChargeDensity.o): SlaterDet.h Matrix.h PrintMem.h
+(objs-linux_x86_64_intel/ChargeDensity.o): StructureFactor.h blas.h
+(objs-linux_x86_64_intel/ChargeDensity.o): Timer.h Context.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ChargeMixCoeff.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ChargeMixing.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ChargeMixing.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ChargeMixing.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ChargeMixing.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ChargeMixing.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ChargeMixing.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ChargeMixing.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ChargeMixNdim.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ChargeMixRcut.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ClebschGordan.o): ClebschGordan.h
+(objs-linux_x86_64_intel/clooper.o): clooper.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): ComputeMLWFCmd.h UserInterface.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Context.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): MLWFTransform.h BasisMapping.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): SlaterDet.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ComputeMLWFCmd.o): MLWFTransform.h BasisMapping.h
+(objs-linux_x86_64_intel/ConfinementPotential.o): ConfinementPotential.h
+(objs-linux_x86_64_intel/ConfinementPotential.o): Basis.h D3vector.h
+(objs-linux_x86_64_intel/ConfinementPotential.o): UnitCell.h Context.h
+(objs-linux_x86_64_intel/Constraint.o): Constraint.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ConstraintCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ConstraintSet.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ConstraintSet.o): PositionConstraint.h Constraint.h
+(objs-linux_x86_64_intel/ConstraintSet.o): DistanceConstraint.h
+(objs-linux_x86_64_intel/ConstraintSet.o): AngleConstraint.h D3vector.h
+(objs-linux_x86_64_intel/ConstraintSet.o): TorsionConstraint.h Atom.h
+(objs-linux_x86_64_intel/ConstraintSet.o): AtomSet.h Context.h Species.h
+(objs-linux_x86_64_intel/ConstraintSet.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ConstraintSet.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ConstraintSet.o): Symmetry.h
+(objs-linux_x86_64_intel/Context.o): Context.h
+(objs-linux_x86_64_intel/Context_row_major.o): Context.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): CPSampleStepper.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Timer.h EnergyFunctional.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): StructureFactor.h SlaterDet.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Matrix.h MDWavefunctionStepper.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): MDIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): SDCellStepper.h CellStepper.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): Timer.h EnergyFunctional.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/CPSampleStepper.o): StructureFactor.h
+(objs-linux_x86_64_intel/Debug.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Debug.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Debug.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Debug.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Debug.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/DistanceCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/DistanceCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/DistanceCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/DistanceCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/DistanceCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/DistanceCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/DistanceCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): DistanceConstraint.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): Constraint.h AtomSet.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): MMSpecies.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/DistanceConstraint.o): Constraint.h
+(objs-linux_x86_64_intel/Dt.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Dt.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Dt.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Dt.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Dt.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Ecutden.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Ecutden.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Ecutden.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Ecutden.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Ecutden.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Ecutden.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Ecut.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Ecut.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Ecut.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Ecut.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Ecut.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Ecutprec.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Ecutprec.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Ecutprec.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Ecutprec.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Ecutprec.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Ecutprec.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Ecuts.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Ecuts.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Ecuts.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Ecuts.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Ecuts.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): EhrenSampleStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): Wavefunction.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): ConstraintSet.h Timer.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): StructureFactor.h PlotCmd.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): UserInterface.h SlaterDet.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): Matrix.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SOTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SORKTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): FORKTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): TDEULERWavefunctionStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SDIonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): IonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SDAIonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): LineMinimizer.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): CGIonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): MDIonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): BMDIonicStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SDCellStepper.h CellStepper.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): MLWFTransform.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): BasisMapping.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SimpleConvergenceDetector.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): ConvergenceDetector.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): Hugoniostat.h PrintMem.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): FourierTransform.h profile.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SampleStepper.h Sample.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): Wavefunction.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): ConstraintSet.h Timer.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): StructureFactor.h PlotCmd.h
+(objs-linux_x86_64_intel/EhrenSampleStepper.o): UserInterface.h
+(objs-linux_x86_64_intel/Emass.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Emass.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Emass.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Emass.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Emass.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/EmpiricalPotential.o): Context.h spline.h
+(objs-linux_x86_64_intel/EmpiricalPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EmpiricalPotential.o): D3vector.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): D3vector.h Species.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): Basis.h UnitCell.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): MMSpecies.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): Wavefunction.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/EmpiricalPotentialCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/EmpiricalPotential.o): Context.h D3vector.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): Context.h StructureFactor.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): FourierTransform.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): XCPotential.h LDAFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): XCFunctional.h PBEFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): PBESolFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): PBERevFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): BLYPFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): NonLocalPotential.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): ConfinementPotential.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): EnthalpyFunctional.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): HubbardPotential.h blas.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/EnergyFunctional.o): Context.h StructureFactor.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): EnthalpyFunctional.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): Context.h Basis.h D3vector.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): UnitCell.h FourierTransform.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/EnthalpyFunctional.o): Context.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/EnthalpyPressure.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/EnthalpyThreshold.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ExtStress.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ExtStress.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ExtStress.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ExtStress.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ExtStress.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ExtStress.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ExtStress.o): ConstraintSet.h
+(objs-linux_x86_64_intel/FermiTemp.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/FermiTemp.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/FermiTemp.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/FermiTemp.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/FermiTemp.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/FermiTemp.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/FermiTemp.o): ConstraintSet.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/FoldInWsCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/Force_Complex_WF.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): FORKTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Atom.h Species.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): SymmetrySet.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Symmetry.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/FORKTDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): FOTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/FOTDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/FourierTransform.o): FourierTransform.h Timer.h
+(objs-linux_x86_64_intel/FourierTransform.o): Basis.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/FourierTransform.o): Context.h profile.h
+(objs-linux_x86_64_intel/FourierTransform.o): Timer.h
+(objs-linux_x86_64_intel/HelpCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/HelpCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/HelpCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/HelpCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/HelpCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/HelpCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/HelpCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/HubbardPotential.o): HubbardPotential.h AtomSet.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/HubbardPotential.o): MMSpecies.h
+(objs-linux_x86_64_intel/HubbardPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/HubbardPotential.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Matrix.h SlaterDet.h Timer.h
+(objs-linux_x86_64_intel/HubbardPotential.o): blas.h
+(objs-linux_x86_64_intel/HubbardPotential.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/HubbardPotential.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/HubbardPotential.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/HubbardPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/HubbardPotential.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/HubbardPotential.o): Matrix.h
+(objs-linux_x86_64_intel/HubbardU.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/HubbardU.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/HubbardU.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/HubbardU.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/HubbardU.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/HubbardU.o): ConstraintSet.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/HugDeltaTemp.o): ConstraintSet.h
+(objs-linux_x86_64_intel/HugFreq.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/HugFreq.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/HugFreq.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/HugFreq.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/HugFreq.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/HugFreq.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Hugoniostat.o): Hugoniostat.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/HugoniostatVar.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/IonicStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/IonicStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/IonicStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/IonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/IonicStepper.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/IonicStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/IonicStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/IPrint.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/IPrint.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/IPrint.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/IPrint.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/IPrint.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/isodate.o): isodate.h
+(objs-linux_x86_64_intel/jacobi.o): Context.h Matrix.h blas.h
+(objs-linux_x86_64_intel/jade.o): Context.h Matrix.h blas.h Timer.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): JDWavefunctionStepper.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): Species.h Basis.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): ChargeDensity.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): StructureFactor.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): Preconditioner.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): Species.h Basis.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/JDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/KpointCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/KpointCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/KpointCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/KpointCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/KpointCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/KpointCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/KpointCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/LDAFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/LDAFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ListAtomsCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): Wavefunction.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ListConstraintsCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ListSpeciesCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/LoadCmd.o): LoadCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/LoadCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/LoadCmd.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/LoadCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/LoadCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/LoadCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/LoadCmd.o): ConstraintSet.h SampleReader.h Timer.h
+(objs-linux_x86_64_intel/LoadCmd.o): ChargeDensity.h FourierTransform.h
+(objs-linux_x86_64_intel/LoadCmd.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/LoadCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/LoadCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/LoadCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/LoadCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/LoadCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/LoadCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/LoadCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): LoaddenCmd.h UserInterface.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): ConstraintSet.h isodate.h release.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): qbox_xmlns.h ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): FourierTransform.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/LoaddenCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/LockCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/LockCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/LockCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/LockCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/LockCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/LockCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/LockCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Matrix.o): Context.h Matrix.h profile.h
+(objs-linux_x86_64_intel/MatrixLoc.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/MatrixLoc.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/MatrixLoc.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/MatrixLoc.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/MatrixLoc.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/MatrixLoc.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/MatrixLoc.o): ConstraintSet.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): MDIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): IonicStepper.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/MDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MDIter.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/MDIter.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/MDIter.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/MDIter.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/MDIter.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): MDSaveCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): SampleWriter.h isodate.h release.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): qbox_xmlns.h Timer.h ChargeDensity.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): FourierTransform.h EnergyFunctional.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): StructureFactor.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/MDSaveCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): MDWavefunctionStepper.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): Species.h Basis.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/MDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/Memory.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Memory.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Memory.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Memory.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Memory.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MLWFTransform.o): MLWFTransform.h D3vector.h
+(objs-linux_x86_64_intel/MLWFTransform.o): BasisMapping.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/MLWFTransform.o): Context.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/MLWFTransform.o): Timer.h jade.h blas.h
+(objs-linux_x86_64_intel/MLWFTransform.o): D3vector.h BasisMapping.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/MMAtomCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/MMSpecies.o): MMSpecies.h Context.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/MMSpeciesCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/MMSpecies.o): Context.h
+(objs-linux_x86_64_intel/NA_overlaps.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/NA_overlaps.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/NA_overlaps.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/NA_overlaps.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/NA_overlaps.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/NA_overlaps.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/NA_overlaps.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Nempty.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Nempty.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Nempty.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Nempty.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Nempty.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/NetCharge.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/NetCharge.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/NetCharge.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/NetCharge.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/NetCharge.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/NetCharge.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/NetCharge.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Nkpoints.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Nkpoints.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Nkpoints.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Nkpoints.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Nkpoints.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Nkpoints.o): ConstraintSet.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): NonLocalPotential.h AtomSet.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): MMSpecies.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): SlaterDet.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): PrintMem.h blas.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/NonLocalPotential.o): SlaterDet.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): NonLocalPotential.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): Atom.h D3vector.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): Species.h Basis.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): Timer.h PrintMem.h
+(objs-linux_x86_64_intel/NonLocalPotential.save2.o): blas.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): Atom.h D3vector.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): Species.h Basis.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/NonLocalPotential.save.o): Timer.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Sample.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): AtomSet.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Context.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Atom.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): D3vector.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Species.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Basis.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): UnitCell.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): MMSpecies.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): SymmetrySet.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Symmetry.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Wavefunction.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): Control.h
+(objs-linux_x86_64_intel/Non_Selfconsistent_Energy_Output.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Nparallelkpts.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Nrowmax.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Nrowmax.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Nrowmax.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Nrowmax.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Nrowmax.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Nrowmax.o): ConstraintSet.h ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/Nrowmax.o): FourierTransform.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): ParallelOptimizer.h Sample.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Timer.h EnergyFunctional.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): ChargeDensity.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): StructureFactor.h SlaterDet.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Matrix.h WavefunctionStepper.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): SDWavefunctionStepper.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): PSDWavefunctionStepper.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): PSDAWavefunctionStepper.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): JDWavefunctionStepper.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Preconditioner.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ParallelOptimizer.o): Timer.h
+(objs-linux_x86_64_intel/ParOptCmd.o): ParOptCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ParOptCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ParOptCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ParOptCmd.o): ParallelOptimizer.h Timer.h
+(objs-linux_x86_64_intel/ParOptCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/ParOptCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ParOptCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ParOptCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ParOptCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ParOptCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/PBEFunctional.o): PBEFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/PBEFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/PBERevFunctional.o): PBERevFunctional.h
+(objs-linux_x86_64_intel/PBERevFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/PBERevFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/PBESolFunctional.o): PBESolFunctional.h
+(objs-linux_x86_64_intel/PBESolFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/PBESolFunctional.o): XCFunctional.h
+(objs-linux_x86_64_intel/Pblock.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Pblock.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Pblock.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Pblock.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Pblock.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/PlotCmd.o): PlotCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/PlotCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/PlotCmd.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/PlotCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/PlotCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/PlotCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/PlotCmd.o): ConstraintSet.h isodate.h release.h
+(objs-linux_x86_64_intel/PlotCmd.o): SampleReader.h FourierTransform.h
+(objs-linux_x86_64_intel/PlotCmd.o): Timer.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/PlotCmd.o): ChargeDensity.h
+(objs-linux_x86_64_intel/PlotCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/PlotCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/PlotCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/PlotCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/PlotCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/PlotCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/PlotCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/PositionConstraint.o): PositionConstraint.h
+(objs-linux_x86_64_intel/PositionConstraint.o): Constraint.h AtomSet.h
+(objs-linux_x86_64_intel/PositionConstraint.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/PositionConstraint.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/PositionConstraint.o): MMSpecies.h
+(objs-linux_x86_64_intel/PositionConstraint.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/PositionConstraint.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/PositionConstraint.o): Constraint.h
+(objs-linux_x86_64_intel/Preconditioner.o): Preconditioner.h
+(objs-linux_x86_64_intel/Preconditioner.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/Preconditioner.o): ChargeDensity.h Timer.h Context.h
+(objs-linux_x86_64_intel/Preconditioner.o): StructureFactor.h Wavefunction.h
+(objs-linux_x86_64_intel/Preconditioner.o): D3vector.h UnitCell.h AtomSet.h
+(objs-linux_x86_64_intel/Preconditioner.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/Preconditioner.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Preconditioner.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/Preconditioner.o): SharedFilePtr.h Sample.h
+(objs-linux_x86_64_intel/Preconditioner.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Preconditioner.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/Preconditioner.o): ConfinementPotential.h
+(objs-linux_x86_64_intel/PrintCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/PrintCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/PrintCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/PrintCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/PrintCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/PrintCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/PrintCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/PrintMem.o): PrintMem.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/PromoteOccCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): PSDAWavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): Preconditioner.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/PSDAWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): PSDWavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): Preconditioner.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/PSDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/qb.o): isodate.h release.h qbox_xmlns.h Context.h
+(objs-linux_x86_64_intel/qb.o): UserInterface.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/qb.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/qb.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/qb.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/qb.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/qb.o): Timer.h AtomCmd.h MMAtomCmd.h HelpCmd.h
+(objs-linux_x86_64_intel/qb.o): ListAtomsCmd.h ListSpeciesCmd.h LoadCmd.h
+(objs-linux_x86_64_intel/qb.o): PrintCmd.h PromoteOccCmd.h QuitCmd.h
+(objs-linux_x86_64_intel/qb.o): RandomizeWfCmd.h RandomizeRealWfCmd.h
+(objs-linux_x86_64_intel/qb.o): RandomizeVelCmd.h RunCmd.h MDSaveCmd.h
+(objs-linux_x86_64_intel/qb.o): SaveCmd.h SavesysCmd.h SavedenCmd.h
+(objs-linux_x86_64_intel/qb.o): SaveESPCmd.h SetCmd.h ShiftWFCmd.h
+(objs-linux_x86_64_intel/qb.o): WFPhaseRealCmd.h SpeciesCmd.h MMSpeciesCmd.h
+(objs-linux_x86_64_intel/qb.o): EmpiricalPotentialCmd.h StatusCmd.h
+(objs-linux_x86_64_intel/qb.o): KpointCmd.h SymmetryCmd.h ParOptCmd.h
+(objs-linux_x86_64_intel/qb.o): LockCmd.h UnlockCmd.h SetVelCmd.h
+(objs-linux_x86_64_intel/qb.o): ComputeMLWFCmd.h MLWFTransform.h
+(objs-linux_x86_64_intel/qb.o): BasisMapping.h AngleCmd.h ConstraintCmd.h
+(objs-linux_x86_64_intel/qb.o): DistanceCmd.h FoldInWsCmd.h StrainCmd.h
+(objs-linux_x86_64_intel/qb.o): TorsionCmd.h ResetVcmCmd.h
+(objs-linux_x86_64_intel/qb.o): ListConstraintsCmd.h PlotCmd.h AtomsDyn.h
+(objs-linux_x86_64_intel/qb.o): Cell.h CellDyn.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/qb.o): CellLock.h CellMass.h ChargeMixing.h
+(objs-linux_x86_64_intel/qb.o): ChargeMixCoeff.h ChargeMixRcut.h
+(objs-linux_x86_64_intel/qb.o): ChargeMixNdim.h Debug.h Ecut.h Ecutprec.h
+(objs-linux_x86_64_intel/qb.o): Ecutden.h Ecuts.h Emass.h ExtStress.h
+(objs-linux_x86_64_intel/qb.o): Smearing.h SmearingWidth.h FermiTemp.h
+(objs-linux_x86_64_intel/qb.o): Force_Complex_WF.h
+(objs-linux_x86_64_intel/qb.o): Non_Selfconsistent_Energy_Output.h TDDt.h
+(objs-linux_x86_64_intel/qb.o): NA_overlaps.h Dt.h Nempty.h Nrowmax.h
+(objs-linux_x86_64_intel/qb.o): ChargeDensity.h FourierTransform.h RefCell.h
+(objs-linux_x86_64_intel/qb.o): Spin.h Stress.h Thermostat.h ThresholdScf.h
+(objs-linux_x86_64_intel/qb.o): ThresholdForce.h ThresholdStress.h ThTemp.h
+(objs-linux_x86_64_intel/qb.o): ThTime.h ThWidth.h CenterOfMass.h WfDiag.h
+(objs-linux_x86_64_intel/qb.o): WfDyn.h WfExtrap.h WFPhaseRealVar.h Xc.h
+(objs-linux_x86_64_intel/qb.o): Nparallelkpts.h Nkpoints.h IPrint.h
+(objs-linux_x86_64_intel/qb.o): CellStepFreq.h ReshapeContext.h
+(objs-linux_x86_64_intel/qb.o): EnthalpyPressure.h EnthalpyThreshold.h
+(objs-linux_x86_64_intel/qb.o): HugoniostatVar.h HugDeltaTemp.h HugFreq.h
+(objs-linux_x86_64_intel/qb.o): RunTimer.h HubbardU.h Memory.h MDIter.h
+(objs-linux_x86_64_intel/qb.o): profile.h MatrixLoc.h Pblock.h SaveFreq.h
+(objs-linux_x86_64_intel/qb.o): SaveDenFreq.h
+(objs-linux_x86_64_intel/qbLink.o): isodate.h release.h qbox_xmlns.h
+(objs-linux_x86_64_intel/qbLink.o): Context.h UserInterface.h Sample.h
+(objs-linux_x86_64_intel/qbLink.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/qbLink.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/qbLink.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/qbLink.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/qbLink.o): Control.h ConstraintSet.h Timer.h
+(objs-linux_x86_64_intel/qbLink.o): BOSampleStepper.h SampleStepper.h
+(objs-linux_x86_64_intel/qbLink.o): EnergyFunctional.h ChargeDensity.h
+(objs-linux_x86_64_intel/qbLink.o): StructureFactor.h CPSampleStepper.h
+(objs-linux_x86_64_intel/qbLink.o): qbLink.h AtomCmd.h MMAtomCmd.h HelpCmd.h
+(objs-linux_x86_64_intel/qbLink.o): ListAtomsCmd.h ListSpeciesCmd.h LoadCmd.h
+(objs-linux_x86_64_intel/qbLink.o): PrintCmd.h PromoteOccCmd.h QuitCmd.h
+(objs-linux_x86_64_intel/qbLink.o): RandomizeWfCmd.h RandomizeVelCmd.h
+(objs-linux_x86_64_intel/qbLink.o): RunCmd.h SaveCmd.h SavesysCmd.h
+(objs-linux_x86_64_intel/qbLink.o): SavedenCmd.h SaveESPCmd.h SetCmd.h
+(objs-linux_x86_64_intel/qbLink.o): SpeciesCmd.h MMSpeciesCmd.h
+(objs-linux_x86_64_intel/qbLink.o): EmpiricalPotentialCmd.h StatusCmd.h
+(objs-linux_x86_64_intel/qbLink.o): KpointCmd.h SymmetryCmd.h ParOptCmd.h
+(objs-linux_x86_64_intel/qbLink.o): LockCmd.h UnlockCmd.h ComputeMLWFCmd.h
+(objs-linux_x86_64_intel/qbLink.o): MLWFTransform.h BasisMapping.h AngleCmd.h
+(objs-linux_x86_64_intel/qbLink.o): ConstraintCmd.h DistanceCmd.h
+(objs-linux_x86_64_intel/qbLink.o): FoldInWsCmd.h StrainCmd.h TorsionCmd.h
+(objs-linux_x86_64_intel/qbLink.o): ResetVcmCmd.h ListConstraintsCmd.h
+(objs-linux_x86_64_intel/qbLink.o): AtomsDyn.h Cell.h CellDyn.h SlaterDet.h
+(objs-linux_x86_64_intel/qbLink.o): Matrix.h CellLock.h CellMass.h
+(objs-linux_x86_64_intel/qbLink.o): ChargeMixing.h ChargeMixCoeff.h
+(objs-linux_x86_64_intel/qbLink.o): ChargeMixRcut.h ChargeMixNdim.h Debug.h
+(objs-linux_x86_64_intel/qbLink.o): Ecut.h Ecutprec.h Ecutden.h Ecuts.h
+(objs-linux_x86_64_intel/qbLink.o): Emass.h ExtStress.h Smearing.h
+(objs-linux_x86_64_intel/qbLink.o): SmearingWidth.h FermiTemp.h Dt.h Nempty.h
+(objs-linux_x86_64_intel/qbLink.o): Nrowmax.h FourierTransform.h RefCell.h
+(objs-linux_x86_64_intel/qbLink.o): Spin.h Stress.h Thermostat.h
+(objs-linux_x86_64_intel/qbLink.o): ThresholdScf.h ThresholdForce.h
+(objs-linux_x86_64_intel/qbLink.o): ThresholdStress.h ThTemp.h ThTime.h
+(objs-linux_x86_64_intel/qbLink.o): ThWidth.h CenterOfMass.h WfDiag.h WfDyn.h
+(objs-linux_x86_64_intel/qbLink.o): Xc.h Nparallelkpts.h Nkpoints.h IPrint.h
+(objs-linux_x86_64_intel/qbLink.o): CellStepFreq.h ReshapeContext.h
+(objs-linux_x86_64_intel/qbLink.o): EnthalpyPressure.h EnthalpyThreshold.h
+(objs-linux_x86_64_intel/qbLink.o): HugoniostatVar.h HugDeltaTemp.h HugFreq.h
+(objs-linux_x86_64_intel/qbLink.o): RunTimer.h HubbardU.h Memory.h
+(objs-linux_x86_64_intel/qb-nruns.o): qbLink.h
+(objs-linux_x86_64_intel/qb-nruns-list.o): qbLink.h
+(objs-linux_x86_64_intel/qbox_xmlns.o): qbox_xmlns.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): SymOpSet.h SymOp.h AtomCmd.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): SpeciesCmd.h SetCmd.h Cell.h
+(objs-linux_x86_64_intel/qb-setupkpts.o): RefCell.h
+(objs-linux_x86_64_intel/QuitCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/QuitCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/QuitCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/QuitCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/QuitCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/QuitCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/QuitCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): Wavefunction.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/RandomizeRealWfCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/RandomizeVelCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/RandomizeWfCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/RefCell.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/RefCell.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/RefCell.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/RefCell.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/RefCell.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/RefCell.o): ConstraintSet.h
+(objs-linux_x86_64_intel/release.o): release.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ResetVcmCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ReshapeContext.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ReshapeContext.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ReshapeContext.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ReshapeContext.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ReshapeContext.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ReshapeContext.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ReshapeContext.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/RunCmd.o): RunCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/RunCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/RunCmd.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/RunCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/RunCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/RunCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/RunCmd.o): BOSampleStepper.h SampleStepper.h Timer.h
+(objs-linux_x86_64_intel/RunCmd.o): EnergyFunctional.h ChargeDensity.h
+(objs-linux_x86_64_intel/RunCmd.o): StructureFactor.h CPSampleStepper.h
+(objs-linux_x86_64_intel/RunCmd.o): EhrenSampleStepper.h PlotCmd.h
+(objs-linux_x86_64_intel/RunCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/RunCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/RunCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/RunCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/RunCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/RunCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/RunTimer.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/RunTimer.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/RunTimer.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/RunTimer.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/RunTimer.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/RunTimer.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Sample.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/Sample.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/Sample.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/Sample.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/Sample.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SampleHandler.o): StructureHandler.h
+(objs-linux_x86_64_intel/SampleReader.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/SampleReader.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SampleReader.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SampleReader.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SampleReader.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SampleReader.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SampleReader.o): ConstraintSet.h SampleReader.h
+(objs-linux_x86_64_intel/SampleReader.o): SpeciesReader.h FourierTransform.h
+(objs-linux_x86_64_intel/SampleReader.o): Timer.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/SampleReader.o): XMLGFPreprocessor.h
+(objs-linux_x86_64_intel/SampleStepper.o): SampleStepper.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/SampleStepper.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SampleStepper.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SampleStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SampleStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SampleStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SampleStepper.o): Control.h ConstraintSet.h Timer.h
+(objs-linux_x86_64_intel/SampleStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/SampleStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SampleStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SampleStepper.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SampleStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SampleStepper.o): ConstraintSet.h Timer.h
+(objs-linux_x86_64_intel/SampleWriter.o): SampleWriter.h Context.h Sample.h
+(objs-linux_x86_64_intel/SampleWriter.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SampleWriter.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SampleWriter.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SampleWriter.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SampleWriter.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SampleWriter.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SampleWriter.o): qbox_xmlns.h Timer.h
+(objs-linux_x86_64_intel/SampleWriter.o): Context.h
+(objs-linux_x86_64_intel/SaveCmd.o): SaveCmd.h UserInterface.h Context.h
+(objs-linux_x86_64_intel/SaveCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SaveCmd.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SaveCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SaveCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveCmd.o): ConstraintSet.h SampleWriter.h isodate.h
+(objs-linux_x86_64_intel/SaveCmd.o): release.h qbox_xmlns.h Timer.h
+(objs-linux_x86_64_intel/SaveCmd.o): ChargeDensity.h FourierTransform.h
+(objs-linux_x86_64_intel/SaveCmd.o): EnergyFunctional.h StructureFactor.h
+(objs-linux_x86_64_intel/SaveCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SaveCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SaveCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SaveCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SaveCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SavedenCmd.o): SavedenCmd.h UserInterface.h
+(objs-linux_x86_64_intel/SavedenCmd.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/SavedenCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SavedenCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SavedenCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SavedenCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SavedenCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SavedenCmd.o): ConstraintSet.h isodate.h release.h
+(objs-linux_x86_64_intel/SavedenCmd.o): qbox_xmlns.h ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/SavedenCmd.o): FourierTransform.h
+(objs-linux_x86_64_intel/SavedenCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SavedenCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SavedenCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SavedenCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SavedenCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SavedenCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SavedenCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveDenFreq.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): SaveESPCmd.h UserInterface.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): ConstraintSet.h EnergyFunctional.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): StructureFactor.h SlaterDet.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): Matrix.h FourierTransform.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveESPCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SaveFreq.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/SaveFreq.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SaveFreq.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SaveFreq.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SaveFreq.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SaveFreq.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SavesysCmd.o): SavesysCmd.h UserInterface.h
+(objs-linux_x86_64_intel/SavesysCmd.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/SavesysCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SavesysCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SavesysCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SavesysCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SavesysCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SavesysCmd.o): ConstraintSet.h isodate.h release.h
+(objs-linux_x86_64_intel/SavesysCmd.o): qbox_xmlns.h
+(objs-linux_x86_64_intel/SavesysCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SavesysCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SavesysCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SavesysCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SavesysCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SavesysCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SavesysCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): SDAIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): LineMinimizer.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): IonicStepper.h Sample.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SDAIonicStepper.o): LineMinimizer.h
+(objs-linux_x86_64_intel/SDCellStepper.o): SDCellStepper.h CellStepper.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SDCellStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SDCellStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SDCellStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SDCellStepper.o): CellStepper.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SDCellStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDCellStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SDCellStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): SDIonicStepper.h IonicStepper.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): IonicStepper.h Sample.h AtomSet.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Context.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SDIonicStepper.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): SDWavefunctionStepper.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): Species.h Basis.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/SetCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SetCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SetCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SetCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SetCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SetCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/SetVelCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SetVelCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SetVelCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SetVelCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SetVelCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SetVelCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SetVelCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ShiftWFCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SimpleConvergenceDetector.o): SimpleConvergenceDetector.h
+(objs-linux_x86_64_intel/SimpleConvergenceDetector.o): ConvergenceDetector.h
+(objs-linux_x86_64_intel/SimpleConvergenceDetector.o): ConvergenceDetector.h
+(objs-linux_x86_64_intel/sinft.o): sinft.h
+(objs-linux_x86_64_intel/SlaterDet.o): SlaterDet.h Context.h Basis.h
+(objs-linux_x86_64_intel/SlaterDet.o): D3vector.h UnitCell.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/SlaterDet.o): FourierTransform.h blas.h
+(objs-linux_x86_64_intel/SlaterDet.o): Base64Transcoder.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SlaterDet.o): AtomSet.h Atom.h Species.h MMSpecies.h
+(objs-linux_x86_64_intel/SlaterDet.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SlaterDet.o): Symmetry.h PrintMem.h
+(objs-linux_x86_64_intel/SlaterDet.o): Context.h Basis.h D3vector.h
+(objs-linux_x86_64_intel/SlaterDet.o): UnitCell.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/Smearing.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Smearing.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Smearing.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Smearing.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Smearing.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Smearing.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SmearingWidth.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/SmearingWidth.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SmearingWidth.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SmearingWidth.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SmearingWidth.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SmearingWidth.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SmearingWidth.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): SORKTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Atom.h Species.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): SymmetrySet.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Symmetry.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SORKTDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): SOTDWavefunctionStepper.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/SOTDWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/Species.o): Species.h Context.h Basis.h D3vector.h
+(objs-linux_x86_64_intel/Species.o): UnitCell.h spline.h sinft.h
+(objs-linux_x86_64_intel/Species.o): SphericalIntegration.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): SpeciesCmd.h UserInterface.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): ConstraintSet.h SpeciesReader.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/SpeciesCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Species.o): Context.h Basis.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SpeciesHandler.o): StructureHandler.h
+(objs-linux_x86_64_intel/SpeciesReader.o): Species.h Context.h Basis.h
+(objs-linux_x86_64_intel/SpeciesReader.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SpeciesReader.o): SpeciesReader.h
+(objs-linux_x86_64_intel/SpeciesReader.o): Context.h
+(objs-linux_x86_64_intel/SphericalIntegration.o): SphericalIntegration.h
+(objs-linux_x86_64_intel/Spin.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Spin.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Spin.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Spin.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Spin.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/spline.o): spline.h
+(objs-linux_x86_64_intel/StatusCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/StatusCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/StatusCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/StatusCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/StatusCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/StatusCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/StatusCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/StrainCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/StrainCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/StrainCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/StrainCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/StrainCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/StrainCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/StrainCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/Stress.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Stress.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Stress.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Stress.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Stress.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/StructuredDocumentHandler.o): StrX.h
+(objs-linux_x86_64_intel/StructuredDocumentHandler.o): StructureHandler.h
+(objs-linux_x86_64_intel/StructureFactor.o): StructureFactor.h Basis.h
+(objs-linux_x86_64_intel/StructureFactor.o): D3vector.h UnitCell.h Context.h
+(objs-linux_x86_64_intel/Symmetry.o): Symmetry.h D3vector.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/SymmetryCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Symmetry.o): D3vector.h
+(objs-linux_x86_64_intel/SymmetrySet.o): SymmetrySet.h Context.h Symmetry.h
+(objs-linux_x86_64_intel/SymmetrySet.o): D3vector.h
+(objs-linux_x86_64_intel/SymmetrySet.o): Context.h Symmetry.h D3vector.h
+(objs-linux_x86_64_intel/SymOp.o): SymOp.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SymOp.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/SymOpSet.o): SymOpSet.h D3vector.h SymOp.h
+(objs-linux_x86_64_intel/SymOpSet.o): UnitCell.h
+(objs-linux_x86_64_intel/SymOpSet.o): D3vector.h SymOp.h UnitCell.h
+(objs-linux_x86_64_intel/TDDt.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/TDDt.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/TDDt.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/TDDt.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/TDDt.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): TDEULERWavefunctionStepper.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Wavefunction.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): AtomSet.h Context.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Atom.h Species.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): SymmetrySet.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Symmetry.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Sample.h Control.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/TDEULERWavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/testAndersonMixer.o): Context.h AndersonMixer.h
+(objs-linux_x86_64_intel/testBase64Transcoder.o): Base64Transcoder.h
+(objs-linux_x86_64_intel/testBasis.o): Basis.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/testBasis.o): Context.h
+(objs-linux_x86_64_intel/testBasisMapping.o): Context.h Basis.h D3vector.h
+(objs-linux_x86_64_intel/testBasisMapping.o): UnitCell.h BasisMapping.h
+(objs-linux_x86_64_intel/testBasisMapping.o): Timer.h
+(objs-linux_x86_64_intel/testBlas.o): blas.h Timer.h
+(objs-linux_x86_64_intel/testChargeDensity.o): Context.h Wavefunction.h
+(objs-linux_x86_64_intel/testChargeDensity.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/testChargeDensity.o): AtomSet.h Atom.h Species.h
+(objs-linux_x86_64_intel/testChargeDensity.o): Basis.h MMSpecies.h
+(objs-linux_x86_64_intel/testChargeDensity.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/testChargeDensity.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/testChargeDensity.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/testChargeDensity.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/testChargeDensity.o): SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/testChargeDensity.o): FourierTransform.h Sample.h
+(objs-linux_x86_64_intel/testChargeDensity.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/testContext.o): Context.h
+(objs-linux_x86_64_intel/testContext.orig.o): Context.h
+(objs-linux_x86_64_intel/testEigenBlock.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testEigenSolvers.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testEigenSolvers.o): jacobi.h
+(objs-linux_x86_64_intel/testEmpiricalPotential.o): Context.h D3vector.h
+(objs-linux_x86_64_intel/testEmpiricalPotential.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): Context.h Sample.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): AtomSet.h Atom.h D3vector.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): Species.h Basis.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): Wavefunction.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): ConstraintSet.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): EnergyFunctional.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): ChargeDensity.h Timer.h
+(objs-linux_x86_64_intel/testEnergyFunctional.o): StructureFactor.h
+(objs-linux_x86_64_intel/testFourierTransform.o): Context.h Basis.h
+(objs-linux_x86_64_intel/testFourierTransform.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/testFourierTransform.o): FourierTransform.h Timer.h
+(objs-linux_x86_64_intel/testGramBlock.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testGram.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testHandler.o): StrX.h
+(objs-linux_x86_64_intel/TestHandler.o): StrX.h
+(objs-linux_x86_64_intel/testLDAFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/testMatrix.o): blas.h Timer.h
+(objs-linux_x86_64_intel/testMemParse.o): StrX.h
+(objs-linux_x86_64_intel/testPgemmBlock.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testPgemm.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testPParse.o): StrX.h
+(objs-linux_x86_64_intel/testPzheev.o): Timer.h Context.h Matrix.h
+(objs-linux_x86_64_intel/testSample.o): Context.h SlaterDet.h Basis.h
+(objs-linux_x86_64_intel/testSample.o): D3vector.h UnitCell.h Matrix.h
+(objs-linux_x86_64_intel/testSample.o): Timer.h Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/testSample.o): Species.h MMSpecies.h
+(objs-linux_x86_64_intel/testSample.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/testSample.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/testSample.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/testSample.o): ConstraintSet.h
+(objs-linux_x86_64_intel/testSlaterDet.o): Context.h SlaterDet.h Basis.h
+(objs-linux_x86_64_intel/testSlaterDet.o): D3vector.h UnitCell.h Matrix.h
+(objs-linux_x86_64_intel/testSlaterDet.o): Timer.h FourierTransform.h
+(objs-linux_x86_64_intel/testSpecies.o): Species.h Context.h Basis.h
+(objs-linux_x86_64_intel/testSpecies.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/testSpecies.o): SpeciesReader.h
+(objs-linux_x86_64_intel/testStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/testStepper.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/testStepper.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/testStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/testStepper.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/testStepper.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/testStepper.o): ConstraintSet.h BOSampleStepper.h
+(objs-linux_x86_64_intel/testStepper.o): SampleStepper.h Timer.h
+(objs-linux_x86_64_intel/testStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-linux_x86_64_intel/testStepper.o): StructureFactor.h
+(objs-linux_x86_64_intel/testUnitCell.o): UnitCell.h D3vector.h
+(objs-linux_x86_64_intel/testWavefunction.o): Context.h Wavefunction.h
+(objs-linux_x86_64_intel/testWavefunction.o): D3vector.h UnitCell.h AtomSet.h
+(objs-linux_x86_64_intel/testWavefunction.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/testWavefunction.o): MMSpecies.h
+(objs-linux_x86_64_intel/testWavefunction.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/testWavefunction.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/testWavefunction.o): SharedFilePtr.h SlaterDet.h
+(objs-linux_x86_64_intel/testWavefunction.o): Matrix.h Timer.h
+(objs-linux_x86_64_intel/testXCFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/testXCFunctional.o): PBEFunctional.h Timer.h
+(objs-linux_x86_64_intel/Thermostat.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Thermostat.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/Thermostat.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/Thermostat.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/Thermostat.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Thermostat.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/Thermostat.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ThresholdForce.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ThresholdForce.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ThresholdForce.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ThresholdForce.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ThresholdForce.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ThresholdForce.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ThresholdForce.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ThresholdScf.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ThresholdScf.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/ThresholdScf.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ThresholdScf.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/ThresholdScf.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ThresholdScf.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ThresholdScf.o): ConstraintSet.h
+(objs-linux_x86_64_intel/ThresholdStress.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/ThresholdStress.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/ThresholdStress.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/ThresholdStress.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/ThresholdStress.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/ThresholdStress.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/ThresholdStress.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ThTemp.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ThTemp.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ThTemp.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ThTemp.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ThTemp.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ThTime.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ThTime.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ThTime.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ThTime.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ThTime.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/ThWidth.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/ThWidth.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/ThWidth.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/ThWidth.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/ThWidth.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/ThWidth.o): ConstraintSet.h
+(objs-linux_x86_64_intel/TorsionCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/TorsionCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/TorsionCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/TorsionCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/TorsionCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/TorsionCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/TorsionCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): TorsionConstraint.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): Constraint.h D3vector.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): MMSpecies.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/TorsionConstraint.o): Constraint.h D3vector.h
+(objs-linux_x86_64_intel/UnitCell.o): UnitCell.h D3vector.h
+(objs-linux_x86_64_intel/UnitCell.o): D3vector.h
+(objs-linux_x86_64_intel/UnlockCmd.o): UserInterface.h Context.h Sample.h
+(objs-linux_x86_64_intel/UnlockCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/UnlockCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/UnlockCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-linux_x86_64_intel/UnlockCmd.o): Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/UnlockCmd.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/UnlockCmd.o): ConstraintSet.h
+(objs-linux_x86_64_intel/UserInterface.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/UserInterface.o): Context.h
+(objs-linux_x86_64_intel/uuid_str.o): uuid_str.h
+(objs-linux_x86_64_intel/Wavefunction.o): Wavefunction.h D3vector.h
+(objs-linux_x86_64_intel/Wavefunction.o): UnitCell.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/Wavefunction.o): Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/Wavefunction.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Wavefunction.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/Wavefunction.o): SharedFilePtr.h SlaterDet.h
+(objs-linux_x86_64_intel/Wavefunction.o): Matrix.h Timer.h FourierTransform.h
+(objs-linux_x86_64_intel/Wavefunction.o): jacobi.h profile.h
+(objs-linux_x86_64_intel/Wavefunction.o): D3vector.h UnitCell.h AtomSet.h
+(objs-linux_x86_64_intel/Wavefunction.o): Context.h Atom.h Species.h Basis.h
+(objs-linux_x86_64_intel/Wavefunction.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Wavefunction.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/Wavefunction.o): SharedFilePtr.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): StructureHandler.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): UnitCell.h D3vector.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): Wavefunction.h AtomSet.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): Context.h Atom.h Species.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): Basis.h MMSpecies.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): SharedFilePtr.h SlaterDet.h
+(objs-linux_x86_64_intel/WavefunctionHandler.o): Matrix.h Timer.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): WavefunctionStepper.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): Timer.h Wavefunction.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): Species.h Basis.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): MMSpecies.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): ConstraintSet.h
+(objs-linux_x86_64_intel/WavefunctionStepper.o): Timer.h
+(objs-linux_x86_64_intel/WfDiag.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/WfDiag.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/WfDiag.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/WfDiag.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/WfDiag.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/WfDyn.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/WfDyn.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/WfDyn.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/WfDyn.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/WfDyn.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/WfDyn.o): SlaterDet.h Matrix.h Timer.h
+(objs-linux_x86_64_intel/WfExtrap.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/WfExtrap.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/WfExtrap.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/WfExtrap.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/WfExtrap.o): SharedFilePtr.h Control.h
+(objs-linux_x86_64_intel/WfExtrap.o): ConstraintSet.h SlaterDet.h Matrix.h
+(objs-linux_x86_64_intel/WfExtrap.o): Timer.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): UserInterface.h Context.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): Sample.h AtomSet.h Atom.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): D3vector.h Species.h Basis.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/WFPhaseRealCmd.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): Sample.h AtomSet.h Context.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): Atom.h D3vector.h Species.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): Basis.h UnitCell.h MMSpecies.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): EmpiricalPotential.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): SymmetrySet.h Symmetry.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): Wavefunction.h SharedFilePtr.h
+(objs-linux_x86_64_intel/WFPhaseRealVar.o): Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/Xc.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-linux_x86_64_intel/Xc.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-linux_x86_64_intel/Xc.o): MMSpecies.h EmpiricalPotential.h
+(objs-linux_x86_64_intel/Xc.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-linux_x86_64_intel/Xc.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-linux_x86_64_intel/XCPotential.o): XCPotential.h ChargeDensity.h
+(objs-linux_x86_64_intel/XCPotential.o): Timer.h Context.h LDAFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): XCFunctional.h PBEFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): PBESolFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): PBERevFunctional.h BLYPFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): Basis.h D3vector.h UnitCell.h
+(objs-linux_x86_64_intel/XCPotential.o): FourierTransform.h blas.h
+(objs-linux_x86_64_intel/XCPotential.o): ChargeDensity.h Timer.h Context.h
+(objs-linux_x86_64_intel/XCPotential.o): LDAFunctional.h XCFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): PBEFunctional.h PBESolFunctional.h
+(objs-linux_x86_64_intel/XCPotential.o): PBERevFunctional.h BLYPFunctional.h
+(objs-linux_x86_64_intel/xmlextract.o): StrX.h
+(objs-linux_x86_64_intel/xmlget.o): StrX.h
+(objs-linux_x86_64_intel/XMLGFPreprocessor.o): Timer.h Context.h
+(objs-linux_x86_64_intel/XMLGFPreprocessor.o): Base64Transcoder.h Matrix.h
+(objs-linux_x86_64_intel/XMLGFPreprocessor.o): XMLGFPreprocessor.h
+(objs-linux_x86_64_intel/XMLGFPreprocessor.o): Matrix.h
+(objs-linux_x86_64_intel/xmlSpecies.o): qbox_xmlns.h

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts
+END
+gp_pseudo_to_qbox
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/gp_pseudo_to_qbox
+END
+qbox_pseudo_to_fhi
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_pseudo_to_fhi
+END
+pwscf_outputsys
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/pwscf_outputsys
+END
+qbox_analysis_tool-0.1beta
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_analysis_tool-0.1beta
+END
+qbox_analysis_tool-0.2beta
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_analysis_tool-0.2beta
+END
+pwscf_outputkpts
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/pwscf_outputkpts
+END
+qbox_to_xyz
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_to_xyz
+END
+qbox_pseudo_to_casino
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_pseudo_to_casino
+END
+qbox_analysis_tool
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_analysis_tool
+END
+pwscf_outputsym
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/pwscf_outputsym
+END
+qbox_setupkpts
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_setupkpts
+END
+qbox_xmltosys
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/repos/qb_ll/!svn/ver/2/qbox_scripts/qbox_xmltosys
+END

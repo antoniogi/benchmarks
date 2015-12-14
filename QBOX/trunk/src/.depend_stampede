@@ -1,0 +1,1333 @@
+# DO NOT DELETE
+
+(objs-stampede/AndersonMixer.o): AndersonMixer.h Context.h blas.h
+(objs-stampede/AndersonMixer.o): Context.h
+(objs-stampede/AngleCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/AngleCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/AngleCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/AngleCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/AngleCmd.o): Control.h ConstraintSet.h
+(objs-stampede/AngleConstraint.o): AngleConstraint.h Constraint.h D3vector.h
+(objs-stampede/AngleConstraint.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/AngleConstraint.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/AngleConstraint.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/AngleConstraint.o): Symmetry.h
+(objs-stampede/AngleConstraint.o): Constraint.h D3vector.h
+(objs-stampede/Atom.o): Atom.h D3vector.h
+(objs-stampede/AtomCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/AtomCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/AtomCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/AtomCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/AtomCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Atom.o): D3vector.h
+(objs-stampede/AtomsDyn.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/AtomsDyn.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/AtomsDyn.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/AtomsDyn.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/AtomsDyn.o): ConstraintSet.h
+(objs-stampede/AtomSet.o): AtomSet.h Context.h Atom.h D3vector.h Species.h
+(objs-stampede/AtomSet.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/AtomSet.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/AtomSet.o): NameOf.h
+(objs-stampede/AtomSet.o): Context.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/AtomSet.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/AtomSet.o): SymmetrySet.h Symmetry.h
+(objs-stampede/AtomSetHandler.o): StructureHandler.h D3vector.h
+(objs-stampede/Base64Transcoder.o): Base64Transcoder.h
+(objs-stampede/Basis.o): Basis.h D3vector.h UnitCell.h Context.h
+(objs-stampede/Basis.o): D3vector.h UnitCell.h Context.h
+(objs-stampede/BasisMapping.o): Basis.h D3vector.h UnitCell.h Context.h
+(objs-stampede/BasisMapping.o): BasisMapping.h
+(objs-stampede/BLYPFunctional.o): BLYPFunctional.h XCFunctional.h
+(objs-stampede/BLYPFunctional.o): XCFunctional.h
+(objs-stampede/BMDIonicStepper.o): BMDIonicStepper.h IonicStepper.h Sample.h
+(objs-stampede/BMDIonicStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/BMDIonicStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/BMDIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/BMDIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/BMDIonicStepper.o): Control.h ConstraintSet.h
+(objs-stampede/BMDIonicStepper.o): IonicStepper.h Sample.h AtomSet.h
+(objs-stampede/BMDIonicStepper.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/BMDIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/BMDIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/BMDIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/BMDIonicStepper.o): Control.h ConstraintSet.h
+(objs-stampede/BOSampleStepper.o): BOSampleStepper.h SampleStepper.h Sample.h
+(objs-stampede/BOSampleStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/BOSampleStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/BOSampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/BOSampleStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/BOSampleStepper.o): Control.h ConstraintSet.h Timer.h
+(objs-stampede/BOSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/BOSampleStepper.o): StructureFactor.h SlaterDet.h Matrix.h
+(objs-stampede/BOSampleStepper.o): WavefunctionStepper.h
+(objs-stampede/BOSampleStepper.o): SDWavefunctionStepper.h
+(objs-stampede/BOSampleStepper.o): JDWavefunctionStepper.h
+(objs-stampede/BOSampleStepper.o): PSDWavefunctionStepper.h
+(objs-stampede/BOSampleStepper.o): PSDAWavefunctionStepper.h SDIonicStepper.h
+(objs-stampede/BOSampleStepper.o): IonicStepper.h SDAIonicStepper.h
+(objs-stampede/BOSampleStepper.o): LineMinimizer.h CGIonicStepper.h
+(objs-stampede/BOSampleStepper.o): MDIonicStepper.h BMDIonicStepper.h
+(objs-stampede/BOSampleStepper.o): SDCellStepper.h CellStepper.h
+(objs-stampede/BOSampleStepper.o): Preconditioner.h AndersonMixer.h
+(objs-stampede/BOSampleStepper.o): MLWFTransform.h BasisMapping.h
+(objs-stampede/BOSampleStepper.o): SimpleConvergenceDetector.h
+(objs-stampede/BOSampleStepper.o): ConvergenceDetector.h Hugoniostat.h
+(objs-stampede/BOSampleStepper.o): PrintMem.h FourierTransform.h profile.h
+(objs-stampede/BOSampleStepper.o): SampleStepper.h Sample.h AtomSet.h
+(objs-stampede/BOSampleStepper.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/BOSampleStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/BOSampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/BOSampleStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/BOSampleStepper.o): Control.h ConstraintSet.h Timer.h
+(objs-stampede/BOSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/BOSampleStepper.o): StructureFactor.h
+(objs-stampede/CellDyn.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CellDyn.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CellDyn.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/CellDyn.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/CellDyn.o): ConstraintSet.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/Cell.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Cell.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Cell.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Cell.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Cell.o): ConstraintSet.h
+(objs-stampede/CellLock.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CellLock.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CellLock.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/CellLock.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/CellLock.o): ConstraintSet.h
+(objs-stampede/CellMass.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CellMass.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CellMass.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/CellMass.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/CellMass.o): ConstraintSet.h
+(objs-stampede/CellStepFreq.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/CellStepFreq.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/CellStepFreq.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/CellStepFreq.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/CellStepFreq.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/CellStepper.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CellStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CellStepper.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/CellStepper.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/CellStepper.o): ConstraintSet.h
+(objs-stampede/CenterOfMass.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/CenterOfMass.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/CenterOfMass.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/CenterOfMass.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/CenterOfMass.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/CGIonicStepper.o): CGIonicStepper.h IonicStepper.h Sample.h
+(objs-stampede/CGIonicStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CGIonicStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CGIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/CGIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/CGIonicStepper.o): Control.h ConstraintSet.h LineMinimizer.h
+(objs-stampede/CGIonicStepper.o): IonicStepper.h Sample.h AtomSet.h Context.h
+(objs-stampede/CGIonicStepper.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/CGIonicStepper.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/CGIonicStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/CGIonicStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/CGIonicStepper.o): LineMinimizer.h
+(objs-stampede/ChargeDensity.o): ChargeDensity.h Timer.h Context.h Sample.h
+(objs-stampede/ChargeDensity.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/ChargeDensity.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ChargeDensity.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ChargeDensity.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ChargeDensity.o): Control.h ConstraintSet.h FourierTransform.h
+(objs-stampede/ChargeDensity.o): SlaterDet.h Matrix.h PrintMem.h
+(objs-stampede/ChargeDensity.o): StructureFactor.h blas.h
+(objs-stampede/ChargeDensity.o): Timer.h Context.h
+(objs-stampede/ChargeMixCoeff.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ChargeMixCoeff.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ChargeMixCoeff.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ChargeMixCoeff.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ChargeMixCoeff.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ChargeMixing.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ChargeMixing.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ChargeMixing.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ChargeMixing.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ChargeMixing.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ChargeMixNdim.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ChargeMixNdim.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ChargeMixNdim.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ChargeMixNdim.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ChargeMixNdim.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ChargeMixRcut.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ChargeMixRcut.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ChargeMixRcut.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ChargeMixRcut.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ChargeMixRcut.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ClebschGordan.o): ClebschGordan.h
+(objs-stampede/clooper.o): clooper.h
+(objs-stampede/ComputeMLWFCmd.o): ComputeMLWFCmd.h UserInterface.h Context.h
+(objs-stampede/ComputeMLWFCmd.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-stampede/ComputeMLWFCmd.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ComputeMLWFCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ComputeMLWFCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ComputeMLWFCmd.o): Control.h ConstraintSet.h MLWFTransform.h
+(objs-stampede/ComputeMLWFCmd.o): BasisMapping.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/ComputeMLWFCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/ComputeMLWFCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/ComputeMLWFCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ComputeMLWFCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ComputeMLWFCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ComputeMLWFCmd.o): Control.h ConstraintSet.h MLWFTransform.h
+(objs-stampede/ComputeMLWFCmd.o): BasisMapping.h
+(objs-stampede/ConfinementPotential.o): ConfinementPotential.h Basis.h
+(objs-stampede/ConfinementPotential.o): D3vector.h UnitCell.h Context.h
+(objs-stampede/Constraint.o): Constraint.h
+(objs-stampede/ConstraintCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/ConstraintCmd.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/ConstraintCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ConstraintCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ConstraintCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ConstraintSet.o): ConstraintSet.h PositionConstraint.h
+(objs-stampede/ConstraintSet.o): Constraint.h DistanceConstraint.h
+(objs-stampede/ConstraintSet.o): AngleConstraint.h D3vector.h
+(objs-stampede/ConstraintSet.o): TorsionConstraint.h Atom.h AtomSet.h
+(objs-stampede/ConstraintSet.o): Context.h Species.h Basis.h UnitCell.h
+(objs-stampede/ConstraintSet.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ConstraintSet.o): SymmetrySet.h Symmetry.h
+(objs-stampede/Context.o): Context.h
+(objs-stampede/Context_row_major.o): Context.h
+(objs-stampede/CPSampleStepper.o): CPSampleStepper.h SampleStepper.h Sample.h
+(objs-stampede/CPSampleStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/CPSampleStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CPSampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/CPSampleStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/CPSampleStepper.o): Control.h ConstraintSet.h Timer.h
+(objs-stampede/CPSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/CPSampleStepper.o): StructureFactor.h SlaterDet.h Matrix.h
+(objs-stampede/CPSampleStepper.o): MDWavefunctionStepper.h
+(objs-stampede/CPSampleStepper.o): WavefunctionStepper.h MDIonicStepper.h
+(objs-stampede/CPSampleStepper.o): IonicStepper.h SDCellStepper.h
+(objs-stampede/CPSampleStepper.o): CellStepper.h
+(objs-stampede/CPSampleStepper.o): SampleStepper.h Sample.h AtomSet.h
+(objs-stampede/CPSampleStepper.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/CPSampleStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/CPSampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/CPSampleStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/CPSampleStepper.o): Control.h ConstraintSet.h Timer.h
+(objs-stampede/CPSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/CPSampleStepper.o): StructureFactor.h
+(objs-stampede/Debug.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Debug.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Debug.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Debug.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Debug.o): ConstraintSet.h
+(objs-stampede/DistanceCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/DistanceCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/DistanceCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/DistanceCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/DistanceCmd.o): Control.h ConstraintSet.h
+(objs-stampede/DistanceConstraint.o): DistanceConstraint.h Constraint.h
+(objs-stampede/DistanceConstraint.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/DistanceConstraint.o): Species.h Basis.h UnitCell.h
+(objs-stampede/DistanceConstraint.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/DistanceConstraint.o): SymmetrySet.h Symmetry.h
+(objs-stampede/DistanceConstraint.o): Constraint.h
+(objs-stampede/Dt.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Dt.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Dt.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Dt.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Dt.o): ConstraintSet.h
+(objs-stampede/Ecutden.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Ecutden.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Ecutden.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Ecutden.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Ecutden.o): ConstraintSet.h
+(objs-stampede/Ecut.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Ecut.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Ecut.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Ecut.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Ecut.o): ConstraintSet.h
+(objs-stampede/Ecutprec.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Ecutprec.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Ecutprec.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Ecutprec.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Ecutprec.o): ConstraintSet.h
+(objs-stampede/Ecuts.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Ecuts.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Ecuts.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Ecuts.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Ecuts.o): ConstraintSet.h
+(objs-stampede/EhrenSampleStepper.o): EhrenSampleStepper.h SampleStepper.h
+(objs-stampede/EhrenSampleStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/EhrenSampleStepper.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/EhrenSampleStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/EhrenSampleStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/EhrenSampleStepper.o): SharedFilePtr.h Control.h
+(objs-stampede/EhrenSampleStepper.o): ConstraintSet.h Timer.h
+(objs-stampede/EhrenSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/EhrenSampleStepper.o): StructureFactor.h PlotCmd.h
+(objs-stampede/EhrenSampleStepper.o): UserInterface.h SlaterDet.h Matrix.h
+(objs-stampede/EhrenSampleStepper.o): WavefunctionStepper.h
+(objs-stampede/EhrenSampleStepper.o): SOTDWavefunctionStepper.h
+(objs-stampede/EhrenSampleStepper.o): SORKTDWavefunctionStepper.h
+(objs-stampede/EhrenSampleStepper.o): FORKTDWavefunctionStepper.h
+(objs-stampede/EhrenSampleStepper.o): TDEULERWavefunctionStepper.h
+(objs-stampede/EhrenSampleStepper.o): SDIonicStepper.h IonicStepper.h
+(objs-stampede/EhrenSampleStepper.o): SDAIonicStepper.h LineMinimizer.h
+(objs-stampede/EhrenSampleStepper.o): CGIonicStepper.h MDIonicStepper.h
+(objs-stampede/EhrenSampleStepper.o): BMDIonicStepper.h SDCellStepper.h
+(objs-stampede/EhrenSampleStepper.o): CellStepper.h MLWFTransform.h
+(objs-stampede/EhrenSampleStepper.o): BasisMapping.h
+(objs-stampede/EhrenSampleStepper.o): SimpleConvergenceDetector.h
+(objs-stampede/EhrenSampleStepper.o): ConvergenceDetector.h Hugoniostat.h
+(objs-stampede/EhrenSampleStepper.o): PrintMem.h FourierTransform.h profile.h
+(objs-stampede/EhrenSampleStepper.o): SampleStepper.h Sample.h AtomSet.h
+(objs-stampede/EhrenSampleStepper.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/EhrenSampleStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/EhrenSampleStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/EhrenSampleStepper.o): Symmetry.h Wavefunction.h
+(objs-stampede/EhrenSampleStepper.o): SharedFilePtr.h Control.h
+(objs-stampede/EhrenSampleStepper.o): ConstraintSet.h Timer.h
+(objs-stampede/EhrenSampleStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/EhrenSampleStepper.o): StructureFactor.h PlotCmd.h
+(objs-stampede/EhrenSampleStepper.o): UserInterface.h
+(objs-stampede/Emass.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Emass.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Emass.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Emass.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Emass.o): ConstraintSet.h
+(objs-stampede/EmpiricalPotential.o): Context.h spline.h EmpiricalPotential.h
+(objs-stampede/EmpiricalPotential.o): D3vector.h
+(objs-stampede/EmpiricalPotentialCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/EmpiricalPotentialCmd.o): AtomSet.h Atom.h D3vector.h
+(objs-stampede/EmpiricalPotentialCmd.o): Species.h Basis.h UnitCell.h
+(objs-stampede/EmpiricalPotentialCmd.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/EmpiricalPotentialCmd.o): SymmetrySet.h Symmetry.h
+(objs-stampede/EmpiricalPotentialCmd.o): Wavefunction.h SharedFilePtr.h
+(objs-stampede/EmpiricalPotentialCmd.o): Control.h ConstraintSet.h
+(objs-stampede/EmpiricalPotential.o): Context.h D3vector.h
+(objs-stampede/EnergyFunctional.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/EnergyFunctional.o): Timer.h Context.h StructureFactor.h
+(objs-stampede/EnergyFunctional.o): Sample.h AtomSet.h Atom.h D3vector.h
+(objs-stampede/EnergyFunctional.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/EnergyFunctional.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/EnergyFunctional.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/EnergyFunctional.o): Control.h ConstraintSet.h SlaterDet.h
+(objs-stampede/EnergyFunctional.o): Matrix.h FourierTransform.h XCPotential.h
+(objs-stampede/EnergyFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-stampede/EnergyFunctional.o): PBEFunctional.h PBESolFunctional.h
+(objs-stampede/EnergyFunctional.o): PBERevFunctional.h BLYPFunctional.h
+(objs-stampede/EnergyFunctional.o): NonLocalPotential.h
+(objs-stampede/EnergyFunctional.o): ConfinementPotential.h
+(objs-stampede/EnergyFunctional.o): EnthalpyFunctional.h HubbardPotential.h
+(objs-stampede/EnergyFunctional.o): blas.h
+(objs-stampede/EnergyFunctional.o): ChargeDensity.h Timer.h Context.h
+(objs-stampede/EnergyFunctional.o): StructureFactor.h
+(objs-stampede/EnthalpyFunctional.o): EnthalpyFunctional.h ChargeDensity.h
+(objs-stampede/EnthalpyFunctional.o): Timer.h Context.h Basis.h D3vector.h
+(objs-stampede/EnthalpyFunctional.o): UnitCell.h FourierTransform.h
+(objs-stampede/EnthalpyFunctional.o): ChargeDensity.h Timer.h Context.h
+(objs-stampede/EnthalpyPressure.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/EnthalpyPressure.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/EnthalpyPressure.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/EnthalpyPressure.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/EnthalpyPressure.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/EnthalpyThreshold.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/EnthalpyThreshold.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/EnthalpyThreshold.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/EnthalpyThreshold.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/EnthalpyThreshold.o): SharedFilePtr.h Control.h
+(objs-stampede/EnthalpyThreshold.o): ConstraintSet.h
+(objs-stampede/ExtStress.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/ExtStress.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ExtStress.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/ExtStress.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/ExtStress.o): ConstraintSet.h
+(objs-stampede/FermiTemp.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/FermiTemp.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/FermiTemp.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/FermiTemp.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/FermiTemp.o): ConstraintSet.h
+(objs-stampede/FoldInWsCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/FoldInWsCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/FoldInWsCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/FoldInWsCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/FoldInWsCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Force_Complex_WF.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/Force_Complex_WF.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/Force_Complex_WF.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/Force_Complex_WF.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/Force_Complex_WF.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/FORKTDWavefunctionStepper.o): FORKTDWavefunctionStepper.h
+(objs-stampede/FORKTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/FORKTDWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/FORKTDWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/FORKTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/FORKTDWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/FORKTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/FORKTDWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/FORKTDWavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/FORKTDWavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/FORKTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/FOTDWavefunctionStepper.o): FOTDWavefunctionStepper.h
+(objs-stampede/FOTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/FOTDWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/FOTDWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/FOTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/FOTDWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/FOTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/FOTDWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/FOTDWavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/FOTDWavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/FOTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/FourierTransform.o): FourierTransform.h Timer.h Basis.h
+(objs-stampede/FourierTransform.o): D3vector.h UnitCell.h Context.h profile.h
+(objs-stampede/FourierTransform.o): Timer.h
+(objs-stampede/HelpCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/HelpCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/HelpCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/HelpCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/HelpCmd.o): Control.h ConstraintSet.h
+(objs-stampede/HubbardPotential.o): HubbardPotential.h AtomSet.h Context.h
+(objs-stampede/HubbardPotential.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/HubbardPotential.o): UnitCell.h MMSpecies.h
+(objs-stampede/HubbardPotential.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/HubbardPotential.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/HubbardPotential.o): Matrix.h SlaterDet.h Timer.h blas.h
+(objs-stampede/HubbardPotential.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/HubbardPotential.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/HubbardPotential.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/HubbardPotential.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/HubbardPotential.o): Matrix.h
+(objs-stampede/HubbardU.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/HubbardU.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/HubbardU.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/HubbardU.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/HubbardU.o): ConstraintSet.h
+(objs-stampede/HugDeltaTemp.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/HugDeltaTemp.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/HugDeltaTemp.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/HugDeltaTemp.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/HugDeltaTemp.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/HugFreq.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/HugFreq.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/HugFreq.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/HugFreq.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/HugFreq.o): ConstraintSet.h
+(objs-stampede/Hugoniostat.o): Hugoniostat.h
+(objs-stampede/HugoniostatVar.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/HugoniostatVar.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/HugoniostatVar.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/HugoniostatVar.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/HugoniostatVar.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/IonicStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/IonicStepper.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/IonicStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/IonicStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/IonicStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/IPrint.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/IPrint.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/IPrint.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/IPrint.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/IPrint.o): ConstraintSet.h
+(objs-stampede/isodate.o): isodate.h
+(objs-stampede/jacobi.o): Context.h Matrix.h blas.h
+(objs-stampede/jade.o): Context.h Matrix.h blas.h Timer.h
+(objs-stampede/JDWavefunctionStepper.o): JDWavefunctionStepper.h
+(objs-stampede/JDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/JDWavefunctionStepper.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/JDWavefunctionStepper.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/JDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-stampede/JDWavefunctionStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/JDWavefunctionStepper.o): Symmetry.h SharedFilePtr.h
+(objs-stampede/JDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-stampede/JDWavefunctionStepper.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/JDWavefunctionStepper.o): StructureFactor.h Preconditioner.h
+(objs-stampede/JDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/JDWavefunctionStepper.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/JDWavefunctionStepper.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/JDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-stampede/JDWavefunctionStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/JDWavefunctionStepper.o): Symmetry.h SharedFilePtr.h
+(objs-stampede/KpointCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/KpointCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/KpointCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/KpointCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/KpointCmd.o): Control.h ConstraintSet.h
+(objs-stampede/LDAFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-stampede/LDAFunctional.o): XCFunctional.h
+(objs-stampede/ListAtomsCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/ListAtomsCmd.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/ListAtomsCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ListAtomsCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ListAtomsCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ListConstraintsCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/ListConstraintsCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/ListConstraintsCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ListConstraintsCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ListConstraintsCmd.o): Symmetry.h Wavefunction.h
+(objs-stampede/ListConstraintsCmd.o): SharedFilePtr.h Control.h
+(objs-stampede/ListConstraintsCmd.o): ConstraintSet.h
+(objs-stampede/ListSpeciesCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/ListSpeciesCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/ListSpeciesCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ListSpeciesCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ListSpeciesCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ListSpeciesCmd.o): Control.h ConstraintSet.h
+(objs-stampede/LoadCmd.o): LoadCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/LoadCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/LoadCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/LoadCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/LoadCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/LoadCmd.o): SampleReader.h Timer.h ChargeDensity.h
+(objs-stampede/LoadCmd.o): FourierTransform.h SlaterDet.h Matrix.h
+(objs-stampede/LoadCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/LoadCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/LoadCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/LoadCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/LoadCmd.o): Control.h ConstraintSet.h
+(objs-stampede/LoaddenCmd.o): LoaddenCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/LoaddenCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/LoaddenCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/LoaddenCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/LoaddenCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/LoaddenCmd.o): isodate.h release.h qbox_xmlns.h
+(objs-stampede/LoaddenCmd.o): ChargeDensity.h Timer.h FourierTransform.h
+(objs-stampede/LoaddenCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/LoaddenCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/LoaddenCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/LoaddenCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/LoaddenCmd.o): Control.h ConstraintSet.h
+(objs-stampede/LockCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/LockCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/LockCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/LockCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/LockCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Matrix.o): Context.h Matrix.h profile.h
+(objs-stampede/MatrixLoc.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/MatrixLoc.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/MatrixLoc.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/MatrixLoc.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/MatrixLoc.o): ConstraintSet.h
+(objs-stampede/MDIonicStepper.o): MDIonicStepper.h IonicStepper.h Sample.h
+(objs-stampede/MDIonicStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/MDIonicStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/MDIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/MDIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/MDIonicStepper.o): Control.h ConstraintSet.h
+(objs-stampede/MDIonicStepper.o): IonicStepper.h Sample.h AtomSet.h Context.h
+(objs-stampede/MDIonicStepper.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/MDIonicStepper.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/MDIonicStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/MDIonicStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/MDIter.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/MDIter.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/MDIter.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/MDIter.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/MDIter.o): ConstraintSet.h
+(objs-stampede/MDSaveCmd.o): MDSaveCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/MDSaveCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/MDSaveCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/MDSaveCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/MDSaveCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/MDSaveCmd.o): SampleWriter.h isodate.h release.h qbox_xmlns.h
+(objs-stampede/MDSaveCmd.o): Timer.h ChargeDensity.h FourierTransform.h
+(objs-stampede/MDSaveCmd.o): EnergyFunctional.h StructureFactor.h
+(objs-stampede/MDSaveCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/MDSaveCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/MDSaveCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/MDSaveCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/MDSaveCmd.o): Control.h ConstraintSet.h
+(objs-stampede/MDWavefunctionStepper.o): MDWavefunctionStepper.h
+(objs-stampede/MDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/MDWavefunctionStepper.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/MDWavefunctionStepper.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/MDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-stampede/MDWavefunctionStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/MDWavefunctionStepper.o): Symmetry.h SharedFilePtr.h
+(objs-stampede/MDWavefunctionStepper.o): SlaterDet.h Matrix.h Sample.h
+(objs-stampede/MDWavefunctionStepper.o): Control.h ConstraintSet.h
+(objs-stampede/MDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/Memory.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Memory.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Memory.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Memory.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Memory.o): ConstraintSet.h
+(objs-stampede/MLWFTransform.o): MLWFTransform.h D3vector.h BasisMapping.h
+(objs-stampede/MLWFTransform.o): Basis.h UnitCell.h Context.h SlaterDet.h
+(objs-stampede/MLWFTransform.o): Matrix.h Timer.h jade.h blas.h
+(objs-stampede/MLWFTransform.o): D3vector.h BasisMapping.h
+(objs-stampede/MMAtomCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/MMAtomCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/MMAtomCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/MMAtomCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/MMAtomCmd.o): Control.h ConstraintSet.h
+(objs-stampede/MMSpecies.o): MMSpecies.h Context.h
+(objs-stampede/MMSpeciesCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/MMSpeciesCmd.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/MMSpeciesCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/MMSpeciesCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/MMSpeciesCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/MMSpecies.o): Context.h
+(objs-stampede/NA_overlaps.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/NA_overlaps.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/NA_overlaps.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/NA_overlaps.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/NA_overlaps.o): ConstraintSet.h
+(objs-stampede/Nempty.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Nempty.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Nempty.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Nempty.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Nempty.o): ConstraintSet.h
+(objs-stampede/NetCharge.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/NetCharge.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/NetCharge.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/NetCharge.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/NetCharge.o): ConstraintSet.h
+(objs-stampede/Nkpoints.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Nkpoints.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Nkpoints.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Nkpoints.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Nkpoints.o): ConstraintSet.h
+(objs-stampede/NonLocalPotential.o): NonLocalPotential.h AtomSet.h Context.h
+(objs-stampede/NonLocalPotential.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/NonLocalPotential.o): UnitCell.h MMSpecies.h
+(objs-stampede/NonLocalPotential.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/NonLocalPotential.o): Symmetry.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/NonLocalPotential.o): PrintMem.h blas.h
+(objs-stampede/NonLocalPotential.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/NonLocalPotential.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/NonLocalPotential.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/NonLocalPotential.o): Symmetry.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/NonLocalPotential.save2.o): NonLocalPotential.h AtomSet.h
+(objs-stampede/NonLocalPotential.save2.o): Context.h Atom.h D3vector.h
+(objs-stampede/NonLocalPotential.save2.o): Species.h Basis.h UnitCell.h
+(objs-stampede/NonLocalPotential.save2.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/NonLocalPotential.save2.o): SymmetrySet.h Symmetry.h
+(objs-stampede/NonLocalPotential.save2.o): SlaterDet.h Matrix.h Timer.h
+(objs-stampede/NonLocalPotential.save2.o): PrintMem.h blas.h
+(objs-stampede/NonLocalPotential.save.o): AtomSet.h Context.h Atom.h
+(objs-stampede/NonLocalPotential.save.o): D3vector.h Species.h Basis.h
+(objs-stampede/NonLocalPotential.save.o): UnitCell.h MMSpecies.h
+(objs-stampede/NonLocalPotential.save.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/NonLocalPotential.save.o): Symmetry.h SlaterDet.h Matrix.h
+(objs-stampede/NonLocalPotential.save.o): Timer.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): Sample.h AtomSet.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): Context.h Atom.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): D3vector.h Species.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): Basis.h UnitCell.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): MMSpecies.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): EmpiricalPotential.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): SymmetrySet.h Symmetry.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): Wavefunction.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): SharedFilePtr.h Control.h
+(objs-stampede/Non_Selfconsistent_Energy_Output.o): ConstraintSet.h
+(objs-stampede/Nparallelkpts.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/Nparallelkpts.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/Nparallelkpts.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/Nparallelkpts.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/Nparallelkpts.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/Nrowmax.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Nrowmax.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Nrowmax.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Nrowmax.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Nrowmax.o): ConstraintSet.h ChargeDensity.h Timer.h
+(objs-stampede/Nrowmax.o): FourierTransform.h
+(objs-stampede/ParallelOptimizer.o): ParallelOptimizer.h Sample.h AtomSet.h
+(objs-stampede/ParallelOptimizer.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/ParallelOptimizer.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ParallelOptimizer.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ParallelOptimizer.o): Symmetry.h Wavefunction.h
+(objs-stampede/ParallelOptimizer.o): SharedFilePtr.h Control.h
+(objs-stampede/ParallelOptimizer.o): ConstraintSet.h Timer.h
+(objs-stampede/ParallelOptimizer.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/ParallelOptimizer.o): StructureFactor.h SlaterDet.h Matrix.h
+(objs-stampede/ParallelOptimizer.o): WavefunctionStepper.h
+(objs-stampede/ParallelOptimizer.o): SDWavefunctionStepper.h
+(objs-stampede/ParallelOptimizer.o): PSDWavefunctionStepper.h
+(objs-stampede/ParallelOptimizer.o): PSDAWavefunctionStepper.h
+(objs-stampede/ParallelOptimizer.o): JDWavefunctionStepper.h Preconditioner.h
+(objs-stampede/ParallelOptimizer.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ParallelOptimizer.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ParallelOptimizer.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ParallelOptimizer.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ParallelOptimizer.o): SharedFilePtr.h Control.h
+(objs-stampede/ParallelOptimizer.o): ConstraintSet.h Timer.h
+(objs-stampede/ParOptCmd.o): ParOptCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/ParOptCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/ParOptCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ParOptCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ParOptCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ParOptCmd.o): ParallelOptimizer.h Timer.h
+(objs-stampede/ParOptCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/ParOptCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ParOptCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ParOptCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ParOptCmd.o): Control.h ConstraintSet.h
+(objs-stampede/PBEFunctional.o): PBEFunctional.h XCFunctional.h
+(objs-stampede/PBEFunctional.o): XCFunctional.h
+(objs-stampede/PBERevFunctional.o): PBERevFunctional.h XCFunctional.h
+(objs-stampede/PBERevFunctional.o): XCFunctional.h
+(objs-stampede/PBESolFunctional.o): PBESolFunctional.h XCFunctional.h
+(objs-stampede/PBESolFunctional.o): XCFunctional.h
+(objs-stampede/Pblock.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Pblock.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Pblock.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Pblock.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Pblock.o): ConstraintSet.h
+(objs-stampede/PlotCmd.o): PlotCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/PlotCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/PlotCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PlotCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/PlotCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/PlotCmd.o): isodate.h release.h SampleReader.h
+(objs-stampede/PlotCmd.o): FourierTransform.h Timer.h SlaterDet.h Matrix.h
+(objs-stampede/PlotCmd.o): ChargeDensity.h
+(objs-stampede/PlotCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/PlotCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/PlotCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/PlotCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/PlotCmd.o): Control.h ConstraintSet.h
+(objs-stampede/PositionConstraint.o): PositionConstraint.h Constraint.h
+(objs-stampede/PositionConstraint.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/PositionConstraint.o): Species.h Basis.h UnitCell.h
+(objs-stampede/PositionConstraint.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PositionConstraint.o): SymmetrySet.h Symmetry.h
+(objs-stampede/PositionConstraint.o): Constraint.h
+(objs-stampede/Preconditioner.o): Preconditioner.h EnergyFunctional.h
+(objs-stampede/Preconditioner.o): ChargeDensity.h Timer.h Context.h
+(objs-stampede/Preconditioner.o): StructureFactor.h Wavefunction.h D3vector.h
+(objs-stampede/Preconditioner.o): UnitCell.h AtomSet.h Atom.h Species.h
+(objs-stampede/Preconditioner.o): Basis.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/Preconditioner.o): SymmetrySet.h Symmetry.h SharedFilePtr.h
+(objs-stampede/Preconditioner.o): Sample.h Control.h ConstraintSet.h
+(objs-stampede/Preconditioner.o): SlaterDet.h Matrix.h ConfinementPotential.h
+(objs-stampede/PrintCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/PrintCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/PrintCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/PrintCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/PrintCmd.o): Control.h ConstraintSet.h
+(objs-stampede/PrintMem.o): PrintMem.h
+(objs-stampede/PromoteOccCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/PromoteOccCmd.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/PromoteOccCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PromoteOccCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/PromoteOccCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/PSDAWavefunctionStepper.o): PSDAWavefunctionStepper.h
+(objs-stampede/PSDAWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/PSDAWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/PSDAWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/PSDAWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/PSDAWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PSDAWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/PSDAWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/PSDAWavefunctionStepper.o): Matrix.h Preconditioner.h
+(objs-stampede/PSDAWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/PSDAWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/PSDAWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/PSDAWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/PSDAWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PSDAWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/PSDAWavefunctionStepper.o): SharedFilePtr.h
+(objs-stampede/PSDWavefunctionStepper.o): PSDWavefunctionStepper.h
+(objs-stampede/PSDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/PSDWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/PSDWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/PSDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/PSDWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/PSDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/PSDWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/PSDWavefunctionStepper.o): Matrix.h Preconditioner.h
+(objs-stampede/PSDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/qb.o): isodate.h release.h qbox_xmlns.h Context.h
+(objs-stampede/qb.o): UserInterface.h Sample.h AtomSet.h Atom.h D3vector.h
+(objs-stampede/qb.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/qb.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/qb.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/qb.o): ConstraintSet.h Timer.h AtomCmd.h MMAtomCmd.h HelpCmd.h
+(objs-stampede/qb.o): ListAtomsCmd.h ListSpeciesCmd.h LoadCmd.h PrintCmd.h
+(objs-stampede/qb.o): PromoteOccCmd.h QuitCmd.h RandomizeWfCmd.h
+(objs-stampede/qb.o): RandomizeRealWfCmd.h RandomizeVelCmd.h RunCmd.h
+(objs-stampede/qb.o): MDSaveCmd.h SaveCmd.h SavesysCmd.h SavedenCmd.h
+(objs-stampede/qb.o): SaveESPCmd.h SetCmd.h ShiftWFCmd.h WFPhaseRealCmd.h
+(objs-stampede/qb.o): SpeciesCmd.h MMSpeciesCmd.h EmpiricalPotentialCmd.h
+(objs-stampede/qb.o): StatusCmd.h KpointCmd.h SymmetryCmd.h ParOptCmd.h
+(objs-stampede/qb.o): LockCmd.h UnlockCmd.h SetVelCmd.h ComputeMLWFCmd.h
+(objs-stampede/qb.o): MLWFTransform.h BasisMapping.h AngleCmd.h
+(objs-stampede/qb.o): ConstraintCmd.h DistanceCmd.h FoldInWsCmd.h StrainCmd.h
+(objs-stampede/qb.o): TorsionCmd.h ResetVcmCmd.h ListConstraintsCmd.h
+(objs-stampede/qb.o): PlotCmd.h AtomsDyn.h Cell.h CellDyn.h SlaterDet.h
+(objs-stampede/qb.o): Matrix.h CellLock.h CellMass.h ChargeMixing.h
+(objs-stampede/qb.o): ChargeMixCoeff.h ChargeMixRcut.h ChargeMixNdim.h
+(objs-stampede/qb.o): Debug.h Ecut.h Ecutprec.h Ecutden.h Ecuts.h Emass.h
+(objs-stampede/qb.o): ExtStress.h Smearing.h SmearingWidth.h FermiTemp.h
+(objs-stampede/qb.o): Force_Complex_WF.h Non_Selfconsistent_Energy_Output.h
+(objs-stampede/qb.o): TDDt.h NA_overlaps.h Dt.h Nempty.h Nrowmax.h
+(objs-stampede/qb.o): ChargeDensity.h FourierTransform.h RefCell.h Spin.h
+(objs-stampede/qb.o): Stress.h Thermostat.h ThresholdScf.h ThresholdForce.h
+(objs-stampede/qb.o): ThresholdStress.h ThTemp.h ThTime.h ThWidth.h
+(objs-stampede/qb.o): CenterOfMass.h WfDiag.h WfDyn.h WfExtrap.h
+(objs-stampede/qb.o): WFPhaseRealVar.h Xc.h Nparallelkpts.h Nkpoints.h
+(objs-stampede/qb.o): IPrint.h CellStepFreq.h ReshapeContext.h
+(objs-stampede/qb.o): EnthalpyPressure.h EnthalpyThreshold.h HugoniostatVar.h
+(objs-stampede/qb.o): HugDeltaTemp.h HugFreq.h RunTimer.h HubbardU.h Memory.h
+(objs-stampede/qb.o): MDIter.h profile.h MatrixLoc.h Pblock.h SaveFreq.h
+(objs-stampede/qb.o): SaveDenFreq.h
+(objs-stampede/qbLink.o): isodate.h release.h qbox_xmlns.h Context.h
+(objs-stampede/qbLink.o): UserInterface.h Sample.h AtomSet.h Atom.h
+(objs-stampede/qbLink.o): D3vector.h Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/qbLink.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/qbLink.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/qbLink.o): ConstraintSet.h Timer.h BOSampleStepper.h
+(objs-stampede/qbLink.o): SampleStepper.h EnergyFunctional.h ChargeDensity.h
+(objs-stampede/qbLink.o): StructureFactor.h CPSampleStepper.h qbLink.h
+(objs-stampede/qbLink.o): AtomCmd.h MMAtomCmd.h HelpCmd.h ListAtomsCmd.h
+(objs-stampede/qbLink.o): ListSpeciesCmd.h LoadCmd.h PrintCmd.h
+(objs-stampede/qbLink.o): PromoteOccCmd.h QuitCmd.h RandomizeWfCmd.h
+(objs-stampede/qbLink.o): RandomizeVelCmd.h RunCmd.h SaveCmd.h SavesysCmd.h
+(objs-stampede/qbLink.o): SavedenCmd.h SaveESPCmd.h SetCmd.h SpeciesCmd.h
+(objs-stampede/qbLink.o): MMSpeciesCmd.h EmpiricalPotentialCmd.h StatusCmd.h
+(objs-stampede/qbLink.o): KpointCmd.h SymmetryCmd.h ParOptCmd.h LockCmd.h
+(objs-stampede/qbLink.o): UnlockCmd.h ComputeMLWFCmd.h MLWFTransform.h
+(objs-stampede/qbLink.o): BasisMapping.h AngleCmd.h ConstraintCmd.h
+(objs-stampede/qbLink.o): DistanceCmd.h FoldInWsCmd.h StrainCmd.h
+(objs-stampede/qbLink.o): TorsionCmd.h ResetVcmCmd.h ListConstraintsCmd.h
+(objs-stampede/qbLink.o): AtomsDyn.h Cell.h CellDyn.h SlaterDet.h Matrix.h
+(objs-stampede/qbLink.o): CellLock.h CellMass.h ChargeMixing.h
+(objs-stampede/qbLink.o): ChargeMixCoeff.h ChargeMixRcut.h ChargeMixNdim.h
+(objs-stampede/qbLink.o): Debug.h Ecut.h Ecutprec.h Ecutden.h Ecuts.h Emass.h
+(objs-stampede/qbLink.o): ExtStress.h Smearing.h SmearingWidth.h FermiTemp.h
+(objs-stampede/qbLink.o): Dt.h Nempty.h Nrowmax.h FourierTransform.h
+(objs-stampede/qbLink.o): RefCell.h Spin.h Stress.h Thermostat.h
+(objs-stampede/qbLink.o): ThresholdScf.h ThresholdForce.h ThresholdStress.h
+(objs-stampede/qbLink.o): ThTemp.h ThTime.h ThWidth.h CenterOfMass.h WfDiag.h
+(objs-stampede/qbLink.o): WfDyn.h Xc.h Nparallelkpts.h Nkpoints.h IPrint.h
+(objs-stampede/qbLink.o): CellStepFreq.h ReshapeContext.h EnthalpyPressure.h
+(objs-stampede/qbLink.o): EnthalpyThreshold.h HugoniostatVar.h HugDeltaTemp.h
+(objs-stampede/qbLink.o): HugFreq.h RunTimer.h HubbardU.h Memory.h
+(objs-stampede/qb-nruns.o): qbLink.h
+(objs-stampede/qb-nruns-list.o): qbLink.h
+(objs-stampede/qbox_xmlns.o): qbox_xmlns.h
+(objs-stampede/qb-setupkpts.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/qb-setupkpts.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/qb-setupkpts.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/qb-setupkpts.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/qb-setupkpts.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/qb-setupkpts.o): SymOpSet.h SymOp.h AtomCmd.h SpeciesCmd.h
+(objs-stampede/qb-setupkpts.o): SetCmd.h Cell.h RefCell.h
+(objs-stampede/QuitCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/QuitCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/QuitCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/QuitCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/QuitCmd.o): Control.h ConstraintSet.h
+(objs-stampede/RandomizeRealWfCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/RandomizeRealWfCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/RandomizeRealWfCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RandomizeRealWfCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/RandomizeRealWfCmd.o): Symmetry.h Wavefunction.h
+(objs-stampede/RandomizeRealWfCmd.o): SharedFilePtr.h Control.h
+(objs-stampede/RandomizeRealWfCmd.o): ConstraintSet.h
+(objs-stampede/RandomizeVelCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/RandomizeVelCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/RandomizeVelCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RandomizeVelCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/RandomizeVelCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/RandomizeVelCmd.o): Control.h ConstraintSet.h
+(objs-stampede/RandomizeWfCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/RandomizeWfCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/RandomizeWfCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RandomizeWfCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/RandomizeWfCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/RandomizeWfCmd.o): Control.h ConstraintSet.h
+(objs-stampede/RefCell.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/RefCell.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RefCell.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/RefCell.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/RefCell.o): ConstraintSet.h
+(objs-stampede/release.o): release.h
+(objs-stampede/ResetVcmCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/ResetVcmCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ResetVcmCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ResetVcmCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ResetVcmCmd.o): Control.h ConstraintSet.h
+(objs-stampede/ReshapeContext.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ReshapeContext.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ReshapeContext.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ReshapeContext.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ReshapeContext.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/RunCmd.o): RunCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/RunCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/RunCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/RunCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/RunCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/RunCmd.o): BOSampleStepper.h SampleStepper.h Timer.h
+(objs-stampede/RunCmd.o): EnergyFunctional.h ChargeDensity.h
+(objs-stampede/RunCmd.o): StructureFactor.h CPSampleStepper.h
+(objs-stampede/RunCmd.o): EhrenSampleStepper.h PlotCmd.h
+(objs-stampede/RunCmd.o): UserInterface.h Context.h Sample.h AtomSet.h Atom.h
+(objs-stampede/RunCmd.o): D3vector.h Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RunCmd.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/RunCmd.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/RunCmd.o): ConstraintSet.h
+(objs-stampede/RunTimer.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/RunTimer.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/RunTimer.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/RunTimer.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/RunTimer.o): ConstraintSet.h
+(objs-stampede/Sample.o): AtomSet.h Context.h Atom.h D3vector.h Species.h
+(objs-stampede/Sample.o): Basis.h UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/Sample.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/Sample.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SampleHandler.o): StructureHandler.h
+(objs-stampede/SampleReader.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/SampleReader.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SampleReader.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SampleReader.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SampleReader.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SampleReader.o): SampleReader.h SpeciesReader.h
+(objs-stampede/SampleReader.o): FourierTransform.h Timer.h SlaterDet.h
+(objs-stampede/SampleReader.o): Matrix.h XMLGFPreprocessor.h
+(objs-stampede/SampleStepper.o): SampleStepper.h Sample.h AtomSet.h Context.h
+(objs-stampede/SampleStepper.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SampleStepper.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SampleStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SampleStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SampleStepper.o): Timer.h
+(objs-stampede/SampleStepper.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/SampleStepper.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SampleStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SampleStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SampleStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SampleStepper.o): Timer.h
+(objs-stampede/SampleWriter.o): SampleWriter.h Context.h Sample.h AtomSet.h
+(objs-stampede/SampleWriter.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SampleWriter.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SampleWriter.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SampleWriter.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SampleWriter.o): qbox_xmlns.h Timer.h
+(objs-stampede/SampleWriter.o): Context.h
+(objs-stampede/SaveCmd.o): SaveCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/SaveCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SaveCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SaveCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SaveCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SaveCmd.o): SampleWriter.h isodate.h release.h qbox_xmlns.h
+(objs-stampede/SaveCmd.o): Timer.h ChargeDensity.h FourierTransform.h
+(objs-stampede/SaveCmd.o): EnergyFunctional.h StructureFactor.h
+(objs-stampede/SaveCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SaveCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SaveCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SaveCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SaveCmd.o): Control.h ConstraintSet.h
+(objs-stampede/SavedenCmd.o): SavedenCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/SavedenCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SavedenCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SavedenCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SavedenCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SavedenCmd.o): isodate.h release.h qbox_xmlns.h
+(objs-stampede/SavedenCmd.o): ChargeDensity.h Timer.h FourierTransform.h
+(objs-stampede/SavedenCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SavedenCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SavedenCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SavedenCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SavedenCmd.o): Control.h ConstraintSet.h
+(objs-stampede/SaveDenFreq.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/SaveDenFreq.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SaveDenFreq.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/SaveDenFreq.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/SaveDenFreq.o): ConstraintSet.h
+(objs-stampede/SaveESPCmd.o): SaveESPCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/SaveESPCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SaveESPCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SaveESPCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SaveESPCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SaveESPCmd.o): EnergyFunctional.h ChargeDensity.h Timer.h
+(objs-stampede/SaveESPCmd.o): StructureFactor.h SlaterDet.h Matrix.h
+(objs-stampede/SaveESPCmd.o): FourierTransform.h
+(objs-stampede/SaveESPCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SaveESPCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SaveESPCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SaveESPCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SaveESPCmd.o): Control.h ConstraintSet.h
+(objs-stampede/SaveFreq.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/SaveFreq.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SaveFreq.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/SaveFreq.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/SaveFreq.o): ConstraintSet.h
+(objs-stampede/SavesysCmd.o): SavesysCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/SavesysCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SavesysCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SavesysCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SavesysCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SavesysCmd.o): isodate.h release.h qbox_xmlns.h
+(objs-stampede/SavesysCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SavesysCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SavesysCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SavesysCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SavesysCmd.o): Control.h ConstraintSet.h
+(objs-stampede/SDAIonicStepper.o): SDAIonicStepper.h IonicStepper.h Sample.h
+(objs-stampede/SDAIonicStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/SDAIonicStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SDAIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SDAIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SDAIonicStepper.o): Control.h ConstraintSet.h LineMinimizer.h
+(objs-stampede/SDAIonicStepper.o): IonicStepper.h Sample.h AtomSet.h
+(objs-stampede/SDAIonicStepper.o): Context.h Atom.h D3vector.h Species.h
+(objs-stampede/SDAIonicStepper.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SDAIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SDAIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SDAIonicStepper.o): Control.h ConstraintSet.h LineMinimizer.h
+(objs-stampede/SDCellStepper.o): SDCellStepper.h CellStepper.h Sample.h
+(objs-stampede/SDCellStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/SDCellStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SDCellStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SDCellStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SDCellStepper.o): Control.h ConstraintSet.h
+(objs-stampede/SDCellStepper.o): CellStepper.h Sample.h AtomSet.h Context.h
+(objs-stampede/SDCellStepper.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SDCellStepper.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SDCellStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SDCellStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SDIonicStepper.o): SDIonicStepper.h IonicStepper.h Sample.h
+(objs-stampede/SDIonicStepper.o): AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/SDIonicStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SDIonicStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SDIonicStepper.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SDIonicStepper.o): Control.h ConstraintSet.h
+(objs-stampede/SDIonicStepper.o): IonicStepper.h Sample.h AtomSet.h Context.h
+(objs-stampede/SDIonicStepper.o): Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SDIonicStepper.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SDIonicStepper.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SDIonicStepper.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SDWavefunctionStepper.o): SDWavefunctionStepper.h
+(objs-stampede/SDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/SDWavefunctionStepper.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/SDWavefunctionStepper.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/SDWavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-stampede/SDWavefunctionStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SDWavefunctionStepper.o): Symmetry.h SharedFilePtr.h
+(objs-stampede/SDWavefunctionStepper.o): SlaterDet.h Matrix.h
+(objs-stampede/SDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/SetCmd.o): UserInterface.h Context.h Sample.h AtomSet.h Atom.h
+(objs-stampede/SetCmd.o): D3vector.h Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/SetCmd.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/SetCmd.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/SetCmd.o): ConstraintSet.h
+(objs-stampede/SetVelCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SetVelCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SetVelCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SetVelCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SetVelCmd.o): Control.h ConstraintSet.h
+(objs-stampede/ShiftWFCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/ShiftWFCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ShiftWFCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/ShiftWFCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/ShiftWFCmd.o): Control.h ConstraintSet.h
+(objs-stampede/SimpleConvergenceDetector.o): SimpleConvergenceDetector.h
+(objs-stampede/SimpleConvergenceDetector.o): ConvergenceDetector.h
+(objs-stampede/SimpleConvergenceDetector.o): ConvergenceDetector.h
+(objs-stampede/sinft.o): sinft.h
+(objs-stampede/SlaterDet.o): SlaterDet.h Context.h Basis.h D3vector.h
+(objs-stampede/SlaterDet.o): UnitCell.h Matrix.h Timer.h FourierTransform.h
+(objs-stampede/SlaterDet.o): blas.h Base64Transcoder.h SharedFilePtr.h
+(objs-stampede/SlaterDet.o): AtomSet.h Atom.h Species.h MMSpecies.h
+(objs-stampede/SlaterDet.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/SlaterDet.o): PrintMem.h
+(objs-stampede/SlaterDet.o): Context.h Basis.h D3vector.h UnitCell.h Matrix.h
+(objs-stampede/SlaterDet.o): Timer.h
+(objs-stampede/Smearing.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Smearing.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Smearing.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Smearing.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Smearing.o): ConstraintSet.h
+(objs-stampede/SmearingWidth.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/SmearingWidth.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SmearingWidth.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SmearingWidth.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SmearingWidth.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SORKTDWavefunctionStepper.o): SORKTDWavefunctionStepper.h
+(objs-stampede/SORKTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/SORKTDWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/SORKTDWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/SORKTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/SORKTDWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SORKTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/SORKTDWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/SORKTDWavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/SORKTDWavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/SORKTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/SOTDWavefunctionStepper.o): SOTDWavefunctionStepper.h
+(objs-stampede/SOTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/SOTDWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/SOTDWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/SOTDWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/SOTDWavefunctionStepper.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SOTDWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/SOTDWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/SOTDWavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/SOTDWavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/SOTDWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/Species.o): Species.h Context.h Basis.h D3vector.h UnitCell.h
+(objs-stampede/Species.o): spline.h sinft.h SphericalIntegration.h
+(objs-stampede/SpeciesCmd.o): SpeciesCmd.h UserInterface.h Context.h Sample.h
+(objs-stampede/SpeciesCmd.o): AtomSet.h Atom.h D3vector.h Species.h Basis.h
+(objs-stampede/SpeciesCmd.o): UnitCell.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/SpeciesCmd.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/SpeciesCmd.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/SpeciesCmd.o): SpeciesReader.h
+(objs-stampede/SpeciesCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SpeciesCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SpeciesCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SpeciesCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SpeciesCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Species.o): Context.h Basis.h D3vector.h UnitCell.h
+(objs-stampede/SpeciesHandler.o): StructureHandler.h
+(objs-stampede/SpeciesReader.o): Species.h Context.h Basis.h D3vector.h
+(objs-stampede/SpeciesReader.o): UnitCell.h SpeciesReader.h
+(objs-stampede/SpeciesReader.o): Context.h
+(objs-stampede/SphericalIntegration.o): SphericalIntegration.h
+(objs-stampede/Spin.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Spin.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Spin.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Spin.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Spin.o): ConstraintSet.h
+(objs-stampede/spline.o): spline.h
+(objs-stampede/StatusCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/StatusCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/StatusCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/StatusCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/StatusCmd.o): Control.h ConstraintSet.h
+(objs-stampede/StrainCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/StrainCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/StrainCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/StrainCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/StrainCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Stress.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Stress.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Stress.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Stress.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Stress.o): ConstraintSet.h
+(objs-stampede/StructuredDocumentHandler.o): StrX.h StructureHandler.h
+(objs-stampede/StructureFactor.o): StructureFactor.h Basis.h D3vector.h
+(objs-stampede/StructureFactor.o): UnitCell.h Context.h
+(objs-stampede/Symmetry.o): Symmetry.h D3vector.h
+(objs-stampede/SymmetryCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/SymmetryCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/SymmetryCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/SymmetryCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/SymmetryCmd.o): Control.h ConstraintSet.h
+(objs-stampede/Symmetry.o): D3vector.h
+(objs-stampede/SymmetrySet.o): SymmetrySet.h Context.h Symmetry.h D3vector.h
+(objs-stampede/SymmetrySet.o): Context.h Symmetry.h D3vector.h
+(objs-stampede/SymOp.o): SymOp.h D3vector.h UnitCell.h
+(objs-stampede/SymOp.o): D3vector.h UnitCell.h
+(objs-stampede/SymOpSet.o): SymOpSet.h D3vector.h SymOp.h UnitCell.h
+(objs-stampede/SymOpSet.o): D3vector.h SymOp.h UnitCell.h
+(objs-stampede/TDDt.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/TDDt.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/TDDt.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/TDDt.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/TDDt.o): ConstraintSet.h
+(objs-stampede/TDEULERWavefunctionStepper.o): TDEULERWavefunctionStepper.h
+(objs-stampede/TDEULERWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/TDEULERWavefunctionStepper.o): Wavefunction.h D3vector.h
+(objs-stampede/TDEULERWavefunctionStepper.o): UnitCell.h AtomSet.h Context.h
+(objs-stampede/TDEULERWavefunctionStepper.o): Atom.h Species.h Basis.h
+(objs-stampede/TDEULERWavefunctionStepper.o): MMSpecies.h
+(objs-stampede/TDEULERWavefunctionStepper.o): EmpiricalPotential.h
+(objs-stampede/TDEULERWavefunctionStepper.o): SymmetrySet.h Symmetry.h
+(objs-stampede/TDEULERWavefunctionStepper.o): SharedFilePtr.h SlaterDet.h
+(objs-stampede/TDEULERWavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/TDEULERWavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/TDEULERWavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/testAndersonMixer.o): Context.h AndersonMixer.h
+(objs-stampede/testBase64Transcoder.o): Base64Transcoder.h
+(objs-stampede/testBasis.o): Basis.h D3vector.h UnitCell.h Context.h
+(objs-stampede/testBasisMapping.o): Context.h Basis.h D3vector.h UnitCell.h
+(objs-stampede/testBasisMapping.o): BasisMapping.h Timer.h
+(objs-stampede/testBlas.o): blas.h Timer.h
+(objs-stampede/testChargeDensity.o): Context.h Wavefunction.h D3vector.h
+(objs-stampede/testChargeDensity.o): UnitCell.h AtomSet.h Atom.h Species.h
+(objs-stampede/testChargeDensity.o): Basis.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/testChargeDensity.o): SymmetrySet.h Symmetry.h SharedFilePtr.h
+(objs-stampede/testChargeDensity.o): ChargeDensity.h Timer.h SlaterDet.h
+(objs-stampede/testChargeDensity.o): Matrix.h FourierTransform.h Sample.h
+(objs-stampede/testChargeDensity.o): Control.h ConstraintSet.h
+(objs-stampede/testContext.o): Context.h
+(objs-stampede/testContext.orig.o): Context.h
+(objs-stampede/testEigenBlock.o): Timer.h Context.h Matrix.h
+(objs-stampede/testEigenSolvers.o): Timer.h Context.h Matrix.h jacobi.h
+(objs-stampede/testEmpiricalPotential.o): Context.h D3vector.h
+(objs-stampede/testEmpiricalPotential.o): EmpiricalPotential.h
+(objs-stampede/testEnergyFunctional.o): Context.h Sample.h AtomSet.h Atom.h
+(objs-stampede/testEnergyFunctional.o): D3vector.h Species.h Basis.h
+(objs-stampede/testEnergyFunctional.o): UnitCell.h MMSpecies.h
+(objs-stampede/testEnergyFunctional.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/testEnergyFunctional.o): Symmetry.h Wavefunction.h
+(objs-stampede/testEnergyFunctional.o): SharedFilePtr.h Control.h
+(objs-stampede/testEnergyFunctional.o): ConstraintSet.h EnergyFunctional.h
+(objs-stampede/testEnergyFunctional.o): ChargeDensity.h Timer.h
+(objs-stampede/testEnergyFunctional.o): StructureFactor.h
+(objs-stampede/testFourierTransform.o): Context.h Basis.h D3vector.h
+(objs-stampede/testFourierTransform.o): UnitCell.h FourierTransform.h Timer.h
+(objs-stampede/testGramBlock.o): Timer.h Context.h Matrix.h
+(objs-stampede/testGram.o): Timer.h Context.h Matrix.h
+(objs-stampede/testHandler.o): StrX.h
+(objs-stampede/TestHandler.o): StrX.h
+(objs-stampede/testLDAFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-stampede/testMatrix.o): blas.h Timer.h
+(objs-stampede/testMemParse.o): StrX.h
+(objs-stampede/testPgemmBlock.o): Timer.h Context.h Matrix.h
+(objs-stampede/testPgemm.o): Timer.h Context.h Matrix.h
+(objs-stampede/testPParse.o): StrX.h
+(objs-stampede/testPzheev.o): Timer.h Context.h Matrix.h
+(objs-stampede/testSample.o): Context.h SlaterDet.h Basis.h D3vector.h
+(objs-stampede/testSample.o): UnitCell.h Matrix.h Timer.h Sample.h AtomSet.h
+(objs-stampede/testSample.o): Atom.h Species.h MMSpecies.h
+(objs-stampede/testSample.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/testSample.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/testSample.o): ConstraintSet.h
+(objs-stampede/testSlaterDet.o): Context.h SlaterDet.h Basis.h D3vector.h
+(objs-stampede/testSlaterDet.o): UnitCell.h Matrix.h Timer.h
+(objs-stampede/testSlaterDet.o): FourierTransform.h
+(objs-stampede/testSpecies.o): Species.h Context.h Basis.h D3vector.h
+(objs-stampede/testSpecies.o): UnitCell.h SpeciesReader.h
+(objs-stampede/testStepper.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/testStepper.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/testStepper.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/testStepper.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/testStepper.o): ConstraintSet.h BOSampleStepper.h
+(objs-stampede/testStepper.o): SampleStepper.h Timer.h EnergyFunctional.h
+(objs-stampede/testStepper.o): ChargeDensity.h StructureFactor.h
+(objs-stampede/testUnitCell.o): UnitCell.h D3vector.h
+(objs-stampede/testWavefunction.o): Context.h Wavefunction.h D3vector.h
+(objs-stampede/testWavefunction.o): UnitCell.h AtomSet.h Atom.h Species.h
+(objs-stampede/testWavefunction.o): Basis.h MMSpecies.h EmpiricalPotential.h
+(objs-stampede/testWavefunction.o): SymmetrySet.h Symmetry.h SharedFilePtr.h
+(objs-stampede/testWavefunction.o): SlaterDet.h Matrix.h Timer.h
+(objs-stampede/testXCFunctional.o): LDAFunctional.h XCFunctional.h
+(objs-stampede/testXCFunctional.o): PBEFunctional.h Timer.h
+(objs-stampede/Thermostat.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Thermostat.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Thermostat.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Thermostat.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Thermostat.o): ConstraintSet.h
+(objs-stampede/ThresholdForce.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ThresholdForce.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ThresholdForce.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ThresholdForce.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ThresholdForce.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ThresholdScf.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ThresholdScf.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ThresholdScf.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ThresholdScf.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ThresholdScf.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ThresholdStress.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/ThresholdStress.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/ThresholdStress.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/ThresholdStress.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/ThresholdStress.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/ThTemp.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/ThTemp.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ThTemp.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/ThTemp.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/ThTemp.o): ConstraintSet.h
+(objs-stampede/ThTime.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/ThTime.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ThTime.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/ThTime.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/ThTime.o): ConstraintSet.h
+(objs-stampede/ThWidth.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/ThWidth.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/ThWidth.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/ThWidth.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/ThWidth.o): ConstraintSet.h
+(objs-stampede/TorsionCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/TorsionCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/TorsionCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/TorsionCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/TorsionCmd.o): Control.h ConstraintSet.h
+(objs-stampede/TorsionConstraint.o): TorsionConstraint.h Constraint.h
+(objs-stampede/TorsionConstraint.o): D3vector.h AtomSet.h Context.h Atom.h
+(objs-stampede/TorsionConstraint.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/TorsionConstraint.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/TorsionConstraint.o): Symmetry.h
+(objs-stampede/TorsionConstraint.o): Constraint.h D3vector.h
+(objs-stampede/UnitCell.o): UnitCell.h D3vector.h
+(objs-stampede/UnitCell.o): D3vector.h
+(objs-stampede/UnlockCmd.o): UserInterface.h Context.h Sample.h AtomSet.h
+(objs-stampede/UnlockCmd.o): Atom.h D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/UnlockCmd.o): MMSpecies.h EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/UnlockCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/UnlockCmd.o): Control.h ConstraintSet.h
+(objs-stampede/UserInterface.o): UserInterface.h Context.h
+(objs-stampede/UserInterface.o): Context.h
+(objs-stampede/uuid_str.o): uuid_str.h
+(objs-stampede/Wavefunction.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/Wavefunction.o): AtomSet.h Context.h Atom.h Species.h Basis.h
+(objs-stampede/Wavefunction.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/Wavefunction.o): SymmetrySet.h Symmetry.h SharedFilePtr.h
+(objs-stampede/Wavefunction.o): SlaterDet.h Matrix.h Timer.h
+(objs-stampede/Wavefunction.o): FourierTransform.h jacobi.h profile.h
+(objs-stampede/Wavefunction.o): D3vector.h UnitCell.h AtomSet.h Context.h
+(objs-stampede/Wavefunction.o): Atom.h Species.h Basis.h MMSpecies.h
+(objs-stampede/Wavefunction.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Wavefunction.o): SharedFilePtr.h
+(objs-stampede/WavefunctionHandler.o): StructureHandler.h UnitCell.h
+(objs-stampede/WavefunctionHandler.o): D3vector.h Wavefunction.h AtomSet.h
+(objs-stampede/WavefunctionHandler.o): Context.h Atom.h Species.h Basis.h
+(objs-stampede/WavefunctionHandler.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/WavefunctionHandler.o): SymmetrySet.h Symmetry.h
+(objs-stampede/WavefunctionHandler.o): SharedFilePtr.h SlaterDet.h Matrix.h
+(objs-stampede/WavefunctionHandler.o): Timer.h
+(objs-stampede/WavefunctionStepper.o): WavefunctionStepper.h Timer.h
+(objs-stampede/WavefunctionStepper.o): Wavefunction.h D3vector.h UnitCell.h
+(objs-stampede/WavefunctionStepper.o): AtomSet.h Context.h Atom.h Species.h
+(objs-stampede/WavefunctionStepper.o): Basis.h MMSpecies.h
+(objs-stampede/WavefunctionStepper.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/WavefunctionStepper.o): Symmetry.h SharedFilePtr.h SlaterDet.h
+(objs-stampede/WavefunctionStepper.o): Matrix.h Sample.h Control.h
+(objs-stampede/WavefunctionStepper.o): ConstraintSet.h
+(objs-stampede/WavefunctionStepper.o): Timer.h
+(objs-stampede/WfDiag.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/WfDiag.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/WfDiag.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/WfDiag.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/WfDiag.o): ConstraintSet.h
+(objs-stampede/WfDyn.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/WfDyn.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/WfDyn.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/WfDyn.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/WfDyn.o): ConstraintSet.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/WfExtrap.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/WfExtrap.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/WfExtrap.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/WfExtrap.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/WfExtrap.o): ConstraintSet.h SlaterDet.h Matrix.h Timer.h
+(objs-stampede/WFPhaseRealCmd.o): UserInterface.h Context.h Sample.h
+(objs-stampede/WFPhaseRealCmd.o): AtomSet.h Atom.h D3vector.h Species.h
+(objs-stampede/WFPhaseRealCmd.o): Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/WFPhaseRealCmd.o): EmpiricalPotential.h SymmetrySet.h
+(objs-stampede/WFPhaseRealCmd.o): Symmetry.h Wavefunction.h SharedFilePtr.h
+(objs-stampede/WFPhaseRealCmd.o): Control.h ConstraintSet.h
+(objs-stampede/WFPhaseRealVar.o): Sample.h AtomSet.h Context.h Atom.h
+(objs-stampede/WFPhaseRealVar.o): D3vector.h Species.h Basis.h UnitCell.h
+(objs-stampede/WFPhaseRealVar.o): MMSpecies.h EmpiricalPotential.h
+(objs-stampede/WFPhaseRealVar.o): SymmetrySet.h Symmetry.h Wavefunction.h
+(objs-stampede/WFPhaseRealVar.o): SharedFilePtr.h Control.h ConstraintSet.h
+(objs-stampede/Xc.o): Sample.h AtomSet.h Context.h Atom.h D3vector.h
+(objs-stampede/Xc.o): Species.h Basis.h UnitCell.h MMSpecies.h
+(objs-stampede/Xc.o): EmpiricalPotential.h SymmetrySet.h Symmetry.h
+(objs-stampede/Xc.o): Wavefunction.h SharedFilePtr.h Control.h
+(objs-stampede/Xc.o): ConstraintSet.h
+(objs-stampede/XCPotential.o): XCPotential.h ChargeDensity.h Timer.h
+(objs-stampede/XCPotential.o): Context.h LDAFunctional.h XCFunctional.h
+(objs-stampede/XCPotential.o): PBEFunctional.h PBESolFunctional.h
+(objs-stampede/XCPotential.o): PBERevFunctional.h BLYPFunctional.h Basis.h
+(objs-stampede/XCPotential.o): D3vector.h UnitCell.h FourierTransform.h
+(objs-stampede/XCPotential.o): blas.h
+(objs-stampede/XCPotential.o): ChargeDensity.h Timer.h Context.h
+(objs-stampede/XCPotential.o): LDAFunctional.h XCFunctional.h PBEFunctional.h
+(objs-stampede/XCPotential.o): PBESolFunctional.h PBERevFunctional.h
+(objs-stampede/XCPotential.o): BLYPFunctional.h
+(objs-stampede/xmlextract.o): StrX.h
+(objs-stampede/xmlget.o): StrX.h
+(objs-stampede/XMLGFPreprocessor.o): Timer.h Context.h Base64Transcoder.h
+(objs-stampede/XMLGFPreprocessor.o): Matrix.h XMLGFPreprocessor.h
+(objs-stampede/XMLGFPreprocessor.o): Matrix.h
+(objs-stampede/xmlSpecies.o): qbox_xmlns.h
