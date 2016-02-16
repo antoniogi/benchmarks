@@ -88,6 +88,7 @@ void calculate_macro_xs( double p_energy, int mat, long n_isotopes,
 		                    nuclide_grids, idx, xs_vector );
 		for( int k = 0; k < 5; k++ )
 			macro_xs_vector[k] += xs_vector[k] * conc;
+        
 	}
 	
 	//test
@@ -108,7 +109,7 @@ long grid_search( long n, double quarry, GridPoint * A)
 	long examinationPoint;
 	long length = upperLimit - lowerLimit;
 
-	while( length > 1 )
+	while( length > 256 )
 	{
 		examinationPoint = lowerLimit + ( length / 2 );
 		
@@ -119,6 +120,13 @@ long grid_search( long n, double quarry, GridPoint * A)
 		
 		length = upperLimit - lowerLimit;
 	}
-	
-	return lowerLimit;
+
+    int i = lowerLimit;
+    for (int i = lowerLimit ; i < upperLimit; i++ )
+    { 
+        if (A[i].energy > quarry) {
+            return i;
+        }
+    }   
+	return i; // lowerLimit;
 }

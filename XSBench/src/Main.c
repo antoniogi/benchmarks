@@ -1,8 +1,8 @@
 #include "XSbench_header.h"
 
-#ifdef MPI
+//#ifdef MPI
 #include<mpi.h>
-#endif
+//#endif
 
 int main( int argc, char* argv[] )
 {
@@ -18,12 +18,12 @@ int main( int argc, char* argv[] )
 	unsigned long long vhash = 0;
 	int nprocs;
 
-	#ifdef MPI
+//	#ifdef MPI
 	MPI_Status stat;
 	MPI_Init(&argc, &argv);
 	MPI_Comm_size(MPI_COMM_WORLD, &nprocs);
 	MPI_Comm_rank(MPI_COMM_WORLD, &mype);
-	#endif
+//	#endif
 	
 	// rand() is only used in the serial initialization stages.
 	// A custom RNG is used in parallel portions.
@@ -41,7 +41,7 @@ int main( int argc, char* argv[] )
 
 	// Print-out of Input Summary
 	if( mype == 0 )
-		print_inputs( in, nprocs, version );
+		print_inputs( in, nprocs, version, mype );
 
 	// =====================================================================
 	// Prepare Nuclide Energy Grids, Unionized Energy Grid, & Material Data
@@ -253,9 +253,9 @@ int main( int argc, char* argv[] )
 	}
 	#endif
 
-	#ifdef MPI
+//	#ifdef MPI
 	MPI_Finalize();
-	#endif
+//	#endif
 
 	return 0;
 }

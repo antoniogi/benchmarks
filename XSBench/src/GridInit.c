@@ -1,16 +1,18 @@
 #include "XSbench_header.h"
 
-#ifdef MPI
+//#ifdef MPI
 #include<mpi.h>
-#endif
+//#endif
 
 // Generates randomized energy grid for each nuclide
 // Note that this is done as part of initialization (serial), so
 // rand() is used.
 void generate_grids( NuclideGridPoint ** nuclide_grids,
                      long n_isotopes, long n_gridpoints ) {
-	for( long i = 0; i < n_isotopes; i++ )
-		for( long j = 0; j < n_gridpoints; j++ )
+    long i;
+    long j;
+	for( i = 0; i < n_isotopes; i++ )
+		for( j = 0; j < n_gridpoints; j++ )
 		{
 			nuclide_grids[i][j].energy       =((double)rand()/(double)RAND_MAX);
 			nuclide_grids[i][j].total_xs     =((double)rand()/(double)RAND_MAX);
@@ -24,8 +26,10 @@ void generate_grids( NuclideGridPoint ** nuclide_grids,
 // Verification version of this function (tighter control over RNG)
 void generate_grids_v( NuclideGridPoint ** nuclide_grids,
                      long n_isotopes, long n_gridpoints ) {
-	for( long i = 0; i < n_isotopes; i++ )
-		for( long j = 0; j < n_gridpoints; j++ )
+    long i;
+    long j;
+	for( i = 0; i < n_isotopes; i++ )
+		for( j = 0; j < n_gridpoints; j++ )
 		{
 			nuclide_grids[i][j].energy       = rn_v();
 			nuclide_grids[i][j].total_xs     = rn_v();
@@ -64,9 +68,9 @@ GridPoint * generate_energy_grid( long n_isotopes, long n_gridpoints,
                                   NuclideGridPoint ** nuclide_grids) {
 	int mype = 0;
 
-	#ifdef MPI
+//	#ifdef MPI
 	MPI_Comm_rank(MPI_COMM_WORLD, &mype);
-	#endif
+//	#endif
 	
 	if( mype == 0 ) printf("Generating Unionized Energy Grid...\n");
 	
@@ -124,9 +128,9 @@ void set_grid_ptrs( GridPoint * energy_grid, NuclideGridPoint ** nuclide_grids,
 {
 	int mype = 0;
 
-	#ifdef MPI
+//	#ifdef MPI
 	MPI_Comm_rank(MPI_COMM_WORLD, &mype);
-	#endif
+//	#endif
 	
 	if( mype == 0 ) printf("Assigning pointers to Unionized Energy Grid...\n");
 	#pragma omp parallel for default(none) \

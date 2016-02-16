@@ -1,12 +1,14 @@
 #include "XSbench_header.h"
 
-#ifdef MPI
+//#ifdef MPI
 #include<mpi.h>
-#endif
+//#endif
 
 // Prints program logo
-void logo(int version)
+void logo(int version, int my_pe)
 {
+    if (my_pe!=0)
+        return;
 	border_print();
 	printf(
 	"                   __   __ ___________                 _                        \n"
@@ -43,12 +45,12 @@ void print_results( Inputs in, int mype, double runtime, int nprocs,
 	int lookups_per_sec = (int) ((double) in.lookups / runtime);
 	
 	// If running in MPI, reduce timing statistics and calculate average
-	#ifdef MPI
+//	#ifdef MPI
 	int total_lookups = 0;
 	MPI_Barrier(MPI_COMM_WORLD);
 	MPI_Reduce(&lookups_per_sec, &total_lookups, 1, MPI_INT,
 	           MPI_SUM, 0, MPI_COMM_WORLD);
-	#endif
+//	#endif
 	
 	// Print output
 	if( mype == 0 )
@@ -59,20 +61,20 @@ void print_results( Inputs in, int mype, double runtime, int nprocs,
 
 		// Print the results
 		printf("Threads:     %d\n", in.nthreads);
-		#ifdef MPI
+//		#ifdef MPI
 		printf("MPI ranks:   %d\n", nprocs);
-		#endif
-		#ifdef MPI
+//		#endif
+//		#ifdef MPI
 		printf("Total Lookups/s:            ");
 		fancy_int(total_lookups);
 		printf("Avg Lookups/s per MPI rank: ");
 		fancy_int(total_lookups / nprocs);
-		#else
-		printf("Runtime:     %.3lf seconds\n", runtime);
-		printf("Lookups:     "); fancy_int(in.lookups);
-		printf("Lookups/s:   ");
-		fancy_int(lookups_per_sec);
-		#endif
+//		#else
+//		printf("Runtime:     %.3lf seconds\n", runtime);
+//		printf("Lookups:     "); fancy_int(in.lookups);
+//		printf("Lookups/s:   ");
+//		fancy_int(lookups_per_sec);
+//		#endif
 		#ifdef VERIFICATION
 		printf("Verification checksum: %llu\n", vhash);
 		#endif
@@ -88,11 +90,11 @@ void print_results( Inputs in, int mype, double runtime, int nprocs,
 	}
 }
 
-void print_inputs(Inputs in, int nprocs, int version )
+void print_inputs(Inputs in, int nprocs, int version, int my_pe)
 {
 	// Calculate Estimate of Memory Usage
 	int mem_tot = estimate_mem_usage( in );
-	logo(version);
+	logo(version, my_pe);
 	center_print("INPUT SUMMARY", 79);
 	border_print();
 	#ifdef VERIFICATION
@@ -106,14 +108,14 @@ void print_inputs(Inputs in, int nprocs, int version )
 	printf("Unionized Energy Gridpoints:  ");
 	fancy_int(in.n_isotopes*in.n_gridpoints);
 	printf("XS Lookups:                   "); fancy_int(in.lookups);
-	#ifdef MPI
+//	#ifdef MPI
 	printf("MPI Ranks:                    %d\n", nprocs);
 	printf("OMP Threads per MPI Rank:     %d\n", in.nthreads);
 	printf("Mem Usage per MPI Rank (MB):  "); fancy_int(mem_tot);
-	#else
-	printf("Threads:                      %d\n", in.nthreads);
-	printf("Est. Memory Usage (MB):       "); fancy_int(mem_tot);
-	#endif
+//	#else
+//	printf("Threads:                      %d\n", in.nthreads);
+//	printf("Est. Memory Usage (MB):       "); fancy_int(mem_tot);
+//	#endif
 	border_print();
 	center_print("INITIALIZATION", 79);
 	border_print();
