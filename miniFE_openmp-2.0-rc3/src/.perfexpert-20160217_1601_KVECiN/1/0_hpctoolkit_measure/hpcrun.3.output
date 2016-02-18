@@ -1,0 +1,38 @@
+TACC: Starting up job 6575156
+TACC: Starting parallel tasks...
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 16 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.113022s, total time: 0.113023
+generating matrix structure...3.83719s, total time: 3.95021
+         assembling FE data...3.47477s, total time: 7.42498
+      imposing Dirichlet BC...1.17201s, total time: 8.59698
+      imposing Dirichlet BC...0.853676s, total time: 9.45066
+making matrix indices local...0.632826s, total time: 10.0835
+Starting CG solver ... 
+Initial Residual = 257.002
+Iteration = 50   Residual = 0.0197999
+Iteration = 100   Residual = 0.0077423
+Iteration = 150   Residual = 0.00551462
+Iteration = 200   Residual = 0.00183097
+Iteration = 250   Residual = 0.00083827
+Iteration = 300   Residual = 0.000381591
+Iteration = 350   Residual = 2.82573e-05
+Iteration = 400   Residual = 5.50511e-06
+Iteration = 450   Residual = 6.40749e-07
+Iteration = 500   Residual = 4.81206e-07
+Iteration = 550   Residual = 9.69337e-09
+Iteration = 600   Residual = 7.72398e-10
+Iteration = 650   Residual = 9.68921e-11
+Iteration = 700   Residual = 5.65923e-12
+Iteration = 750   Residual = 2.61004e-13
+Iteration = 800   Residual = 1.32605e-14
+Iteration = 850   Residual = 7.45321e-16
+Final Resid Norm: 2.21428e-16
+ 
+TACC: Shutdown complete. Exiting.

@@ -1,0 +1,50 @@
+TACC: Starting up job 6575156
+TACC: Starting parallel tasks...
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 16 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.0629871s, total time: 0.0629871
+generating matrix structure...1.77298s, total time: 1.83596
+         assembling FE data...3.59027s, total time: 5.42624
+      imposing Dirichlet BC...0.971298s, total time: 6.39754
+      imposing Dirichlet BC...0.0696821s, total time: 6.46722
+making matrix indices local...2.44075s, total time: 8.90797
+Starting CG solver ... 
+Initial Residual = 257.002
+Iteration = 50   Residual = 0.0288709
+Iteration = 100   Residual = 0.0225886
+Iteration = 150   Residual = 0.0181307
+Iteration = 200   Residual = 0.00176483
+Iteration = 250   Residual = 0.000807978
+Iteration = 300   Residual = 0.000360561
+Iteration = 350   Residual = 2.47018e-05
+Iteration = 400   Residual = 4.23383e-06
+Iteration = 450   Residual = 5.15322e-07
+Iteration = 500   Residual = 6.30569e-08
+Iteration = 550   Residual = 7.14145e-09
+Iteration = 600   Residual = 1.03689e-09
+Iteration = 650   Residual = 2.26584e-10
+Iteration = 700   Residual = 1.43299e-11
+Iteration = 750   Residual = 1.33434e-13
+Iteration = 800   Residual = 8.27704e-15
+Iteration = 850   Residual = 3.50392e-16
+Final Resid Norm: 2.02221e-16
+ 
+TACC: Shutdown complete. Exiting.

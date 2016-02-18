@@ -1,0 +1,70 @@
+[46147, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[46147, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff898
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff803
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+[46147, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff645ff8a4
+MEMORY: segment size: 4.0 meg, num segments: 6, total allocation: 24.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 1.5 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 1 (async: 1, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 607957 (recorded: 607956, blocked: 1, errant: 0, trolled: 74, yielded: 0),
+         frames: 4125311 (trolled: 74)
+         intervals: 7715 (suspicious: 0)

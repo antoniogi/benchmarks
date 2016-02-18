@@ -1,0 +1,75 @@
+[45397, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[45397, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[45397, 6]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 8]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 3]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 4]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 3]: NULL (0): ip = 0x2b1b48bcf376 (0x48376), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 4]: NULL (0): ip = 0x2b1b48bcf3a4 (0x483a4), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 3]: -- end backtrace ------------------------------------
+
+[45397, 9]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 8]: NULL (0): ip = 0x2b1b48bcf376 (0x48376), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 5]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[45397, 8]: -- end backtrace ------------------------------------
+
+[45397, 9]: NULL (0): ip = 0x2b1b48bcf4b8 (0x484b8), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 6]: NULL (0): ip = 0x2b1b48bcf376 (0x48376), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 9]: -- end backtrace ------------------------------------
+
+[45397, 6]: -- end backtrace ------------------------------------
+
+[45397, 4]: -- end backtrace ------------------------------------
+
+[45397, 5]: NULL (0): ip = 0x2b1b48bcf406 (0x48406), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[45397, 5]: -- end backtrace ------------------------------------
+
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff830
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff8a4
+[45397, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+[45397, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa99ff898
+MEMORY: segment size: 4.0 meg, num segments: 18, total allocation: 72.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 3.7 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 3 (async: 2, dlopen: 1), errors: 6 (segv: 0, soft: 6)
+SUMMARY: samples: 2990852 (recorded: 2990849, blocked: 3, errant: 6, trolled: 44, yielded: 0),
+         frames: 18429122 (trolled: 44)
+         intervals: 5523 (suspicious: 0)

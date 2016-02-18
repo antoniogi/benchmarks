@@ -1,0 +1,46 @@
+TACC: Starting up job 6575156
+TACC: Starting parallel tasks...
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+OMP: Warning #234: KMP_AFFINITY: granularity=core will be used.
+Counted: 6 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.116788s, total time: 0.116788
+generating matrix structure...4.6906s, total time: 4.80739
+         assembling FE data...9.32099s, total time: 14.1284
+      imposing Dirichlet BC...2.64246s, total time: 16.7708
+      imposing Dirichlet BC...2.00863s, total time: 18.7795
+making matrix indices local...5.36627s, total time: 24.1457
+Starting CG solver ... 
+Initial Residual = 257.002
+Iteration = 50   Residual = 0.0957263
+Iteration = 100   Residual = 0.0100625
+Iteration = 150   Residual = 0.00379659
+Iteration = 200   Residual = 0.00179757
+Iteration = 250   Residual = 0.000822986
+Iteration = 300   Residual = 0.00037423
+Iteration = 350   Residual = 3.64581e-05
+Iteration = 400   Residual = 6.2758e-06
+Iteration = 450   Residual = 6.12693e-07
+Iteration = 500   Residual = 7.84409e-08
+Iteration = 550   Residual = 8.77414e-09
+Iteration = 600   Residual = 7.80342e-10
+Iteration = 650   Residual = 5.93128e-11
+Iteration = 700   Residual = 4.71314e-12
+Iteration = 750   Residual = 2.03295e-13
+Iteration = 800   Residual = 1.11091e-14
+Iteration = 850   Residual = 5.23699e-16
+Final Resid Norm: 2.02039e-16
+ 
+TACC: Shutdown complete. Exiting.

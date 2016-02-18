@@ -1,0 +1,181 @@
+---------------------------------------------------------------------------------
+Module ld-2.12.so takes 0.00% of the total runtime
+Module libc-2.12.so takes 0.00% of the total runtime
+Module libpthread-2.12.so takes 0.00% of the total runtime
+Module libiomp5.so takes 0.08% of the total runtime
+Module libmpifort.so.12.0 takes 0.00% of the total runtime
+Module libmpi.so.12.0 takes 0.02% of the total runtime
+Module libibverbs.so.1.0.0 takes 0.00% of the total runtime
+Module libmlx4-rdmav2.so takes 0.03% of the total runtime
+Module libdaploucm.so.2.0.0 takes 0.00% of the total runtime
+Module libdat2.so.2.0.0 takes 0.00% of the total runtime
+Module libstdc++.so.6.0.13 takes 0.00% of the total runtime
+Module miniFE.x takes 99.88% of the total runtime
+Module libmonitor.so.0.0.0 takes 0.00% of the total runtime
+Module ~unknown-load-module~ takes 0.00% of the total runtime
+
+Loop in function miniFE::matvec_std<miniFE::CSRMatrix<double, int, int>, miniFE::Vector<double, int, int> >::operator in SparseMatrix_functions.hpp:519 (3.77% of the total runtime)
+=================================================================================
+Instructions Ratio        %   0..........25..........50...........75.........100
+ - floating point        8.1 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - data accesses        22.1 [>>>>>>>>>>>   .    .    .    .    .    .    .     ]
+* GFLOPS (% max)         1.9 [>   .    .    .    .    .    .    .    .    .     ]
+ - packed                1.8 [>   .    .    .    .    .    .    .    .    .     ]
+ - scalar                0.1 [    .    .    .    .    .    .    .    .    .     ]
+
+Performance Assessment  LCPI  good.......okay........fair........poor........bad
+* overall               0.22 [>>>>.    .    .    .    .    .    .    .    .     ]
+
+Slowdown Caused By      LCPI    (interpretation varies according to the metric)
+* data accesses         1.48 [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    .    .    .     ]
+ - L1 cache hits        0.77 [>>>>>>>>>>>>>>>    .    .    .    .    .    .     ]
+ - L2 cache hits        0.08 [>>  .    .    .    .    .    .    .    .    .     ]
+ - L3 cache hits        0.15 [>>> .    .    .    .    .    .    .    .    .     ]
+ - LLC misses           0.48 [>>>>>>>>>>    .    .    .    .    .    .    .     ]
+* instruction accesses  0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - L1 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 misses            0.03 [>   .    .    .    .    .    .    .    .    .     ]
+* data TLB              0.00 [    .    .    .    .    .    .    .    .    .     ]
+* instruction TLB       0.00 [    .    .    .    .    .    .    .    .    .     ]
+* branch instructions   0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - correctly predicted  0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - mispredicted         0.00 [    .    .    .    .    .    .    .    .    .     ]
+* FP instructions       0.08 [>>  .    .    .    .    .    .    .    .    .     ]
+ - fast                 0.08 [>>  .    .    .    .    .    .    .    .    .     ]
+ - slow                 0.00 [    .    .    .    .    .    .    .    .    .     ]
+
+---------------------------------------------------------------------------------
+
+Loop in function miniFE::matvec_std<miniFE::CSRMatrix<double, int, int>, miniFE::Vector<double, int, int> >::operator in SparseMatrix_functions.hpp:527 (69.70% of the total runtime)
+=================================================================================
+Instructions Ratio        %   0..........25..........50...........75.........100
+ - floating point        7.8 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - data accesses        13.6 [>>>>>>>  .    .    .    .    .    .    .    .     ]
+* GFLOPS (% max)         1.7 [>   .    .    .    .    .    .    .    .    .     ]
+ - packed                1.5 [>   .    .    .    .    .    .    .    .    .     ]
+ - scalar                0.2 [    .    .    .    .    .    .    .    .    .     ]
+
+Performance Assessment  LCPI  good.......okay........fair........poor........bad
+* overall               0.43 [>>>>>>>>>.    .    .    .    .    .    .    .     ]
+
+Slowdown Caused By      LCPI    (interpretation varies according to the metric)
+* data accesses         1.13 [>>>>>>>>>>>>>>>>>>>>>>> .    .    .    .    .     ]
+ - L1 cache hits        0.48 [>>>>>>>>>>    .    .    .    .    .    .    .     ]
+ - L2 cache hits        0.06 [>   .    .    .    .    .    .    .    .    .     ]
+ - L3 cache hits        0.12 [>>  .    .    .    .    .    .    .    .    .     ]
+ - LLC misses           0.48 [>>>>>>>>>>    .    .    .    .    .    .    .     ]
+* instruction accesses  0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - L1 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 misses            0.02 [    .    .    .    .    .    .    .    .    .     ]
+* data TLB              0.01 [    .    .    .    .    .    .    .    .    .     ]
+* instruction TLB       0.00 [    .    .    .    .    .    .    .    .    .     ]
+* branch instructions   0.04 [>   .    .    .    .    .    .    .    .    .     ]
+ - correctly predicted  0.04 [>   .    .    .    .    .    .    .    .    .     ]
+ - mispredicted         0.00 [    .    .    .    .    .    .    .    .    .     ]
+* FP instructions       0.08 [>>  .    .    .    .    .    .    .    .    .     ]
+ - fast                 0.08 [>>  .    .    .    .    .    .    .    .    .     ]
+ - slow                 0.00 [    .    .    .    .    .    .    .    .    .     ]
+
+---------------------------------------------------------------------------------
+
+Loop in function void miniFE::daxpby<miniFE::Vector<double, int, int> >(double, miniFE::Vector<double, int, int> const&, double, miniFE::Vector<double, int, int>&) in Vector_functions.hpp:211 (5.05% of the total runtime)
+=================================================================================
+Instructions Ratio        %   0..........25..........50...........75.........100
+ - floating point       31.2 [>>>>>>>>>>>>>>>>   .    .    .    .    .    .     ]
+ - data accesses        13.8 [>>>>>>>  .    .    .    .    .    .    .    .     ]
+* GFLOPS (% max)         7.8 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - packed                7.8 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - scalar                0.0 [    .    .    .    .    .    .    .    .    .     ]
+
+Performance Assessment  LCPI  good.......okay........fair........poor........bad
+* overall               1.92 [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> .    .     ]
+
+Slowdown Caused By      LCPI    (interpretation varies according to the metric)
+* data accesses         3.90 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+ - L1 cache hits        0.48 [>>>>>>>>>>    .    .    .    .    .    .    .     ]
+ - L2 cache hits        0.12 [>>  .    .    .    .    .    .    .    .    .     ]
+ - L3 cache hits        0.40 [>>>>>>>> .    .    .    .    .    .    .    .     ]
+ - LLC misses           2.89 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+* instruction accesses  0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - L1 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 misses            0.02 [    .    .    .    .    .    .    .    .    .     ]
+* data TLB              0.03 [>   .    .    .    .    .    .    .    .    .     ]
+* instruction TLB       0.00 [    .    .    .    .    .    .    .    .    .     ]
+* branch instructions   0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - correctly predicted  0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - mispredicted         0.00 [    .    .    .    .    .    .    .    .    .     ]
+* FP instructions       0.31 [>>>>>>   .    .    .    .    .    .    .    .     ]
+ - fast                 0.31 [>>>>>>   .    .    .    .    .    .    .    .     ]
+ - slow                 0.00 [    .    .    .    .    .    .    .    .    .     ]
+
+---------------------------------------------------------------------------------
+
+Loop in function miniFE::dot<miniFE::Vector<double, int, int> > in Vector_functions.hpp:250 (3.05% of the total runtime)
+=================================================================================
+Instructions Ratio        %   0..........25..........50...........75.........100
+ - floating point       26.2 [>>>>>>>>>>>>> .    .    .    .    .    .    .     ]
+ - data accesses        17.7 [>>>>>>>>>.    .    .    .    .    .    .    .     ]
+* GFLOPS (% max)         6.6 [>>> .    .    .    .    .    .    .    .    .     ]
+ - packed                6.6 [>>> .    .    .    .    .    .    .    .    .     ]
+ - scalar                0.0 [    .    .    .    .    .    .    .    .    .     ]
+
+Performance Assessment  LCPI  good.......okay........fair........poor........bad
+* overall               1.42 [>>>>>>>>>>>>>>>>>>>>>>>>>>>> .    .    .    .     ]
+
+Slowdown Caused By      LCPI    (interpretation varies according to the metric)
+* data accesses         5.04 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+ - L1 cache hits        0.62 [>>>>>>>>>>>>  .    .    .    .    .    .    .     ]
+ - L2 cache hits        0.13 [>>> .    .    .    .    .    .    .    .    .     ]
+ - L3 cache hits        0.55 [>>>>>>>>>>>   .    .    .    .    .    .    .     ]
+ - LLC misses           3.75 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+* instruction accesses  0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - L1 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 misses            0.03 [>   .    .    .    .    .    .    .    .    .     ]
+* data TLB              0.03 [>   .    .    .    .    .    .    .    .    .     ]
+* instruction TLB       0.00 [    .    .    .    .    .    .    .    .    .     ]
+* branch instructions   0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - correctly predicted  0.03 [>   .    .    .    .    .    .    .    .    .     ]
+ - mispredicted         0.00 [    .    .    .    .    .    .    .    .    .     ]
+* FP instructions       0.26 [>>>>>    .    .    .    .    .    .    .    .     ]
+ - fast                 0.26 [>>>>>    .    .    .    .    .    .    .    .     ]
+ - slow                 0.00 [    .    .    .    .    .    .    .    .    .     ]
+
+---------------------------------------------------------------------------------
+
+Loop in function void miniFE::daxpby<miniFE::Vector<double, int, int> >(double, miniFE::Vector<double, int, int> const&, double, miniFE::Vector<double, int, int>&) in Vector_functions.hpp:206 (10.28% of the total runtime)
+=================================================================================
+Instructions Ratio        %   0..........25..........50...........75.........100
+ - floating point       31.7 [>>>>>>>>>>>>>>>>   .    .    .    .    .    .     ]
+ - data accesses        14.0 [>>>>>>>  .    .    .    .    .    .    .    .     ]
+* GFLOPS (% max)         7.9 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - packed                7.9 [>>>>.    .    .    .    .    .    .    .    .     ]
+ - scalar                0.0 [    .    .    .    .    .    .    .    .    .     ]
+
+Performance Assessment  LCPI  good.......okay........fair........poor........bad
+* overall               1.98 [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    .     ]
+
+Slowdown Caused By      LCPI    (interpretation varies according to the metric)
+* data accesses         3.91 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+ - L1 cache hits        0.49 [>>>>>>>>>>    .    .    .    .    .    .    .     ]
+ - L2 cache hits        0.12 [>>  .    .    .    .    .    .    .    .    .     ]
+ - L3 cache hits        0.41 [>>>>>>>> .    .    .    .    .    .    .    .     ]
+ - LLC misses           2.89 [++++++++++++++++++++++++++++++++++++++++++++++++++]
+* instruction accesses  0.04 [>   .    .    .    .    .    .    .    .    .     ]
+ - L1 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 hits              0.00 [    .    .    .    .    .    .    .    .    .     ]
+ - L2 misses            0.04 [>   .    .    .    .    .    .    .    .    .     ]
+* data TLB              0.03 [>   .    .    .    .    .    .    .    .    .     ]
+* instruction TLB       0.00 [    .    .    .    .    .    .    .    .    .     ]
+* branch instructions   0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - correctly predicted  0.02 [    .    .    .    .    .    .    .    .    .     ]
+ - mispredicted         0.00 [    .    .    .    .    .    .    .    .    .     ]
+* FP instructions       0.32 [>>>>>>   .    .    .    .    .    .    .    .     ]
+ - fast                 0.32 [>>>>>>   .    .    .    .    .    .    .    .     ]
+ - slow                 0.00 [    .    .    .    .    .    .    .    .    .     ]
+
+---------------------------------------------------------------------------------
+

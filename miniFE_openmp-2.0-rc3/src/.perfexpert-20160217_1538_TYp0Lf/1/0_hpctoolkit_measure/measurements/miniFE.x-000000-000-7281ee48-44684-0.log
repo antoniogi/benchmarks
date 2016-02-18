@@ -1,0 +1,50 @@
+[44684, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[44684, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[44684, 3]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[44684, 7]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[44684, 4]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[44684, 6]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[44684, 4]: NULL (0): ip = 0x2af11adf1379 (0x48379), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[44684, 5]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[44684, 3]: NULL (0): ip = 0x2af11adf1379 (0x48379), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[44684, 6]: NULL (0): ip = 0x2af11adf13b8 (0x483b8), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[44684, 4]: -- end backtrace ------------------------------------
+
+[44684, 5]: NULL (0): ip = 0x2af11adf1384 (0x48384), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[44684, 7]: NULL (0): ip = 0x2af11adf1364 (0x48364), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[44684, 6]: -- end backtrace ------------------------------------
+
+[44684, 3]: -- end backtrace ------------------------------------
+
+[44684, 7]: -- end backtrace ------------------------------------
+
+[44684, 5]: -- end backtrace ------------------------------------
+
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff02687898
+[44684, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+[44684, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff026878a4
+MEMORY: segment size: 4.0 meg, num segments: 18, total allocation: 72.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 3.6 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 2 (async: 2, dlopen: 0), errors: 5 (segv: 0, soft: 5)
+SUMMARY: samples: 1840758 (recorded: 1840756, blocked: 2, errant: 5, trolled: 37, yielded: 0),
+         frames: 11353438 (trolled: 37)
+         intervals: 5682 (suspicious: 2)

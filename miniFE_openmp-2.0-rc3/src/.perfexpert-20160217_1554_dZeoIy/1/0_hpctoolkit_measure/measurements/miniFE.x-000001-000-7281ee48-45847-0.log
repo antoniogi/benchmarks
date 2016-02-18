@@ -1,0 +1,9 @@
+[45847, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[45847, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[45847, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffb39ff898
+MEMORY: segment size: 4.0 meg, num segments: 10, total allocation: 40.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 1.8 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 1 (async: 1, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 398120 (recorded: 398119, blocked: 1, errant: 0, trolled: 1, yielded: 0),
+         frames: 2560615 (trolled: 1)
+         intervals: 7166 (suspicious: 2)

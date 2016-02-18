@@ -109,7 +109,7 @@ long grid_search( long n, double quarry, GridPoint * A)
 	long examinationPoint;
 	long length = upperLimit - lowerLimit;
 
-	while( length > 256 )
+	while( length > 128 )
 	{
 		examinationPoint = lowerLimit + ( length / 2 );
 		
@@ -128,5 +128,21 @@ long grid_search( long n, double quarry, GridPoint * A)
             return i;
         }
     }   
-	return i; // lowerLimit;
+    return i;
+
+    /*  
+    while( length > 1 )
+    {
+        examinationPoint = lowerLimit + ( length / 2 );
+        
+        if( A[examinationPoint].energy > quarry )
+            upperLimit = examinationPoint;
+        else
+            lowerLimit = examinationPoint;
+        
+        length = upperLimit - lowerLimit;
+    }
+    
+    return lowerLimit;
+*/
 }

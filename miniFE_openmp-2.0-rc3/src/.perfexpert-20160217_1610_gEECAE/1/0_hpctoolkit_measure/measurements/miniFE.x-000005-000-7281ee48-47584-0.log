@@ -1,0 +1,8 @@
+[47584, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[47584, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+MEMORY: segment size: 4.0 meg, num segments: 2, total allocation: 8.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 0.7 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 0 (async: 0, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 223814 (recorded: 223814, blocked: 0, errant: 0, trolled: 1, yielded: 0),
+         frames: 1853507 (trolled: 1)
+         intervals: 6733 (suspicious: 2)

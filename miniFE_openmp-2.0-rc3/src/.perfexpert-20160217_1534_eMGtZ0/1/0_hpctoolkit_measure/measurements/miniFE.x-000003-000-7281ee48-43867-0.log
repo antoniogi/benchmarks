@@ -1,0 +1,34 @@
+[43867, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[43867, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff826
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0xffffffffff600140
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff898
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+[43867, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fffa6fff8a4
+MEMORY: segment size: 4.0 meg, num segments: 4, total allocation: 16.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 1.0 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 1 (async: 1, dlopen: 0), errors: 0 (segv: 0, soft: 0)
+SUMMARY: samples: 197337 (recorded: 197336, blocked: 1, errant: 0, trolled: 52, yielded: 0),
+         frames: 1494569 (trolled: 52)
+         intervals: 7713 (suspicious: 2)

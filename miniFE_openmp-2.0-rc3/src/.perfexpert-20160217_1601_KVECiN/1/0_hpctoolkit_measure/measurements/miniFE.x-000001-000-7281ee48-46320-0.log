@@ -1,0 +1,15 @@
+[46320, N]: SYSTEM_SERVER: warning: memory usage: 78 Meg
+[46320, N]: SYSTEM_SERVER: warning: memory usage: 81 Meg, restart server
+[46320, 3]: -- begin new backtrace (innermost first) [PARTIAL] ----------
+[46320, 3]: NULL (0): ip = 0x2acbf9f70364 (0x48364), load module = /opt/apps/intel/15/composer_xe_2015.2.164/compiler/lib/intel64/libiomp5.so | lip 
+[46320, 3]: -- end backtrace ------------------------------------
+
+[46320, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff123d0898
+[46320, 0]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff123d08a4
+[46320, 2]: unw_init: cursor could NOT build an interval for initial pc = 0x7fff123d0891
+MEMORY: segment size: 4.0 meg, num segments: 6, total allocation: 24.0 meg, reclaims: 0
+MEMORY: total freeable: 0.0 meg, total non-freeable: 1.2 meg, malloc failures: 0
+SAMPLE ANOMALIES: blocks: 1 (async: 1, dlopen: 0), errors: 1 (segv: 0, soft: 1)
+SUMMARY: samples: 200048 (recorded: 200047, blocked: 1, errant: 1, trolled: 11, yielded: 0),
+         frames: 1361704 (trolled: 11)
+         intervals: 7743 (suspicious: 3)

@@ -1,0 +1,49 @@
+TACC: Starting up job 6579240
+TACC: Starting parallel tasks...
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+Warning!  num_cntrs is more than num_mpx_cntrs
+MiniFE Mini-App, OpenMP Peer Implementation
+Creating OpenMP Thread Pool...
+Counted: 12 threads.
+Running MiniFE Mini-App...
+      creating/filling mesh...0.174916s, total time: 0.174916
+generating matrix structure...4.78221s, total time: 4.95712
+         assembling FE data...8.42304s, total time: 13.3802
+      imposing Dirichlet BC...2.20853s, total time: 15.5887
+      imposing Dirichlet BC...0.167938s, total time: 15.7566
+making matrix indices local...4.37355s, total time: 20.1302
+Starting CG solver ... 
+Initial Residual = 313.002
+Iteration = 50   Residual = 0.0205707
+Iteration = 100   Residual = 0.00845726
+Iteration = 150   Residual = 0.00465883
+Iteration = 200   Residual = 0.00257697
+Iteration = 250   Residual = 0.00140004
+Iteration = 300   Residual = 0.000745637
+Iteration = 350   Residual = 0.000393365
+Iteration = 400   Residual = 0.000246452
+Iteration = 450   Residual = 1.47591e-05
+Iteration = 500   Residual = 3.12169e-06
+Iteration = 550   Residual = 5.48092e-07
+Iteration = 600   Residual = 1.12168e-07
+Iteration = 650   Residual = 2.0579e-08
+Iteration = 700   Residual = 2.60289e-09
+Iteration = 750   Residual = 4.79416e-10
+Iteration = 800   Residual = 4.90933e-11
+Iteration = 850   Residual = 6.58678e-12
+Iteration = 900   Residual = 6.62806e-13
+Iteration = 950   Residual = 4.32017e-14
+Iteration = 1000   Residual = 6.96328e-15
+Final Resid Norm: 6.96328e-15
+ 
+TACC: Shutdown complete. Exiting.
