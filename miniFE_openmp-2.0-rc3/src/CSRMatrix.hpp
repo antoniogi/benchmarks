@@ -31,6 +31,7 @@
 #include <cstddef>
 #include <vector>
 #include <algorithm>
+#include <Aligned_allocator.hpp>
 #ifdef HAVE_MPI
 #include <mpi.h>
 #endif
@@ -65,8 +66,10 @@ CSRMatrix {
   std::vector<GlobalOrdinal> rows;
   std::vector<LocalOrdinal>  row_offsets;
   std::vector<LocalOrdinal>  row_offsets_external;
-  std::vector<GlobalOrdinal> packed_cols;
-  std::vector<Scalar>        packed_coefs;
+  std::vector<GlobalOrdinal, aligned_allocator<GlobalOrdinal, 32> > packed_cols;
+//  std::vector<GlobalOrdinal> packed_cols;
+//  std::vector<Scalar>        packed_coefs;
+  std::vector<Scalar, aligned_allocator<Scalar, 32> > packed_coefs;
   LocalOrdinal               num_cols;
 
 #ifdef HAVE_MPI

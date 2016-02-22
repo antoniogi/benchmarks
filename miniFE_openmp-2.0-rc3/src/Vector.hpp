@@ -29,6 +29,7 @@
 //@HEADER
 
 #include <vector>
+#include <Aligned_allocator.hpp>
 
 namespace miniFE {
 
@@ -58,7 +59,8 @@ struct Vector {
 
   GlobalOrdinal startIndex;
   LocalOrdinal local_size;
-  std::vector<Scalar> coefs;
+  std::vector<Scalar, aligned_allocator<Scalar, 32> > coefs;
+  //std::vector<Scalar> coefs;
 };
 
 

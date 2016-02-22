@@ -16,7 +16,7 @@ MINIFE_MATRIX_TYPE = -DMINIFE_CSR_MATRIX
 
 #-----------------------------------------------------------------------
 
-CFLAGS = -g -O3 -openmp #-xHost
+CFLAGS = -g -O3 -openmp -std=c++11 -restrict -vec-report=6 #-xCORE-AVX2 #-xHost
 CXXFLAGS = $(CFLAGS)
 
 CPPFLAGS = -openmp -I. -I../utils -I../fem $(MINIFE_TYPES) $(MINIFE_MATRIX_TYPE) -DHAVE_MPI

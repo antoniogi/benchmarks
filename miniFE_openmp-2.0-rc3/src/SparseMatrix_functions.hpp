@@ -522,7 +522,7 @@ void operator()(MatrixType& A,
 
                 MINIFE_SCALAR sum = 0;
 
-                #pragma loop_count(15)
+//                 #pragma loop_count(15)
                 for(MINIFE_GLOBAL_ORDINAL i = row_start; i < row_end; ++i) {
                         sum += Acoefs[i] * xcoefs[Acols[i]];
                 }
