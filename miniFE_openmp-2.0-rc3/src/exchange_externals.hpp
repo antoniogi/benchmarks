@@ -87,7 +87,8 @@ exchange_externals(MatrixType& A,
   // Externals are at end of locals
   //
 
-  std::vector<Scalar, aligned_allocator<Scalar, 32> > & x_coefs = x.coefs;
+  std::vector<Scalar, boost::alignment::aligned_allocator<Scalar> > & x_coefs = x.coefs;
+  //std::vector<Scalar, aligned_allocator<Scalar, 32> > & x_coefs = x.coefs;
 //  std::vector<Scalar>& x_coefs = x.coefs;
   Scalar* x_external = &(x_coefs[local_nrow]);
 
@@ -209,7 +210,8 @@ begin_exchange_externals(MatrixType& A,
   // Externals are at end of locals
   //
 
-  std::vector<Scalar, aligned_allocator<Scalar, 32> > & x_coefs = x.coefs;
+  std::vector<Scalar, boost::alignment::aligned_allocator<Scalar> > & x_coefs = x.coefs;
+  //std::vector<Scalar, aligned_allocator<Scalar, 32> > & x_coefs = x.coefs;
 //   std::vector<Scalar>& x_coefs = x.coefs;
   Scalar* x_external = &(x_coefs[local_nrow]);
 

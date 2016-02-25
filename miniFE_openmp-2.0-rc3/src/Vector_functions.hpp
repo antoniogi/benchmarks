@@ -95,8 +95,9 @@ void sum_into_vector(size_t num_indices,
   GlobalOrdinal first = vec.startIndex;
   GlobalOrdinal last = first + vec.local_size - 1;
 
-  std::vector<Scalar, aligned_allocator<Scalar, 32> > & vec_coefs = vec.coefs;
 //  std::vector<Scalar>& vec_coefs = vec.coefs;
+//  std::vector<Scalar, aligned_allocator<Scalar, 32> > & vec_coefs = vec.coefs;
+  std::vector<Scalar, boost::alignment::aligned_allocator<Scalar> > & vec_coefs = vec.coefs;
 
   for(size_t i=0; i<num_indices; ++i) {
     if (indices[i] < first || indices[i] > last) continue;
@@ -196,33 +197,34 @@ void
   const MINIFE_SCALAR*  xcoefs = &x.coefs[0];
         MINIFE_SCALAR*  ycoefs = &y.coefs[0];
 
+//std::cout << "alpha " << alpha << " beta " << beta << std::endl;
   if(alpha == 1.0 && beta == 1.0) {
 //	  #pragma omp parallel for
-#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
+//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] += xcoefs[i];
   	  }
   } else if (beta == 1.0) {
 //	  #pragma omp parallel for
-           #pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
+//           #pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] += alpha * xcoefs[i];
   	  }
   } else if (alpha == 1.0) {
 //	  #pragma omp parallel for
-#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
+//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = xcoefs[i] + beta * ycoefs[i];
   	  }
   } else if (beta == 0.0) {
 //	  #pragma omp parallel for
-#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
+//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = alpha * xcoefs[i];
   	  }
   } else {
 //	  #pragma omp parallel for
-#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
+//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
   	  }

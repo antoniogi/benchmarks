@@ -31,10 +31,13 @@
 #include <cstddef>
 #include <vector>
 #include <algorithm>
-#include <Aligned_allocator.hpp>
+//#include <Aligned_allocator.hpp>
 #ifdef HAVE_MPI
 #include <mpi.h>
 #endif
+
+#include <boost/align/aligned_allocator.hpp>
+
 
 namespace miniFE {
 
@@ -66,10 +69,12 @@ CSRMatrix {
   std::vector<GlobalOrdinal> rows;
   std::vector<LocalOrdinal>  row_offsets;
   std::vector<LocalOrdinal>  row_offsets_external;
-  std::vector<GlobalOrdinal, aligned_allocator<GlobalOrdinal, 32> > packed_cols;
+  std::vector<GlobalOrdinal,boost::alignment::aligned_allocator<GlobalOrdinal> > packed_cols;
+  //std::vector<GlobalOrdinal, aligned_allocator<GlobalOrdinal, 32> > packed_cols;
 //  std::vector<GlobalOrdinal> packed_cols;
 //  std::vector<Scalar>        packed_coefs;
-  std::vector<Scalar, aligned_allocator<Scalar, 32> > packed_coefs;
+  //std::vector<Scalar, aligned_allocator<Scalar, 32> > packed_coefs;
+  std::vector<Scalar, boost::alignment::aligned_allocator<Scalar> > packed_coefs;
   LocalOrdinal               num_cols;
 
 #ifdef HAVE_MPI

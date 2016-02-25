@@ -151,9 +151,11 @@ cg_solve(OperatorType& A,
 
   for(LocalOrdinalType k=1; k <= max_iter && normr > tolerance; ++k) {
     if (k == 1) {
+//        std::cout << " waxpby " << std::endl;
       TICK(); waxpby(one, r, zero, r, p); TOCK(tWAXPY);
     }
     else {
+//            std::cout << "dot_r2" << std::endl;
       oldrtrans = rtrans;
       TICK(); rtrans = dot_r2(r); TOCK(tDOT);
       magnitude_type beta = rtrans/oldrtrans;
@@ -169,7 +171,9 @@ cg_solve(OperatorType& A,
     magnitude_type alpha = 0;
     magnitude_type p_ap_dot = 0;
 
+   // std::cout << "matvec" << std::endl;
     TICK(); matvec(A, p, Ap); TOCK(tMATVEC);
+    //std::cout << "dot" << std::endl;
     TICK(); p_ap_dot = dot(Ap, p); TOCK(tDOT);
 
 #ifdef MINIFE_DEBUG
@@ -196,9 +200,12 @@ cg_solve(OperatorType& A,
     os << ", rtrans = " << rtrans << ", alpha = " << alpha << std::endl;
 #endif
 
+    //std::cout << "daxpby" << std::endl;
     TICK(); daxpby(alpha, p, one, x);
+    //std::cout << "daxpby2" << std::endl;
             daxpby(-alpha, Ap, one, r); TOCK(tWAXPY);
 
+    //std::cout << "end iteration" << std::endl;
     num_iters = k;
   }
 
