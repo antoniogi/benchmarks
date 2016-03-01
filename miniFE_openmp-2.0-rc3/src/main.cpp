@@ -106,7 +106,7 @@ int main(int argc, char** argv) {
   }
   int value = 0;
   const int thread_count = omp_get_max_threads();
-#pragma omp parallel for reduction(+:value)
+//#pragma omp parallel for reduction(+:value)
   for(int i = 0; i < thread_count; ++i) {
 	value += 1;
   }

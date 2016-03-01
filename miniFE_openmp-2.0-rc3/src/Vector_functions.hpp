@@ -150,32 +150,44 @@ void
 #endif
 
   const int n = x.coefs.size();
-  const ScalarType*  xcoefs = &x.coefs[0];
-  const ScalarType*  ycoefs = &y.coefs[0];
-        ScalarType*  wcoefs = &w.coefs[0];
+  const ScalarType* restrict xcoefs = &x.coefs[0];
+  const ScalarType* restrict ycoefs = &y.coefs[0];
+        ScalarType* restrict wcoefs = &w.coefs[0];
 
   if(beta == 0.0) {
 	if(alpha == 1.0) {
   		#pragma omp parallel for
-  		for(int i=0; i<n; ++i) {
+  		for(int i=0; i<n; i+=4) {
     			wcoefs[i] = xcoefs[i];
+                wcoefs[i+1] = xcoefs[i+1];
+                wcoefs[i+2] = xcoefs[i+2];
+                wcoefs[i+3] = xcoefs[i+3];
   		}
   	} else {
   		#pragma omp parallel for
-  		for(int i=0; i<n; ++i) {
+  		for(int i=0; i<n; i+=4) {
     			wcoefs[i] = alpha * xcoefs[i];
+    			wcoefs[i+1] = alpha * xcoefs[i+1];
+    			wcoefs[i+2] = alpha * xcoefs[i+2];
+    			wcoefs[i+3] = alpha * xcoefs[i+3];
   		}
   	}
   } else {
 	if(alpha == 1.0) {
   		#pragma omp parallel for
-  		for(int i=0; i<n; ++i) {
+  		for(int i=0; i<n; i+=4) {
     			wcoefs[i] = xcoefs[i] + beta * ycoefs[i];
+    			wcoefs[i+1] = xcoefs[i+1] + beta * ycoefs[i+1];
+    			wcoefs[i+2] = xcoefs[i+2] + beta * ycoefs[i+2];
+    			wcoefs[i+3] = xcoefs[i+3] + beta * ycoefs[i+3];
   		}
   	} else {
   		#pragma omp parallel for
-  		for(int i=0; i<n; ++i) {
+  		for(int i=0; i<n; i+=4) {
     			wcoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
+    			wcoefs[i+1] = alpha * xcoefs[i+1] + beta * ycoefs[i+1];
+    			wcoefs[i+2] = alpha * xcoefs[i+2] + beta * ycoefs[i+2];
+    			wcoefs[i+3] = alpha * xcoefs[i+3] + beta * ycoefs[i+3];
   		}
   	}
   }
@@ -194,39 +206,53 @@ void
 {
 
   const MINIFE_LOCAL_ORDINAL n = MINIFE_MIN(x.coefs.size(), y.coefs.size());
-  const MINIFE_SCALAR*  xcoefs = &x.coefs[0];
-        MINIFE_SCALAR*  ycoefs = &y.coefs[0];
+  const MINIFE_SCALAR*  restrict xcoefs = &x.coefs[0];
+        MINIFE_SCALAR*  restrict ycoefs = &y.coefs[0];
 
-//std::cout << "alpha " << alpha << " beta " << beta << std::endl;
   if(alpha == 1.0 && beta == 1.0) {
-//	  #pragma omp parallel for
-//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
-	  for(int i = 0; i < n; ++i) {
+//#pragma omp simd safelen(8)// aligned(ycoefs, xcoefs:32)
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; i+=4) {
 	    ycoefs[i] += xcoefs[i];
+	    ycoefs[i+1] += xcoefs[i+1];
+	    ycoefs[i+2] += xcoefs[i+2];
+	    ycoefs[i+3] += xcoefs[i+3];
   	  }
   } else if (beta == 1.0) {
-//	  #pragma omp parallel for
-//           #pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
-	  for(int i = 0; i < n; ++i) {
+//           #pragma omp simd safelen(8)// aligned(ycoefs, xcoefs:32)
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; i+=4) {
 	    ycoefs[i] += alpha * xcoefs[i];
+	    ycoefs[i+1] += alpha * xcoefs[i+1];
+	    ycoefs[i+2] += alpha * xcoefs[i+2];
+	    ycoefs[i+3] += alpha * xcoefs[i+3];
   	  }
   } else if (alpha == 1.0) {
-//	  #pragma omp parallel for
-//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
-	  for(int i = 0; i < n; ++i) {
+//#pragma omp simd safelen(8)// aligned(ycoefs, xcoefs:32)
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; i+=4) {
 	    ycoefs[i] = xcoefs[i] + beta * ycoefs[i];
+	    ycoefs[i+1] = xcoefs[i+1] + beta * ycoefs[i+1];
+	    ycoefs[i+2] = xcoefs[i+2] + beta * ycoefs[i+2];
+	    ycoefs[i+3] = xcoefs[i+3] + beta * ycoefs[i+3];
   	  }
   } else if (beta == 0.0) {
-//	  #pragma omp parallel for
-//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
-	  for(int i = 0; i < n; ++i) {
+//#pragma omp simd safelen(8)// aligned(ycoefs, xcoefs:32)
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; i+=4) {
 	    ycoefs[i] = alpha * xcoefs[i];
+	    ycoefs[i+1] = alpha * xcoefs[i+1];
+	    ycoefs[i+2] = alpha * xcoefs[i+2];
+	    ycoefs[i+3] = alpha * xcoefs[i+3];
   	  }
   } else {
-//	  #pragma omp parallel for
-//#pragma omp simd safelen(8) aligned(ycoefs, xcoefs:32)
-	  for(int i = 0; i < n; ++i) {
+//#pragma omp simd safelen(8)// aligned(ycoefs, xcoefs:32)
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; i+=4) {
 	    ycoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
+	    ycoefs[i+1] = alpha * xcoefs[i+1] + beta * ycoefs[i+1];
+	    ycoefs[i+2] = alpha * xcoefs[i+2] + beta * ycoefs[i+2];
+	    ycoefs[i+3] = alpha * xcoefs[i+3] + beta * ycoefs[i+3];
   	  }
   }
 
@@ -249,15 +275,22 @@ typename TypeTraits<typename Vector::ScalarType>::magnitude_type
   typedef typename Vector::ScalarType Scalar;
   typedef typename TypeTraits<typename Vector::ScalarType>::magnitude_type magnitude;
 
-  const Scalar*  xcoefs = &x.coefs[0];
-  const Scalar*  ycoefs = &y.coefs[0];
+  const Scalar* restrict  xcoefs = &x.coefs[0];
+  const Scalar* restrict  ycoefs = &y.coefs[0];
   MINIFE_SCALAR result = 0;
+  MINIFE_SCALAR dot1 = 0, dot2 = 0, dot3 = 0, dot4 = 0;
 
-  #pragma omp parallel for reduction(+:result)
-  for(int i=0; i<n; ++i) {
-    result += xcoefs[i] * ycoefs[i];
+  #pragma prefetch xcoefs:1:64 
+  #pragma prefetch xcoefs:0:12
+  #pragma omp parallel for reduction(+:dot1,dot2,dot3,dot4)
+  for(int i=0; i<n; i+=4) {
+    dot1 += xcoefs[i] * ycoefs[i];
+    dot2 += xcoefs[i+1] * ycoefs[i+1];
+    dot3 += xcoefs[i+2] * ycoefs[i+2];
+    dot4 += xcoefs[i+3] * ycoefs[i+3];
   }
 
+    result = dot1+dot2+dot3+dot4; //xcoefs[i] * ycoefs[i];
 #ifdef HAVE_MPI
   magnitude local_dot = result, global_dot = 0;
   MPI_Datatype mpi_dtype = TypeTraits<magnitude>::mpi_type();  
@@ -290,18 +323,24 @@ typename TypeTraits<typename Vector::ScalarType>::magnitude_type
   typedef typename Vector::ScalarType Scalar;
   typedef typename TypeTraits<typename Vector::ScalarType>::magnitude_type magnitude;
 
-  const MINIFE_SCALAR*  xcoefs = &x.coefs[0];
+  const MINIFE_SCALAR* restrict xcoefs = &x.coefs[0];
   MINIFE_SCALAR result = 0;
-
-//  std::vector <MINIFE_SCALAR> results (omp_get_num_threads(), 0);
-  #pragma omp parallel for reduction(+:result) //schedule (dynamic) //reduction(+:result)
+  MINIFE_SCALAR dot1 = 0, dot2 = 0, dot3 = 0, dot4 = 0;
+  
+  #pragma omp parallel for reduction(+:dot1,dot2,dot3,dot4)
+  for(int i=0; i<n; i+=4) {
+    dot1 += xcoefs[i] * xcoefs[i];
+    dot2 += xcoefs[i+1] * xcoefs[i+1];
+    dot3 += xcoefs[i+2] * xcoefs[i+2];
+    dot4 += xcoefs[i+3] * xcoefs[i+3];
+  }
+  result = dot1+dot2+dot3+dot4;
+/*  
+#pragma omp parallel for reduction(+:result) //schedule (dynamic) //reduction(+:result)
   for(int i=0; i<n; ++i) {
-//    results[omp_get_thread_num()]+=xcoefs[i] * xcoefs[i];
     result += xcoefs[i] * xcoefs[i];
   }
-//  for (int i=0; i<omp_get_num_threads(); ++i)
-//          result += results[i];
-
+  */
 #ifdef HAVE_MPI
   magnitude local_dot = result, global_dot = 0;
   MPI_Datatype mpi_dtype = TypeTraits<magnitude>::mpi_type();  

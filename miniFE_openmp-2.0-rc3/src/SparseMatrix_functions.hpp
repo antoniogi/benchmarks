@@ -55,9 +55,9 @@ namespace miniFE {
 
 template<typename MatrixType>
 void init_matrix(MatrixType& M,
-                 const std::vector<typename MatrixType::GlobalOrdinalType>& rows,
-                 const std::vector<typename MatrixType::LocalOrdinalType>& row_offsets,
-                 const std::vector<int>& row_coords,
+                 const std::vector<typename MatrixType::GlobalOrdinalType, boost::alignment::aligned_allocator<typename MatrixType::GlobalOrdinalType> >& rows,
+                 const std::vector<typename MatrixType::LocalOrdinalType, boost::alignment::aligned_allocator<typename MatrixType::LocalOrdinalType> >& row_offsets,
+                 const std::vector<int, boost::alignment::aligned_allocator<int> >& row_coords,
                  int global_nodes_x,
                  int global_nodes_y,
                  int global_nodes_z,
@@ -68,6 +68,7 @@ void init_matrix(MatrixType& M,
                                  global_nodes_x, global_nodes_y, global_nodes_z,
                                  global_nrows, mesh, M);
 
+#pragma omp parallel for
   for(int i=0; i<mat_init.n; ++i) {
     mat_init(i);
   }
@@ -154,7 +155,7 @@ sum_into_row(int row_len,
     if (loc-row_indices < row_len && *loc == input_indices[i]) {
 //if(flag && *loc==6)
 //std::cout<<"  ("<<*loc<<":"<<row_coefs[loc-row_indices]<<" += "<<input_coefs[i]<<")"<<std::endl;
-      #pragma omp atomic
+//      #pragma omp atomic
       row_coefs[loc-row_indices] += input_coefs[i];
     }
   }
@@ -479,7 +480,7 @@ impose_dirichlet(typename MatrixType::ScalarType prescribed_value,
       }
     }
 
-    #pragma omp atomic
+ //   #pragma omp atomic
     b.coefs[i] -= sum*prescribed_value;
   }
 }
@@ -509,9 +510,9 @@ void operator()(MatrixType& A,
 
         const MINIFE_GLOBAL_ORDINAL rows_size     = A.rows.size();
         const LocalOrdinalType* const Arowoffsets = &A.row_offsets[0];
-        const GlobalOrdinalType* const Acols      = &A.packed_cols[0];
-        const ScalarType* const Acoefs            = &A.packed_coefs[0];
-        const ScalarType* const xcoefs            = &x.coefs[0];
+        const GlobalOrdinalType* restrict const Acols      = &A.packed_cols[0];
+        const ScalarType* restrict const Acoefs            = &A.packed_coefs[0];
+        const ScalarType* restrict const xcoefs            = &x.coefs[0];
         ScalarType* ycoefs                        = &y.coefs[0];
         const ScalarType beta                     = 0;
 
@@ -522,7 +523,9 @@ void operator()(MatrixType& A,
 
                 MINIFE_SCALAR sum = 0;
 
-//                 #pragma loop_count(15)
+        //std::cout << "row size " << row_end - row_start << std::endl;
+                 //#pragma loop_count min(2), max(50), avg (16)
+        //         #pragma loop_count(15)
                 for(MINIFE_GLOBAL_ORDINAL i = row_start; i < row_end; ++i) {
                         sum += Acoefs[i] * xcoefs[Acols[i]];
                 }
@@ -556,14 +559,12 @@ void operator()(MatrixType& A,
   #pragma omp parallel for
   for(int row=0; row<n; ++row) {
     ScalarType sum = beta*ycoefs[row];
-
     int row_start=row*row_len;
     int row_end=row_start+row_len;
 
-    for(LocalOrdinalType i=row_start; i<row_end; ++i) {
-      sum += Acoefs[i]*xcoefs[Acols[i]];
+    for(LocalOrdinalType i=row_start; i<row_end; i++) {
+        sum += Acoefs[i]*xcoefs[Acols[i]];
     }
-
     ycoefs[row] = sum;
   }
 }

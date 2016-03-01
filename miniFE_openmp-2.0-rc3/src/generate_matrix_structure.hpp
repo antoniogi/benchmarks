@@ -88,9 +88,9 @@ generate_matrix_structure(const simple_mesh_description<typename MatrixType::Glo
     throw std::runtime_error(str1);
   }
 
-  std::vector<GlobalOrdinal> rows(nrows);
-  std::vector<LocalOrdinal> row_offsets(nrows+1);
-  std::vector<LocalOrdinal> row_coords(nrows*3);
+  std::vector<GlobalOrdinal, boost::alignment::aligned_allocator<GlobalOrdinal> > rows(nrows);
+  std::vector<LocalOrdinal, boost::alignment::aligned_allocator<LocalOrdinal> > row_offsets(nrows+1);
+  std::vector<LocalOrdinal, boost::alignment::aligned_allocator<LocalOrdinal> > row_coords(nrows*3);
 
   const MINIFE_GLOBAL_ORDINAL z_width = box[2][1] - box[2][0];
   const MINIFE_GLOBAL_ORDINAL y_width = box[1][1] - box[1][0];
@@ -99,41 +99,37 @@ generate_matrix_structure(const simple_mesh_description<typename MatrixType::Glo
 					(box[1][1] - box[1][0]) *
 					(box[0][1] - box[0][0]);
   const MINIFE_GLOBAL_ORDINAL xy_width = x_width * y_width;
-        MINIFE_GLOBAL_ORDINAL* const row_ptr = &rows[0];
-        MINIFE_LOCAL_ORDINAL* const row_offset_ptr = &row_offsets[0];
-        MINIFE_LOCAL_ORDINAL* const row_coords_ptr = &row_coords[0];
+        MINIFE_GLOBAL_ORDINAL* restrict const row_ptr = &rows[0];
+        MINIFE_LOCAL_ORDINAL* restrict const row_offset_ptr = &row_offsets[0];
+        MINIFE_LOCAL_ORDINAL* restrict const row_coords_ptr = &row_coords[0];
+
+//    std::cout << "xy_width " << xy_width << " x_width " << x_width << " y_width " << y_width << " r_n " << r_n << std::endl;
 
 	#pragma omp parallel for
-	for(int r = 0; r < r_n; ++r) {
+	for(int r = 0; r < r_n; ++r ) {
 		int iz = r / (xy_width) + box[2][0];
 		int iy = (r / x_width) % y_width + box[1][0];
 		int ix = r % x_width + box[0][0];
 
-        	GlobalOrdinal row_id =
-                           	get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
-                               	ix, iy, iz);
-                       	row_ptr[r] = mesh.map_id_to_row(row_id);
-                       	row_coords_ptr[r*3] = ix;
-                       	row_coords_ptr[r*3+1] = iy;
-                        row_coords_ptr[r*3+2] = iz;
+      	GlobalOrdinal row_id = get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z, ix, iy, iz);
+       	row_ptr[r] = mesh.map_id_to_row(row_id);
+       	row_coords_ptr[r*3] = ix;
+    	row_coords_ptr[r*3+1] = iy;
+        row_coords_ptr[r*3+2] = iz;
 
-			MINIFE_LOCAL_ORDINAL nnz = 0;
-                        for(int sz=-1; sz<=1; ++sz) {
-                               	for(int sy=-1; sy<=1; ++sy) {
-                                       	for(int sx=-1; sx<=1; ++sx) {
-                                               	GlobalOrdinal col_id =
-get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
-	                                   ix+sx, iy+sy, iz+sz);
-
-                                               	if (col_id >= 0 && col_id < global_nrows) {
-                                               	++nnz;
-                                               	}
-                                       	}
-                               	}
-                       	}
-                       	row_offset_ptr[r+1] = nnz;
-
-	}
+    	MINIFE_LOCAL_ORDINAL nnz = 0;
+        for(int sz=-1; sz<=1; ++sz) {
+           	for(int sy=-1; sy<=1; ++sy) {
+               	for(int sx=-1; sx<=1; ++sx) {
+                 	GlobalOrdinal col_id = get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z, ix+sx, iy+sy, iz+sz);
+                   	if (col_id >= 0 && col_id < global_nrows) {
+                      	++nnz;
+                 	}
+              	}
+           	}
+        }
+       	row_offset_ptr[r+1] = nnz;
+    }
 
   const MINIFE_GLOBAL_ORDINAL n = row_offsets.size() - 1;
   for(int i = 0; i < n; ++i) {

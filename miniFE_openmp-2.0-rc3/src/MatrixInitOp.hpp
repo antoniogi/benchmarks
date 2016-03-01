@@ -60,9 +60,9 @@ struct MatrixInitOp {
 
 template<>
 struct MatrixInitOp<miniFE::CSRMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_GLOBAL_ORDINAL> > {
-  MatrixInitOp(const std::vector<MINIFE_GLOBAL_ORDINAL>& rows_vec,
-               const std::vector<MINIFE_LOCAL_ORDINAL>& row_offsets_vec,
-               const std::vector<int>& row_coords_vec,
+  MatrixInitOp(const std::vector<MINIFE_GLOBAL_ORDINAL, boost::alignment::aligned_allocator<MINIFE_GLOBAL_ORDINAL> >& rows_vec,
+               const std::vector<MINIFE_LOCAL_ORDINAL, boost::alignment::aligned_allocator<MINIFE_LOCAL_ORDINAL> >& row_offsets_vec,
+               const std::vector<int, boost::alignment::aligned_allocator<int> >& row_coords_vec,
                int global_nx, int global_ny, int global_nz,
                MINIFE_GLOBAL_ORDINAL global_n_rows,
                const miniFE::simple_mesh_description<MINIFE_GLOBAL_ORDINAL>& input_mesh,
@@ -201,9 +201,15 @@ struct MatrixInitOp<miniFE::ELLMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_
     int iy = row_coords[i*3+1];
     int iz = row_coords[i*3+2];
     GlobalOrdinalType nnz = 0;
+//#pragma omp parallel for
+//    {
+//#pragma omp single
+//            {
     for(int sz=-1; sz<=1; ++sz)
       for(int sy=-1; sy<=1; ++sy)
         for(int sx=-1; sx<=1; ++sx) {
+//#pragma omp task 
+                {
           GlobalOrdinalType col_id =
               miniFE::get_id<GlobalOrdinalType>(global_nodes_x, global_nodes_y, global_nodes_z,
                                    ix+sx, iy+sy, iz+sz);
@@ -213,8 +219,10 @@ struct MatrixInitOp<miniFE::ELLMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_
             dest_coefs[offset+nnz] = 0;
             ++nnz;
           }
+     //     }
         }
-
+       //     }
+    }
     sort_if_needed(&dest_cols[offset], nnz);
   }
 };

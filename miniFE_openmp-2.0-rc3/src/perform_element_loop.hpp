@@ -66,8 +66,10 @@ perform_element_loop(const simple_mesh_description<GlobalOrdinal>& mesh,
 
   BoxIterator iter = BoxIterator::begin(local_elem_box);
   BoxIterator end  = BoxIterator::end(local_elem_box);
-
+//#pragma omp parallel shared (elemIDs)
+//#pragma omp single
   for(size_t i=0; iter != end; ++iter, ++i) {
+//    #pragma omp task
     elemIDs[i] = get_id<GlobalOrdinal>(global_elems_x, global_elems_y, global_elems_z,
                                        iter.x, iter.y, iter.z);
   }
