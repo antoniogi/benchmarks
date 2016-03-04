@@ -238,7 +238,7 @@ driver(const Box& global_box, Box& my_box,
 
   //Prepare to perform conjugate gradient solve:
 
-  LocalOrdinal max_iters = 1000;
+  LocalOrdinal max_iters = 200;
   LocalOrdinal num_iters = 0;
   typedef typename TypeTraits<Scalar>::magnitude_type magnitude;
   magnitude rnorm = 0;
@@ -260,7 +260,7 @@ driver(const Box& global_box, Box& my_box,
     std::cout << "Starting kernel timing loops ..." << std::endl;
   }
 
-  max_iters = 500;
+  max_iters = 200;
   x.coefs[0] = 0.9;
   if (matvec_with_comm_overlap) {
     time_kernels(A, b, x, matvec_overlap<MatrixType,VectorType>(), max_iters, rnorm, cg_times);
