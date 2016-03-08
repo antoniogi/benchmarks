@@ -60,9 +60,9 @@ generate_matrix_structure(const simple_mesh_description<typename MatrixType::Glo
   typedef typename MatrixType::GlobalOrdinalType GlobalOrdinal;
   typedef typename MatrixType::LocalOrdinalType LocalOrdinal;
 
-  const int global_nodes_x = mesh.global_box[0][1]+1;
-  const int global_nodes_y = mesh.global_box[1][1]+1;
-  const int global_nodes_z = mesh.global_box[2][1]+1;
+  int global_nodes_x = mesh.global_box[0][1]+1;
+  int global_nodes_y = mesh.global_box[1][1]+1;
+  int global_nodes_z = mesh.global_box[2][1]+1;
   Box box;
   copy_box(mesh.local_box, box);
 
@@ -90,55 +90,44 @@ generate_matrix_structure(const simple_mesh_description<typename MatrixType::Glo
 
   std::vector<GlobalOrdinal> rows(nrows);
   std::vector<LocalOrdinal> row_offsets(nrows+1);
-  std::vector<LocalOrdinal> row_coords(nrows*3);
+  std::vector<int> row_coords(nrows*3);
 
-  const MINIFE_GLOBAL_ORDINAL z_width = box[2][1] - box[2][0];
-  const MINIFE_GLOBAL_ORDINAL y_width = box[1][1] - box[1][0];
-  const MINIFE_GLOBAL_ORDINAL x_width = box[0][1] - box[0][0];
-  const MINIFE_GLOBAL_ORDINAL r_n = (box[2][1] - box[2][0]) *
-					(box[1][1] - box[1][0]) *
-					(box[0][1] - box[0][0]);
-  const MINIFE_GLOBAL_ORDINAL xy_width = x_width * y_width;
-        MINIFE_GLOBAL_ORDINAL* const row_ptr = &rows[0];
-        MINIFE_LOCAL_ORDINAL* const row_offset_ptr = &row_offsets[0];
-        MINIFE_LOCAL_ORDINAL* const row_coords_ptr = &row_coords[0];
+  unsigned roffset = 0;
+  GlobalOrdinal nnz = 0;
 
-	#pragma omp parallel for
-	for(int r = 0; r < r_n; ++r) {
-		int iz = r / (xy_width) + box[2][0];
-		int iy = (r / x_width) % y_width + box[1][0];
-		int ix = r % x_width + box[0][0];
+  for(int iz=box[2][0]; iz<box[2][1]; ++iz) {
+   for(int iy=box[1][0]; iy<box[1][1]; ++iy) {
+    for(int ix=box[0][0]; ix<box[0][1]; ++ix) {
+      GlobalOrdinal row_id =
+          get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
+                                ix, iy, iz);
+      rows[roffset] = mesh.map_id_to_row(row_id);
+      row_coords[roffset*3] = ix;
+      row_coords[roffset*3+1] = iy;
+      row_coords[roffset*3+2] = iz;
+      row_offsets[roffset++] = nnz;
 
-        	GlobalOrdinal row_id =
-                           	get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
-                               	ix, iy, iz);
-                       	row_ptr[r] = mesh.map_id_to_row(row_id);
-                       	row_coords_ptr[r*3] = ix;
-                       	row_coords_ptr[r*3+1] = iy;
-                        row_coords_ptr[r*3+2] = iz;
+      for(int sz=-1; sz<=1; ++sz) {
+       for(int sy=-1; sy<=1; ++sy) {
+        for(int sx=-1; sx<=1; ++sx) {
+          GlobalOrdinal col_id =
+              get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
+                                   ix+sx, iy+sy, iz+sz);
+          if (col_id >= 0 && col_id < global_nrows) {
+            ++nnz;
+          }
+        }
+       }
+      }
 
-			MINIFE_LOCAL_ORDINAL nnz = 0;
-                        for(int sz=-1; sz<=1; ++sz) {
-                               	for(int sy=-1; sy<=1; ++sy) {
-                                       	for(int sx=-1; sx<=1; ++sx) {
-                                               	GlobalOrdinal col_id =
-get_id<GlobalOrdinal>(global_nodes_x, global_nodes_y, global_nodes_z,
-	                                   ix+sx, iy+sy, iz+sz);
-
-                                               	if (col_id >= 0 && col_id < global_nrows) {
-                                               	++nnz;
-                                               	}
-                                       	}
-                               	}
-                       	}
-                       	row_offset_ptr[r+1] = nnz;
-
-	}
-
-  const MINIFE_GLOBAL_ORDINAL n = row_offsets.size() - 1;
-  for(int i = 0; i < n; ++i) {
-  	row_offset_ptr[i+1] += row_offset_ptr[i];
+    }
+   }
   }
+
+  if (roffset != nrows) {
+    throw std::runtime_error("ERROR in generate_matrix_structure, roffset != nrows.");
+  }
+  row_offsets[roffset] = nnz;
 
   init_matrix(A, rows, row_offsets, row_coords,
               global_nodes_x, global_nodes_y, global_nodes_z, global_nrows, mesh);

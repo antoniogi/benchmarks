@@ -5,7 +5,7 @@
 // ************************************************************************
 //
 // MiniFE: Simple Finite Element Assembly and Solve
-// Copyright (2006-2013) Sandia	Corporation
+// Copyright (2006-2013) Sandia Corporation
 //
 // Under terms of Contract DE-AC04-94AL85000, there is a non-exclusive
 // license for use of this work by or on behalf of the U.S. Government.
@@ -260,7 +260,7 @@ driver(const Box& global_box, Box& my_box,
     std::cout << "Starting kernel timing loops ..." << std::endl;
   }
 
-  max_iters = 200;
+  max_iters = 500;
   x.coefs[0] = 0.9;
   if (matvec_with_comm_overlap) {
     time_kernels(A, b, x, matvec_overlap<MatrixType,VectorType>(), max_iters, rnorm, cg_times);

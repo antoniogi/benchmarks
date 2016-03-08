@@ -31,18 +31,14 @@
 #include <cstdlib>
 #include <vector>
 
-#include <miniFE_version.h>
-
-#include <outstream.hpp>
-
-#ifdef _OPENMP
-#include <omp.h>
-#endif
-
 #ifdef MINIFE_REPORT_RUSAGE
 #include <sys/time.h>
 #include <sys/resource.h>
 #endif
+
+#include <miniFE_version.h>
+
+#include <outstream.hpp>
 
 #ifdef HAVE_MPI
 #include <mpi.h>
@@ -94,34 +90,17 @@ int main(int argc, char** argv) {
   int numprocs = 1, myproc = 0;
   miniFE::initialize_mpi(argc, argv, numprocs, myproc);
 
+#ifdef HAVE_MPI
+#ifdef USE_MPI_PCONTROL
+  MPI_Pcontrol(0);
+#endif
+#endif
+
   miniFE::timer_type start_time = miniFE::mytimer();
 
 #ifdef MINIFE_DEBUG
   outstream(numprocs, myproc);
 #endif
-
-  if(myproc==0) {
-    std::cout << "MiniFE Mini-App, OpenMP Peer Implementation" << std::endl;
-    std::cout << "Creating OpenMP Thread Pool..." << std::endl;
-  }
-  int value = 0;
-  const int thread_count = omp_get_max_threads();
-#pragma omp parallel for reduction(+:value)
-  for(int i = 0; i < thread_count; ++i) {
-	value += 1;
-  }
-  double global_threadcount;
-  double local_threadcount = value;
-
-#ifdef HAVE_MPI
-  MPI_Allreduce(&local_threadcount,&global_threadcount,1,MPI_DOUBLE,MPI_SUM,MPI_COMM_WORLD);
-#else
-  global_threadcount = local_threadcount;
-#endif
-  if(myproc==0) {
-    std::cout << "Counted: " << global_threadcount << " threads." << std::endl;
-    std::cout << "Running MiniFE Mini-App..." << std::endl;
-  }
 
   //make sure each processor has the same parameters:
   miniFE::broadcast_parameters(params);
@@ -185,13 +164,13 @@ int main(int argc, char** argv) {
    long long int max_rss = 0;
 
 #ifdef HAVE_MPI
-   MPI_Reduce(&rank_rss, &global_rss, 1, 
-	MPI_LONG_LONG, MPI_SUM, 0, MPI_COMM_WORLD);
-   MPI_Reduce(&rank_rss, &max_rss, 1, 
-	MPI_LONG_LONG, MPI_MAX, 0, MPI_COMM_WORLD);
+   MPI_Reduce(&rank_rss, &global_rss, 1,
+       	MPI_LONG_LONG, MPI_SUM, 0, MPI_COMM_WORLD);
+   MPI_Reduce(&rank_rss, &max_rss, 1,
+       	MPI_LONG_LONG, MPI_MAX, 0, MPI_COMM_WORLD);
    if (myproc == 0) {
-	doc.add("Global All-RSS (kB)", global_rss);
-	doc.add("Global Max-RSS (kB)", max_rss);
+        doc.add("Global All-RSS (kB)", global_rss);
+       	doc.add("Global Max-RSS (kB)", max_rss);
    }
 #else
    doc.add("RSS (kB)", rank_rss);
@@ -202,7 +181,6 @@ int main(int argc, char** argv) {
     doc.add("Total Program Time",total_time);
     doc.generateYAML();
   }
-
 
   miniFE::finalize_mpi();
 
