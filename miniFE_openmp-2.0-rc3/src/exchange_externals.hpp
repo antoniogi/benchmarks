@@ -113,6 +113,7 @@ exchange_externals(MatrixType& A,
   os << "total_to_be_sent: " << total_to_be_sent << std::endl;
 #endif
 
+#pragma omp parallel for
   for(size_t i=0; i<total_to_be_sent; ++i) {
 #ifdef MINIFE_DEBUG
     //expensive index range-check:

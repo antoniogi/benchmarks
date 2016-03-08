@@ -5,7 +5,7 @@
 // ************************************************************************
 //
 // MiniFE: Simple Finite Element Assembly and Solve
-// Copyright (2006-2013) Sandia Corporation
+// Copyright (2006-2013) Sandia	Corporation
 //
 // Under terms of Contract DE-AC04-94AL85000, there is a non-exclusive
 // license for use of this work by or on behalf of the U.S. Government.
@@ -91,9 +91,6 @@ cg_solve(OperatorType& A,
   int myproc = 0;
 #ifdef HAVE_MPI
   MPI_Comm_rank(MPI_COMM_WORLD, &myproc);
-#ifdef USE_MPI_PCONTROL
-  MPI_Pcontrol(1);
-#endif
 #endif
 
   if (!A.has_local_indices) {
@@ -131,7 +128,7 @@ cg_solve(OperatorType& A,
 
   TICK(); waxpby(one, b, -one, Ap, r); TOCK(tWAXPY);
 
-  TICK(); rtrans = dot(r, r); TOCK(tDOT);
+  TICK(); rtrans = dot_r2(r); TOCK(tDOT);
 
 //std::cout << "rtrans="<<rtrans<<std::endl;
 
@@ -148,6 +145,9 @@ cg_solve(OperatorType& A,
   os << "brkdown_tol = " << brkdown_tol << std::endl;
 #endif
 
+#ifdef MINIFE_DEBUG_OPENMP
+  std::cout << "Starting CG Solve Phase..." << std::endl;
+#endif
 
   for(LocalOrdinalType k=1; k <= max_iter && normr > tolerance; ++k) {
     if (k == 1) {
@@ -155,12 +155,12 @@ cg_solve(OperatorType& A,
     }
     else {
       oldrtrans = rtrans;
-      TICK(); rtrans = dot(r, r); TOCK(tDOT);
+      TICK(); rtrans = dot_r2(r); TOCK(tDOT);
       magnitude_type beta = rtrans/oldrtrans;
-      TICK(); waxpby(one, r, beta, p, p); TOCK(tWAXPY);
+      TICK(); daxpby(one, r, beta, p); TOCK(tWAXPY);
     }
 
-    normr = std::sqrt(rtrans);
+    normr = sqrt(rtrans);
 
     if (myproc == 0 && (k%print_freq==0 || k==max_iter)) {
       std::cout << "Iteration = "<<k<<"   Residual = "<<normr<<std::endl;
@@ -169,15 +169,8 @@ cg_solve(OperatorType& A,
     magnitude_type alpha = 0;
     magnitude_type p_ap_dot = 0;
 
-#ifdef MINIFE_FUSED
-    TICK();
-    p_ap_dot = matvec_and_dot(A, p, Ap);
-    TOCK(tMATVECDOT);
-#else
     TICK(); matvec(A, p, Ap); TOCK(tMATVEC);
-
     TICK(); p_ap_dot = dot(Ap, p); TOCK(tDOT);
-#endif
 
 #ifdef MINIFE_DEBUG
     os << "iter " << k << ", p_ap_dot = " << p_ap_dot;
@@ -203,23 +196,11 @@ cg_solve(OperatorType& A,
     os << ", rtrans = " << rtrans << ", alpha = " << alpha << std::endl;
 #endif
 
-#ifdef MINIFE_FUSED
-    TICK();
-    fused_waxpby(one, x, alpha, p, x, one, r, -alpha, Ap, r);
-    TOCK(tWAXPY);
-#else
-    TICK(); waxpby(one, x, alpha, p, x);
-            waxpby(one, r, -alpha, Ap, r); TOCK(tWAXPY);
-#endif
+    TICK(); daxpby(alpha, p, one, x);
+            daxpby(-alpha, Ap, one, r); TOCK(tWAXPY);
 
     num_iters = k;
   }
-
-#ifdef HAVE_MPI
-#ifdef USE_MPI_PCONTROL
-  MPI_Pcontrol(0);
-#endif
-#endif
 
   my_cg_times[WAXPY] = tWAXPY;
   my_cg_times[DOT] = tDOT;

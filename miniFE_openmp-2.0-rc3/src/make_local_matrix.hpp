@@ -423,7 +423,7 @@ make_local_matrix(MatrixType& A)
   for(GlobalOrdinal i=0; i<total_to_be_sent; ++i) {
     A.elements_to_send[i] -= start_row;
     if (A.elements_to_send[i] >= A.rows.size()) {
-      std::cout<<"start_row: "<<start_row<<", A.elements_to_send[i]: "<<A.elements_to_send[i]<<", A.rows.size(): "<<A.rows.size()<<std::endl;
+//std::cout<<"start_row: "<<start_row<<", A.elements_to_send[i]: "<<A.elements_to_send[i]<<", A.rows.size(): "<<A.rows.size()<<std::endl;
     assert(A.elements_to_send[i] < A.rows.size());
     }
   }

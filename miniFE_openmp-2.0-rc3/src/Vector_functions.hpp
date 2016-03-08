@@ -43,6 +43,8 @@
 #include <TypeTraits.hpp>
 #include <Vector.hpp>
 
+#define MINIFE_MIN(X, Y)  ((X) < (Y) ? (X) : (Y))
+
 namespace miniFE {
 
 
@@ -98,6 +100,8 @@ void sum_into_vector(size_t num_indices,
   for(size_t i=0; i<num_indices; ++i) {
     if (indices[i] < first || indices[i] > last) continue;
     size_t idx = indices[i] - first;
+
+    #pragma omp atomic
     vec_coefs[idx] += coefs[i];
   }
 }
@@ -132,6 +136,10 @@ void
 {
   typedef typename VectorType::ScalarType ScalarType;
 
+#ifdef MINIFE_DEBUG_OPENMP
+  std::cout << "Starting WAXPBY..." << std::endl;
+#endif
+
 #ifdef MINIFE_DEBUG
   if (y.local_size < x.local_size || w.local_size < x.local_size) {
     std::cerr << "miniFE::waxpby ERROR, y and w must be at least as long as x." << std::endl;
@@ -139,49 +147,81 @@ void
   }
 #endif
 
-  int n = x.coefs.size();
-  const ScalarType* xcoefs = &x.coefs[0];
-  const ScalarType* ycoefs = &y.coefs[0];
-        ScalarType* wcoefs = &w.coefs[0];
+  const int n = x.coefs.size();
+  const ScalarType*  xcoefs = &x.coefs[0];
+  const ScalarType*  ycoefs = &y.coefs[0];
+        ScalarType*  wcoefs = &w.coefs[0];
 
-  for(int i=0; i<n; ++i) {
-    wcoefs[i] = alpha*xcoefs[i] + beta*ycoefs[i];
+  if(beta == 0.0) {
+	if(alpha == 1.0) {
+  		#pragma omp parallel for
+  		for(int i=0; i<n; ++i) {
+    			wcoefs[i] = xcoefs[i];
+  		}
+  	} else {
+  		#pragma omp parallel for
+  		for(int i=0; i<n; ++i) {
+    			wcoefs[i] = alpha * xcoefs[i];
+  		}
+  	}
+  } else {
+	if(alpha == 1.0) {
+  		#pragma omp parallel for
+  		for(int i=0; i<n; ++i) {
+    			wcoefs[i] = xcoefs[i] + beta * ycoefs[i];
+  		}
+  	} else {
+  		#pragma omp parallel for
+  		for(int i=0; i<n; ++i) {
+    			wcoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
+  		}
+  	}
   }
+
+#ifdef MINIFE_DEBUG_OPENMP
+  std::cout << "Finished WAXPBY." << std::endl;
+#endif
 }
 
-//Like waxpby above, except operates on two sets of arguments.
-//In other words, performs two waxpby operations in one loop.
 template<typename VectorType>
 void
-  fused_waxpby(typename VectorType::ScalarType alpha, const VectorType& x,
-         typename VectorType::ScalarType beta, const VectorType& y,
-         VectorType& w,
-         typename VectorType::ScalarType alpha2, const VectorType& x2,
-         typename VectorType::ScalarType beta2, const VectorType& y2,
-         VectorType& w2)
+  daxpby(const MINIFE_SCALAR alpha, 
+	const VectorType& x,
+	const MINIFE_SCALAR beta, 
+	VectorType& y)
 {
-  typedef typename VectorType::ScalarType ScalarType;
 
-#ifdef MINIFE_DEBUG
-  if (y.local_size < x.local_size || w.local_size < x.local_size) {
-    std::cerr << "miniFE::waxpby ERROR, y and w must be at least as long as x." << std::endl;
-    return;
+  const MINIFE_LOCAL_ORDINAL n = MINIFE_MIN(x.coefs.size(), y.coefs.size());
+  const MINIFE_SCALAR*  xcoefs = &x.coefs[0];
+        MINIFE_SCALAR*  ycoefs = &y.coefs[0];
+
+  if(alpha == 1.0 && beta == 1.0) {
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; ++i) {
+	    ycoefs[i] += xcoefs[i];
+  	  }
+  } else if (beta == 1.0) {
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; ++i) {
+	    ycoefs[i] += alpha * xcoefs[i];
+  	  }
+  } else if (alpha == 1.0) {
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; ++i) {
+	    ycoefs[i] = xcoefs[i] + beta * ycoefs[i];
+  	  }
+  } else if (beta == 0.0) {
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; ++i) {
+	    ycoefs[i] = alpha * xcoefs[i];
+  	  }
+  } else {
+	  #pragma omp parallel for
+	  for(int i = 0; i < n; ++i) {
+	    ycoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
+  	  }
   }
-#endif
 
-  int n = x.coefs.size();
-  const ScalarType* xcoefs = &x.coefs[0];
-  const ScalarType* ycoefs = &y.coefs[0];
-        ScalarType* wcoefs = &w.coefs[0];
-
-  const ScalarType* x2coefs = &x2.coefs[0];
-  const ScalarType* y2coefs = &y2.coefs[0];
-        ScalarType* w2coefs = &w2.coefs[0];
-
-  for(int i=0; i<n; ++i) {
-    wcoefs[i] = alpha*xcoefs[i] + beta*ycoefs[i];
-    w2coefs[i] = alpha2*x2coefs[i] + beta2*y2coefs[i];
-  }
 }
 
 //-----------------------------------------------------------
@@ -196,7 +236,41 @@ typename TypeTraits<typename Vector::ScalarType>::magnitude_type
   dot(const Vector& x,
       const Vector& y)
 {
-  int n = x.coefs.size();
+  const MINIFE_LOCAL_ORDINAL n = x.coefs.size();
+
+  typedef typename Vector::ScalarType Scalar;
+  typedef typename TypeTraits<typename Vector::ScalarType>::magnitude_type magnitude;
+
+  const Scalar*  xcoefs = &x.coefs[0];
+  const Scalar*  ycoefs = &y.coefs[0];
+  MINIFE_SCALAR result = 0;
+
+  #pragma omp parallel for reduction(+:result)
+  for(int i=0; i<n; ++i) {
+    result += xcoefs[i] * ycoefs[i];
+  }
+
+#ifdef HAVE_MPI
+  magnitude local_dot = result, global_dot = 0;
+  MPI_Datatype mpi_dtype = TypeTraits<magnitude>::mpi_type();  
+  MPI_Allreduce(&local_dot, &global_dot, 1, mpi_dtype, MPI_SUM, MPI_COMM_WORLD);
+  return global_dot;
+#else
+  return result;
+#endif
+}
+
+template<typename Vector>
+typename TypeTraits<typename Vector::ScalarType>::magnitude_type
+  dot_r2(const Vector& x)
+{
+#ifdef MINIFE_DEBUG_OPENMP
+ 	int myrank;
+	MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
+	std::cout << "[" << myrank << "] Starting dot..." << std::endl;
+#endif
+
+  const MINIFE_LOCAL_ORDINAL n = x.coefs.size();
 
 #ifdef MINIFE_DEBUG
   if (y.local_size < n) {
@@ -208,19 +282,28 @@ typename TypeTraits<typename Vector::ScalarType>::magnitude_type
   typedef typename Vector::ScalarType Scalar;
   typedef typename TypeTraits<typename Vector::ScalarType>::magnitude_type magnitude;
 
-  const Scalar* xcoefs = &x.coefs[0];
-  const Scalar* ycoefs = &y.coefs[0];
-  magnitude result = 0;
+  const MINIFE_SCALAR*  xcoefs = &x.coefs[0];
+  MINIFE_SCALAR result = 0;
+
+  #pragma omp parallel for reduction(+:result)
   for(int i=0; i<n; ++i) {
-    result += xcoefs[i]*ycoefs[i];
+    result += xcoefs[i] * xcoefs[i];
   }
 
 #ifdef HAVE_MPI
   magnitude local_dot = result, global_dot = 0;
   MPI_Datatype mpi_dtype = TypeTraits<magnitude>::mpi_type();  
   MPI_Allreduce(&local_dot, &global_dot, 1, mpi_dtype, MPI_SUM, MPI_COMM_WORLD);
+
+#ifdef MINIFE_DEBUG_OPENMP
+ 	std::cout << "[" << myrank << "] Completed dot." << std::endl;
+#endif
+
   return global_dot;
 #else
+#ifdef MINIFE_DEBUG_OPENMP
+ 	std::cout << "[" << myrank << "] Completed dot." << std::endl;
+#endif
   return result;
 #endif
 }

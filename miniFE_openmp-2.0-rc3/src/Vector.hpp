@@ -46,8 +46,9 @@ struct Vector {
      local_size(local_sz),
      coefs(local_size)
   {
-    for(size_t i=0; i < local_size; ++i) {
-    	coefs[i] = 0;
+    #pragma omp parallel for
+    for(MINIFE_LOCAL_ORDINAL i=0; i < local_size; ++i) {
+	coefs[i] = 0;	 
     }
   }
 
