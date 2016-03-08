@@ -89,8 +89,26 @@ CSRMatrix {
   {
     rows.resize(nrows);
     row_offsets.resize(nrows+1);
-    packed_cols.reserve(nrows * ncols_per_row);
-    packed_coefs.reserve(nrows * ncols_per_row);
+
+    const MINIFE_GLOBAL_ORDINAL nrows_max = nrows * ncols_per_row;
+    packed_cols.reserve(nrows_max);
+    packed_coefs.reserve(nrows_max);
+
+    #pragma omp parallel for
+    for(MINIFE_GLOBAL_ORDINAL i = 0; i < nrows; ++i) {
+	rows[i] = 0;
+    }
+
+    #pragma omp parallel for
+    for(MINIFE_GLOBAL_ORDINAL i = 0; i < nrows + 1; ++i) {
+	row_offsets[i] = 0;
+    }
+
+    #pragma omp parallel for
+    for(MINIFE_GLOBAL_ORDINAL i = 0; i < nrows_max; ++i) {
+	packed_cols[i] = 0;
+	packed_coefs[i] = 0;
+    }
   }
 
   void get_row_pointers(GlobalOrdinalType row, size_t& row_length,

@@ -1,3 +1,4 @@
+
 //@HEADER
 // ************************************************************************
 //
@@ -94,11 +95,6 @@ struct MatrixInitOp<miniFE::CSRMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_
     matrix.packed_cols.resize(nnz);
     matrix.packed_coefs.resize(nnz);
     dest_rowoffsets[n] = nnz;
-#ifdef HAVE_MPI 
-   MPI_Comm_rank(MPI_COMM_WORLD, &proc);
-#else
-   proc = 0;
-#endif
   }
 
   typedef MINIFE_GLOBAL_ORDINAL GlobalOrdinalType;
@@ -120,7 +116,6 @@ struct MatrixInitOp<miniFE::CSRMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_
   GlobalOrdinalType* dest_cols;
   ScalarType*        dest_coefs;
   int n;
-  int proc;
 
   const miniFE::simple_mesh_description<GlobalOrdinalType>* mesh;
 
@@ -141,9 +136,6 @@ struct MatrixInitOp<miniFE::CSRMatrix<MINIFE_SCALAR,MINIFE_LOCAL_ORDINAL,MINIFE_
                                    ix+sx, iy+sy, iz+sz);
           if (col_id >= 0 && col_id < global_nrows) {
             GlobalOrdinalType col = mesh->map_id_to_row(col_id);
-            if (col >= global_nrows) {
-              std::cout << "mesh->map_id_to_row produced col="<<col<<" from col_id="<<col_id<<", but global_nrows="<<global_nrows<<", max_row_in_map="<<mesh->max_row_in_map()<<", proc="<<proc<<std::endl;
-            }
             dest_cols[offset+nnz] = col;
             dest_coefs[offset+nnz] = 0;
             ++nnz;

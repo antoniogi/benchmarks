@@ -30,8 +30,36 @@
 
 #include <vector>
 
+#include <assert.h>
+#include <stdlib.h>
+#include <sys/mman.h>
+#define HUGE_PAGE_SIZE (2 * 1024 * 1024)
+#define ALIGN_TO_PAGE_SIZE(x) \
+    (((x) + HUGE_PAGE_SIZE - 1) / HUGE_PAGE_SIZE * HUGE_PAGE_SIZE)
+
 namespace miniFE {
 
+#ifdef __MIC__
+void *malloc_huge_pages(size_t size)
+{
+    // Use 1 extra page to store allocation metadata
+    // (libhugetlbfs is more efficient in this regard)
+    size_t real_size = ALIGN_TO_PAGE_SIZE(size + HUGE_PAGE_SIZE);
+    char *ptr = (char *)mmap(NULL, real_size, PROT_READ | PROT_WRITE,
+                  MAP_PRIVATE | MAP_ANONYMOUS |
+                  MAP_POPULATE | MAP_HUGETLB, -1, 0);
+    if (ptr == MAP_FAILED) {
+           // The mmap() call failed. Try to malloc instead
+           ptr = (char *)malloc(real_size);
+           if (ptr == NULL) return NULL;
+           real_size = 0;
+}
+    // Save real_size since mmunmap() requires a size parameter
+    *((size_t *)ptr) = real_size;
+    // Skip the page with metadata
+    return ptr + HUGE_PAGE_SIZE;
+}
+#endif
 
 template<typename Scalar,
          typename LocalOrdinal,
@@ -43,11 +71,22 @@ struct Vector {
 
   Vector(GlobalOrdinal startIdx, LocalOrdinal local_sz)
    : startIndex(startIdx),
-     local_size(local_sz),
-     coefs(local_size)
+     local_size(local_sz)//,
+//     coefs(local_size)
   {
-    for(size_t i=0; i < local_size; ++i) {
-    	coefs[i] = 0;
+#ifdef __MIC__
+    coefs = (MINIFE_SCALAR*) malloc_huge_pages((sizeof(MINIFE_SCALAR) * local_size) + 64);
+#else
+    posix_memalign((void**) &coefs, 64, sizeof(MINIFE_SCALAR) * local_size);
+#endif
+
+    if(((unsigned long long int) coefs) % 64 > 0) {
+	coefs = coefs + (((unsigned long long int )coefs) % 64);
+    }
+
+    #pragma omp parallel for
+    for(MINIFE_LOCAL_ORDINAL i = 0; i < local_size; ++i) {
+	coefs[i] = 0;
     }
   }
 
@@ -55,9 +94,11 @@ struct Vector {
   {
   }
 
-  GlobalOrdinal startIndex;
-  LocalOrdinal local_size;
-  std::vector<Scalar> coefs;
+  const GlobalOrdinal startIndex;
+  const LocalOrdinal local_size;
+//  std::vector<Scalar> coefs;
+
+  MINIFE_SCALAR* MINIFE_RESTRICT coefs __attribute__ ((aligned (64)));
 };
 
 

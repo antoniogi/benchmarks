@@ -4,7 +4,7 @@ if [ -f ./YAML_Doc.cpp ] ; then
   exit 0;
 fi
 
-dir=../../common
+dir=../common
 
 cp ${dir}/YAML_Doc.cpp .
 cp ${dir}/YAML_Doc.hpp .

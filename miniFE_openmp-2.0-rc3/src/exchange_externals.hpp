@@ -87,7 +87,8 @@ exchange_externals(MatrixType& A,
   // Externals are at end of locals
   //
 
-  std::vector<Scalar>& x_coefs = x.coefs;
+  //std::vector<Scalar>& x_coefs = x.coefs;
+  MINIFE_SCALAR* x_coefs __attribute__((aligned(64))) = x.coefs;
   Scalar* x_external = &(x_coefs[local_nrow]);
 
   MPI_Datatype mpi_dtype = TypeTraits<Scalar>::mpi_type();
@@ -113,11 +114,12 @@ exchange_externals(MatrixType& A,
   os << "total_to_be_sent: " << total_to_be_sent << std::endl;
 #endif
 
+#pragma omp parallel for
   for(size_t i=0; i<total_to_be_sent; ++i) {
 #ifdef MINIFE_DEBUG
     //expensive index range-check:
-    if (elements_to_send[i] < 0 || elements_to_send[i] > x.coefs.size()) {
-      os << "error, out-of-range. x.coefs.size()=="<<x.coefs.size()<<", elements_to_send[i]=="<<elements_to_send[i]<<std::endl;
+    if (elements_to_send[i] < 0 || elements_to_send[i] > x.local_size) {
+      os << "error, out-of-range. x.coefs.size()=="<<x.local_size<<", elements_to_send[i]=="<<elements_to_send[i]<<std::endl;
     }
 #endif
     send_buffer[i] = x.coefs[elements_to_send[i]];
@@ -207,7 +209,8 @@ begin_exchange_externals(MatrixType& A,
   // Externals are at end of locals
   //
 
-  std::vector<Scalar>& x_coefs = x.coefs;
+//  std::vector<Scalar>& x_coefs = x.coefs;
+  MINIFE_SCALAR* x_coefs __attribute__((aligned(64))) = x.coefs;
   Scalar* x_external = &(x_coefs[local_nrow]);
 
   MPI_Datatype mpi_dtype = TypeTraits<Scalar>::mpi_type();
