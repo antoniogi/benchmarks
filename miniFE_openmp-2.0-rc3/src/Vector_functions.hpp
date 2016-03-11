@@ -155,32 +155,48 @@ void
 
   if(beta == 0.0) {
 	if(alpha == 1.0) {
+      #pragma prefetch xcoefs:1:32
+      #pragma prefetch xcoefs:1:12
+      #pragma prefetch ycoefs:1:32
+      #pragma prefetch ycoefs:1:12
   		#pragma omp parallel for
 		#pragma vector nontemporal
-		#pragma unroll(8)
+//		#pragma unroll(8)
   		for(int i=0; i<n; ++i) {
     			wcoefs[i] = xcoefs[i];
   		}
   	} else {
+      #pragma prefetch xcoefs:1:32
+      #pragma prefetch xcoefs:1:12
+      #pragma prefetch ycoefs:1:32
+      #pragma prefetch ycoefs:1:12
   		#pragma omp parallel for
 		#pragma vector nontemporal
-		#pragma unroll(8)
+//		#pragma unroll(8)
   		for(int i=0; i<n; ++i) {
     			wcoefs[i] = alpha * xcoefs[i];
   		}
   	}
   } else {
 	if(alpha == 1.0) {
+      #pragma prefetch xcoefs:1:32
+      #pragma prefetch xcoefs:1:12
+      #pragma prefetch ycoefs:1:32
+      #pragma prefetch ycoefs:1:12
   		#pragma omp parallel for
 		#pragma vector nontemporal
-		#pragma unroll(8)
+//		#pragma unroll(8)
   		for(int i=0; i<n; ++i) {
     			wcoefs[i] = xcoefs[i] + beta * ycoefs[i];
   		}
   	} else {
+#pragma prefetch xcoefs:1:32
+      #pragma prefetch xcoefs:1:12
+      #pragma prefetch ycoefs:1:32
+      #pragma prefetch ycoefs:1:12
   		#pragma omp parallel for
 		#pragma vector nontemporal
-		#pragma unroll(8)
+//		#pragma unroll(8)
   		for(int i=0; i<n; ++i) {
     			wcoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
   		}
@@ -205,37 +221,57 @@ void
         MINIFE_SCALAR* MINIFE_RESTRICT ycoefs __attribute__ ((aligned (64))) = &y.coefs[0];
 
   if(alpha == 1.0 && beta == 1.0) {
+//      #pragma prefetch xcoefs:1:32
+//      #pragma prefetch xcoefs:1:12
+//      #pragma prefetch ycoefs:1:32
+//      #pragma prefetch ycoefs:1:12
 	  #pragma omp parallel for
 	  #pragma vector nontemporal
-	  #pragma unroll(8)
+//	  #pragma unroll(8)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] += xcoefs[i];
   	  }
   } else if (beta == 1.0) {
+//      #pragma prefetch xcoefs:1:32
+//      #pragma prefetch xcoefs:1:12
+//      #pragma prefetch ycoefs:1:32
+//      #pragma prefetch ycoefs:1:12
 	  #pragma omp parallel for
 	  #pragma vector nontemporal
-	  #pragma unroll(8)
+//	  #pragma unroll(8)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] += alpha * xcoefs[i];
   	  }
   } else if (alpha == 1.0) {
+//      #pragma prefetch xcoefs:1:32
+//      #pragma prefetch xcoefs:1:12
+//      #pragma prefetch ycoefs:1:32
+//      #pragma prefetch ycoefs:1:12
 	  #pragma omp parallel for
 	  #pragma vector nontemporal
-	  #pragma unroll(8)
+//	  #pragma unroll(8)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = xcoefs[i] + beta * ycoefs[i];
   	  }
   } else if (beta == 0.0) {
+//      #pragma prefetch xcoefs:1:32
+//      #pragma prefetch xcoefs:1:12
+//      #pragma prefetch ycoefs:1:32
+//      #pragma prefetch ycoefs:1:12
 	  #pragma omp parallel for
 	  #pragma vector nontemporal
-	  #pragma unroll(8)
+//	  #pragma unroll(8)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = alpha * xcoefs[i];
   	  }
   } else {
+//      #pragma prefetch xcoefs:1:32
+//      #pragma prefetch xcoefs:1:12
+//      #pragma prefetch ycoefs:1:32
+//      #pragma prefetch ycoefs:1:12
 	  #pragma omp parallel for
 	  #pragma vector nontemporal
-	  #pragma unroll(8)
+//	  #pragma unroll(8)
 	  for(int i = 0; i < n; ++i) {
 	    ycoefs[i] = alpha * xcoefs[i] + beta * ycoefs[i];
   	  }
@@ -265,8 +301,10 @@ MINIFE_SCALAR dot(const Vector& x,
   MINIFE_SCALAR result = 0;
   MINIFE_SCALAR dot1 = 0, dot2 = 0, dot3 = 0, dot4 = 0;
 
-  #pragma prefetch xcoefs:1:64
-  #pragma prefetch xcoefs:0:12
+//  #pragma prefetch xcoefs:1:64
+//  #pragma prefetch xcoefs:0:12
+//  #pragma prefetch ycoefs:1:64
+//  #pragma prefetch ycoefs:0:12
   #pragma omp parallel for reduction(+:dot1,dot2,dot3,dot4)
   for(int i=0; i<n; i+=4) {
         dot1 += xcoefs[i] * ycoefs[i];
@@ -309,12 +347,20 @@ MINIFE_SCALAR dot_r2(const Vector& x)
 
   const MINIFE_SCALAR* MINIFE_RESTRICT xcoefs __attribute__ ((aligned (64))) = &x.coefs[0];
   MINIFE_SCALAR result = 0;
+  MINIFE_SCALAR dot1 = 0, dot2 = 0, dot3 = 0, dot4 = 0;
 
-  #pragma omp parallel for reduction(+:result)
+  //#pragma omp parallel for reduction(+:result)
+  #pragma omp parallel for reduction(+:dot1,dot2,dot3,dot4)
   #pragma unroll(8)
-  for(MINIFE_LOCAL_ORDINAL i = 0; i < n; ++i) {
-  	result += xcoefs[i] * xcoefs[i];
+  for(MINIFE_LOCAL_ORDINAL i = 0; i < n; i+=4) {
+  	//result += xcoefs[i] * xcoefs[i];
+
+  	dot1 += xcoefs[i] * xcoefs[i];
+  	dot2 += xcoefs[i+1] * xcoefs[i+1];
+  	dot3 += xcoefs[i+2] * xcoefs[i+2];
+  	dot4 += xcoefs[i+3] * xcoefs[i+3];
   }
+  result = dot1 + dot2 + dot3 + dot4;
 
 #ifdef HAVE_MPI
   magnitude local_dot = result, global_dot = 0;
